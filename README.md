@@ -40,7 +40,7 @@ git commit -m "XXX"    // 提交版本至儲存庫，XXX 是打你的說明文�
 git push origin master // 上傳 master 分支至遠端 origin 節點
 ```
 
-* 同步
+* 下載遠端進度以同步
 ```javascript
 git pull origin master	// 下載遠端的最新進度並合併進本地端專案，記得若本地若有新進度而遠端未同步到要先commit呀！！
 ```
@@ -84,7 +84,7 @@ git remote
 [其一](https://zlargon.gitbooks.io/git-tutorial/content/file/modify.html)  
 [其二(記得往下滑才能看到目錄)](https://gitbook.tw/)
 
-##替換工具
+## 替換工具
 如果覺得太難（懶得學）可參考以下工具
 * [TortoiseGit](https://backlog.com/git-tutorial/tw/intro/intro2_1.html)  
 * [bitbucket](https://bitbucket.org/)

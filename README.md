@@ -1,6 +1,8 @@
 # DCT畢業專案-羅密歐與仙杜瑞拉
+
+![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)  
 ![made-with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow) ![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS3-brightgreen)  
-![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)
+
 
 ## 下載Git
 [載點](https://git-scm.com/downloads)
@@ -78,9 +80,9 @@ git merge XXX    合併分支XXX到目前所在的分支
 gitk --all &    // --all 顯示所有分支，&是背景執行
 ```
 
-* 查看遠端的訊息
+* 查看本地端檔案儲存狀態
 ```javascript
-git remote
+git status
 ```
 
 ## 教學資源
@@ -91,3 +93,11 @@ git remote
 如果覺得太難（懶得學）可參考以下工具
 * [TortoiseGit](https://backlog.com/git-tutorial/tw/intro/intro2_1.html)  
 * [bitbucket](https://bitbucket.org/)
+
+
+## 其他專案開發工具
+* 快速排版 [Bootstrap4](https://v4.bootcss.com/docs/4.0/getting-started/introduction/)
+* SVG圖片（需註明出處）[flaticon](https://www.flaticon.com/)
+
+## 其他現成模板
+* [FB](http://jvilk.com/cmpsci-326/workshop/05)

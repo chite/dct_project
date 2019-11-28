@@ -1,7 +1,7 @@
 # DCT畢業專案-羅密歐與仙杜瑞拉
 
-![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)  
 ![made-with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow) ![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS3-brightgreen)  
+![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)  
 
 
 ## 下載Git
@@ -96,7 +96,7 @@ git status
 
 
 ## 其他專案開發工具
-* 快速排版 [Bootstrap4](https://v4.bootcss.com/docs/4.0/getting-started/introduction/)
+* 快速排版 [Bootstrap4](https://medium.com/@weilihmen/bootstrap-%E5%88%9D%E5%AD%B8%E4%BB%8B%E7%B4%B9-%E9%9D%9C%E6%85%8B%E7%AF%87-f20500235b33)
 * SVG圖片（需註明出處）[flaticon](https://www.flaticon.com/)
 
 ## 其他現成模板

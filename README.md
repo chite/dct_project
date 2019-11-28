@@ -1,5 +1,5 @@
 # DCT畢業專案-羅密歐與仙杜瑞拉
-![made-with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow) ![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS3-brightgreen)
+![made-with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow) ![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS3-brightgreen)  
 ![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)
 
 ## 下載Git

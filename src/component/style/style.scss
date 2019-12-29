@@ -1,0 +1,42 @@
+$ig-bg: #FAFAFA;
+// construct
+//style
+//responsive
+@mixin pc-width {
+    @media only screen and (min-width: 992px) {
+        @content
+    }
+}
+
+//--------------------
+.layout {
+    box-sizing: border-box;
+    // padding: 1rem;
+    min-height: 100vh;
+}
+
+.ig-bg {
+    background: $ig-bg;
+    .login-box {
+        background: #FFFFFF;
+        @include pc-width {
+            width: 50%;
+        }
+        .ig-login-title {
+            width: 100%;
+            height: 30vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+        input {
+            background: $ig-bg;
+            font-size: 0.75rem;
+            font-weight: 100;
+            border: 1px solid rgb(211, 211, 211);
+            padding: 0.75rem;
+            border-radius: 5px;
+            font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif';
+        }
+    }
+}

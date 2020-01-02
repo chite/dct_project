@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
 import {FaFacebookSquare} from "react-icons/fa";
 import igIcon from '../../resources/igIcon.PNG';
 import igButton from '../../resources/igButton.PNG';

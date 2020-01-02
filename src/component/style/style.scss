@@ -1,5 +1,6 @@
 $ig-bg: #FAFAFA;
 $ig-gray: rgb(211, 211, 211);
+$ig-blue: #3897F0;
 $fb: rgb(36, 55, 94);
 // construct
 //style
@@ -11,6 +12,16 @@ $fb: rgb(36, 55, 94);
     font-size: 0.75rem;
 }
 
+.font-600{
+    font-weight: 600;
+}
+
+@mixin bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 //responsive
 @mixin pc-width {
     @media only screen and (min-width: 992px) {
@@ -19,20 +30,92 @@ $fb: rgb(36, 55, 94);
 }
 
 //--------------------
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .layout {
     box-sizing: border-box;
-    // padding: 1rem;
     min-height: 100vh;
+}
+
+.ig-bar {
+    height: 77px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    svg {
+        font-size: 1.75rem;
+    }
+    .bar-left {
+        .b-left {
+            height: 2rem;
+            width: 0.05rem;
+            background: #000000;
+        }
+        .bar-img {
+            width: 7rem;
+            height: 2rem;
+            @include bg();
+        }
+    }
+    .bar-middle {
+        .bar-input {
+            display: none;
+            @include pc-width {
+                display: block;
+                font-size: 0.75rem;
+                text-align: center;
+            }
+        }
+    }
+    .bar-right {
+        svg:not(:first-child) {
+            margin-left: 2rem;
+        }
+    }
+}
+
+.home-layout {
+    max-width: 935px;
+    min-height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    .self-photo {
+        flex: 2 0 30px;
+        .photo {
+            border-radius: 100%;
+            height: 168px;
+            width: 168px;
+            @include bg();
+        }
+    }
+    .document {
+        flex: 2 0 30px;
+        button{
+            background: $ig-blue;
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 28px;
+            margin: 0;
+            line-height: 32px;
+        }
+        p{
+            margin-bottom: 0.25rem;
+        }
+    }
 }
 
 .ig-bg {
     background: $ig-bg;
-    .ig-login-btn{
+    .ig-login-btn {
         width: 100%;
         height: 5rem;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
+        @include bg();
         margin: auto;
     }
     .login-box {
@@ -44,11 +127,8 @@ $fb: rgb(36, 55, 94);
         .ig-login-title {
             width: 100%;
             height: 15vh;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
+            @include bg();
         }
-        
         input {
             background: $ig-bg;
             font-size: 0.75rem;

@@ -1,7 +1,8 @@
 import React from 'react';
 import Bar from './share/Bar';
 import { IoMdGrid } from "react-icons/io";
-import { FaRegUserCircle, FaHeart, FaComment } from "react-icons/fa";
+import { FaRegUserCircle, FaHeart, FaComment, FaRegBookmark } from "react-icons/fa";
+import { FiTv } from "react-icons/fi";
 import selfPt from '../../resources/selfie.jpg';
 import photo from '../../resources/igPhoto.jpg';
 
@@ -19,23 +20,28 @@ function Home() {
                     <div className="document">
                         <div className="d-flex flex-direction-row">
                             <h1>pikachu111</h1>
-                            <button className="btn text-white btn-sm ml-3">追蹤</button>
-                            <button className="btn text-white btn-sm ml-3">&#x25BE;</button>
-                            <h1 className="font-600 ml-3">&#183;&#183;&#183;</h1>
+                            <button className="d-none d-sm-block btn btn-outline-secondary btn-sm ml-3" disabled>編輯個人檔案</button>
+                            <h1 className="font-600 ml-3">	&#9965;</h1>
                         </div>
-                        <div className="d-flex flex-direction-row mt-4">
+                        <button className="d-block d-sm-none btn btn-outline-secondary btn-sm w-75 mt-4" disabled>編輯個人檔案</button>
+                        <div className=" flex-direction-row mt-4 d-none d-sm-flex">
                             <h6>1,949 貼文</h6>
                             <h6 className="ml-4">635千 位追蹤者</h6>
                             <h6 className="ml-4">558 追蹤中</h6>
                         </div>
-                        <div className="about">
+                        <div className="d-none d-sm-block">
                             <h6>k0000000</h6>
                             <p>有仼何活動 電影 戲劇 節目邀約</p>
                             <p>E-mail: sharon_701111@hotmail.com</p>
                         </div>
                     </div>
                 </div>
-                <div className="history mt-5">
+                <div className="ml-3 mt-3 d-sm-none">
+                    <h6>k0000000</h6>
+                    <p>有仼何活動 電影 戲劇 節目邀約</p>
+                    <p>E-mail: sharon_701111@hotmail.com</p>
+                </div>
+                <div className="history w-100">
                     <div className="history-container">
                         <div className="photo-container">
                             <div className="bg history-photo" style={{ 'backgroundImage': 'url(' + selfPt + ')' }}></div>
@@ -55,12 +61,25 @@ function Home() {
                         <h6>AAAAAAAAAAAAAAAA</h6>
                     </div>
                 </div>
-                <div className="post-banner d-flex justify-content-center mt-5">
-                    <div className="mx-5">
+                <div className="s-follow flex-direction-row justify-content-around d-flex d-sm-none">
+                    <h6 className="text-center"><span>1,949</span><br/>貼文</h6>
+                    <h6 className="ml-4 text-center"><span>635千</span><br/>位追蹤者</h6>
+                    <h6 className="ml-4 text-center"><span>558</span><br/>追蹤中</h6>
+                </div>
+                <div className="post-banner d-flex justify-content-center">
+                    <div className="mx-4">
                         <IoMdGrid />
                         <span>&nbsp;貼文</span>
                     </div>
-                    <div className="mx-5">
+                    <div className="mx-4">
+                        <FiTv />
+                        <span>&nbsp;IGTV</span>
+                    </div>
+                    <div className="mx-4">
+                        <FaRegBookmark />
+                        <span>&nbsp;我的珍藏</span>
+                    </div>
+                    <div className="mx-4">
                         <FaRegUserCircle />
                         <span>&nbsp;已標註</span>
                     </div>

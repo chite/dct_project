@@ -3,6 +3,14 @@
 ![made-with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow) ![made-with-CSS](https://img.shields.io/badge/Made%20with-CSS3-brightgreen)  
 ![NCCU-DCT](https://img.shields.io/badge/NCCU%20-DCT-orange?style=for-the-badge)  
 
+## 咱們的小共識
+1. 請在根目錄建立資料夾，HTML等放裡面（如同已建立的 ig 資料夾）
+
+## 已完成的頁面URL
+1.IG
+...1. 登入：<https://chite.github.io/dct_project/ig/index.html#/login>
+...2. 首頁：<https://chite.github.io/dct_project/ig/index.html#/home>
+
 
 ## 下載Git
 [載點](https://git-scm.com/downloads)

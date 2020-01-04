@@ -7,9 +7,9 @@
 1. 請在根目錄建立資料夾，HTML等放裡面（如同已建立的 ig 資料夾）
 
 ## 已完成的頁面URL
-1.IG
-...1. 登入：<https://chite.github.io/dct_project/ig/index.html#/login>
-...2. 首頁：<https://chite.github.io/dct_project/ig/index.html#/home>
+1.IG 
+1. 登入：<https://chite.github.io/dct_project/ig/index.html#/login> 
+2. 首頁：<https://chite.github.io/dct_project/ig/index.html#/home>
 
 
 ## 下載Git

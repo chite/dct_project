@@ -2,8 +2,9 @@ import React from 'react';
 import Bar from './share/Bar';
 import { IoMdGrid } from "react-icons/io";
 import { FaRegUserCircle, FaHeart, FaComment, FaRegBookmark } from "react-icons/fa";
+import { DiAptana } from "react-icons/di";
 import { FiTv } from "react-icons/fi";
-import selfPt from '../../resources/selfie.jpg';
+import selfPt from '../../resources/igSelfie.jpg';
 import photo from '../../resources/igPhoto.jpg';
 
 function Home() {
@@ -21,7 +22,8 @@ function Home() {
                         <div className="d-flex flex-direction-row">
                             <h1>pikachu111</h1>
                             <button className="d-none d-sm-block btn btn-outline-secondary btn-sm ml-3" disabled>編輯個人檔案</button>
-                            <h1 className="font-600 ml-3">	&#9965;</h1>
+                            &nbsp;&nbsp;
+                            <DiAptana />
                         </div>
                         <button className="d-block d-sm-none btn btn-outline-secondary btn-sm w-75 mt-4" disabled>編輯個人檔案</button>
                         <div className=" flex-direction-row mt-4 d-none d-sm-flex">

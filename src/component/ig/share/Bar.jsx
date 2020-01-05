@@ -5,13 +5,15 @@ import igIcon from '../../../resources/igIcon2.PNG';
 function Bar() {
     const [moveState, setMove] = useState(false);
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        function handleScroll(){
             if (window.pageYOffset) {
                 setMove(true);
             } else {
                 setMove(false);
             }
-        })
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
         <div className={(moveState ? "short " : "") + "ig-bar bg-white w-100"}>

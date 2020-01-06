@@ -1,5 +1,6 @@
 import React from 'react';
 import Bar from './share/Bar';
+import Post from './share/Post';
 import { IoMdGrid } from "react-icons/io";
 import { FaRegUserCircle, FaHeart, FaComment, FaRegBookmark } from "react-icons/fa";
 import { DiAptana } from "react-icons/di";
@@ -11,6 +12,7 @@ function Home() {
     return (
         <div className="layout ig-bg">
             <Bar />
+            <Post />
             <article className="home-layout mb-5">
                 <div className="d-flex justify-content-between align-items-start pt-5">
                     <div className="self-photo" >

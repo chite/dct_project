@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
 import igSelfie from '../../resources/igSelfie.jpg';
 import igSelfie2 from '../../resources/igSelfie2.jpg';
@@ -6,12 +6,27 @@ import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 
 function Post() {
-    const [show, setShow] = useState([false, false]);
+    const [show, setShow] = useState([false]);
+    const [moveState, setMove] = useState(false);
+
     const handleClick = (index) => {
         let newShow = [...show];
         newShow[index] = true;
         setShow(newShow);
     }
+
+    useEffect(() => {
+        function handleScroll() {
+            if (window.pageYOffset) {
+                setMove(true);
+            } else {
+                setMove(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <div className="layout ig-bg">
             <Bar />
@@ -51,12 +66,6 @@ function Post() {
                                     <br />怕大家不相信 送上幾張照片
                                     <br />到處請路人甲幫我拍照😂
                                 </p>
-                                {/* <p className={show[1] ? "" : "hide"} onClick={() => handleClick(1)}>
-                                    andypeng1031 2020/1/5<br />實習最後一個週末來朝聖北京紫禁城
-                                    <br />看到了天安門、太和殿等知名建築物
-                                    <br />怕大家不相信 送上幾張照片
-                                    <br />到處請路人甲幫我拍照😂
-                                </p> */}
                             </div>
                             <div className="text">
                                 <p>&nbsp;<strong>stephen___li</strong>&nbsp;You look more ________. (Not fatter)</p>
@@ -68,8 +77,126 @@ function Post() {
                             </div>
                         </div>
                     </div>
-                    <div className="d-none d-sm-block col-sm-4">
-                        <h1>aaaaaaaaaaaaaa</h1>
+                    <div className={(moveState ? "moving " : "") + "side-part d-none d-sm-block col-sm-4"}>
+                        <div className="user d-flex align-items-center">
+                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie + ')' }}></div>
+                            <div className="ml-2">
+                                <h6>pikachu111</h6>
+                                <p>皮卡丘</p>
+                            </div>
+                        </div>
+                        <section className="section mt-3 bg-white pt-3 pl-3">
+                            <div className="section-bar d-flex justify-content-between pr-3">
+                                <h6>限時動態</h6>
+                                <h6>全部觀看</h6>
+                            </div>
+                            <div className="friend-list">
+                                <div className="friends">
+                                    <div className="d-flex">
+                                        <div className="image-border">
+                                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                        </div>
+                                        <div className="ml-2">
+                                            <div>
+                                                <h6>andypeng1031</h6>
+                                                <p>40分鐘前</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="friends">
+                                    <div className="d-flex">
+                                        <div className="image-border">
+                                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                        </div>
+                                        <div className="ml-2">
+                                            <div>
+                                                <h6>andypeng1031</h6>
+                                                <p>40分鐘前</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="friends">
+                                    <div className="d-flex">
+                                        <div className="image-border">
+                                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                        </div>
+                                        <div className="ml-2">
+                                            <div>
+                                                <h6>andypeng1031</h6>
+                                                <p>40分鐘前</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="friends">
+                                    <div className="d-flex">
+                                        <div className="image-border">
+                                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                        </div>
+                                        <div className="ml-2">
+                                            <div>
+                                                <h6>andypeng1031</h6>
+                                                <p>40分鐘前</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="section mt-3 bg-white pt-3 px-3">
+                            <div className="section-bar d-flex justify-content-between">
+                                <h6>推薦用戶</h6>
+                                <h6>查看全部</h6>
+                            </div>
+                            <div className="friends">
+                                <div className="d-flex">
+                                    <div className="image-border">
+                                        <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                    </div>
+                                    <div className="ml-2">
+                                        <div>
+                                            <h6>andypeng1031</h6>
+                                            <p>為你推薦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 className="text-primary"><strong>追蹤</strong></h6>
+                            </div>
+                            <div className="friends">
+                                <div className="d-flex">
+                                    <div className="image-border">
+                                        <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                    </div>
+                                    <div className="ml-2">
+                                        <div>
+                                            <h6>andypeng1031</h6>
+                                            <p>為你推薦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 className="text-primary"><strong>追蹤</strong></h6>
+                            </div>
+                            <div className="friends">
+                                <div className="d-flex">
+                                    <div className="image-border">
+                                        <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                    </div>
+                                    <div className="ml-2">
+                                        <div>
+                                            <h6>andypeng1031</h6>
+                                            <p>為你推薦</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 className="text-primary"><strong>追蹤</strong></h6>
+                            </div>
+                        </section>
+                        <div className="about mt-3">
+                            關於我們&nbsp;&middot;&nbsp;支援&nbsp;&middot;&nbsp;新聞稿&nbsp;&middot;&nbsp;API&nbsp;&middot;&nbsp;工作機會&nbsp;&middot;&nbsp;隱私&nbsp;&middot;&nbsp;使用條款&nbsp;&middot;&nbsp;目錄&nbsp;&middot;&nbsp;個人檔案&nbsp;&middot;&nbsp;主題標籤&nbsp;&middot;&nbsp;語言
+                            <br />© 2020 INSTAGRAM
+                        </div>
                     </div>
                 </div>
             </article>

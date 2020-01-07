@@ -348,9 +348,15 @@ body {
     }
     .ig-login-btn {
         width: 100%;
-        height: 5rem;
-        @include bg();
         margin: auto;
+        @include pc-width(){
+            width: 30%;
+        }
+        div{
+            @include bg();
+            background-size: contain;
+            height: 5rem;
+        }
     }
     .login-box {
         @include pc-width {

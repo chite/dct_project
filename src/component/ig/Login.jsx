@@ -27,7 +27,9 @@ function Login() {
             <h6 className="text-center">沒有帳號嗎？<span className="text-primary">註冊</span></h6>
             </div>
             <h6 className="text-center my-4">下載應用程式。</h6>
-            <div className="ig-login-btn text-center" style={{ 'backgroundImage': 'url(' + igButton + ')' }}></div>
+            <div className="ig-login-btn text-center">
+                <div className="w-100" style={{ 'backgroundImage': 'url(' + igButton + ')' }}></div>
+            </div>
         </div>
     )
 }

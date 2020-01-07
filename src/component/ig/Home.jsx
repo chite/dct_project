@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
 import Post from './share/Post';
 import { IoMdGrid } from "react-icons/io";
@@ -7,12 +7,34 @@ import { DiAptana } from "react-icons/di";
 import { FiTv } from "react-icons/fi";
 import selfPt from '../../resources/igSelfie.jpg';
 import photo from '../../resources/igPhoto.jpg';
+import data from '../../json/ig.json';
 
 function Home() {
+    const [open, setOpen] = useState(0);
+    const [post, setPhoto] = useState([]);
+    useEffect(() => {
+        setPhoto(data.data.post);
+    }, []);
+    const handleClick = (index) => {
+        console.log(index)
+        if(index < 0 || index >= post.length) return;
+        setOpen(index + 1);
+        let body = document.querySelector('body').style;
+        body.height = '100%';
+        body.overflow = 'hidden';
+    }
+    const handleClose = (index) => {
+        setOpen(0);
+        let body = document.querySelector('body').style;
+        body.height = '';
+        body.overflow = 'auto';
+    }
     return (
         <div className="layout ig-bg">
             <Bar />
-            <Post />
+            {
+                open && <Post close={handleClose} spec={open-1} turnPage={handleClick} />
+            }
             <article className="home-layout mb-5">
                 <div className="d-flex justify-content-between align-items-start pt-5">
                     <div className="self-photo" >
@@ -66,9 +88,9 @@ function Home() {
                     </div>
                 </div>
                 <div className="s-follow flex-direction-row justify-content-around d-flex d-sm-none">
-                    <h6 className="text-center"><span>1,949</span><br/>貼文</h6>
-                    <h6 className="ml-4 text-center"><span>635千</span><br/>位追蹤者</h6>
-                    <h6 className="ml-4 text-center"><span>558</span><br/>追蹤中</h6>
+                    <h6 className="text-center"><span>1,949</span><br />貼文</h6>
+                    <h6 className="ml-4 text-center"><span>635千</span><br />位追蹤者</h6>
+                    <h6 className="ml-4 text-center"><span>558</span><br />追蹤中</h6>
                 </div>
                 <div className="post-banner d-flex justify-content-center">
                     <div className="mx-4">
@@ -89,28 +111,28 @@ function Home() {
                     </div>
                 </div>
                 <div className="cards">
-                    <div className="card-element">
+                    <div className="card-element" onClick={() => handleClick(0)}>
                         <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
                         <div className="icon">
                             <FaHeart /><span>&nbsp;66</span>
                             <FaComment /><span>&nbsp;2</span>
                         </div>
                     </div>
-                    <div className="card-element">
+                    <div className="card-element" onClick={() => handleClick(0)}>
                         <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
                         <div className="icon">
                             <FaHeart /><span>&nbsp;66</span>
                             <FaComment /><span>&nbsp;2</span>
                         </div>
                     </div>
-                    <div className="card-element">
+                    <div className="card-element" onClick={() => handleClick(0)}>
                         <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
                         <div className="icon">
                             <FaHeart /><span>&nbsp;66</span>
                             <FaComment /><span>&nbsp;2</span>
                         </div>
                     </div>
-                    <div className="card-element">
+                    <div className="card-element" onClick={() => handleClick(0)}>
                         <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
                         <div className="icon">
                             <FaHeart /><span>&nbsp;66</span>

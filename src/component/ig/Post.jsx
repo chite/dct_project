@@ -72,7 +72,7 @@ function Post() {
                                 <p>&nbsp;<strong>ooxx._.1014</strong>&nbsp;@qw_02 擺著長肥肉❤️</p>
                             </div>
                             <h6 className="time">2 小時前</h6>
-                            <div className="post d-flex justify-content-between p-3">
+                            <div className="leave-message d-flex justify-content-between p-3">
                                 <span>留言……</span><span className="text-primary">發佈</span>
                             </div>
                         </div>

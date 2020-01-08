@@ -31,6 +31,13 @@ $fb: rgb(36, 55, 94);
     @include bg();
 }
 
+.btn-like {
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
+    }
+}
+
 //responsive
 @mixin pc-width {
     @media only screen and (min-width: 576px) {
@@ -88,6 +95,9 @@ body {
         font-size: 1.75rem;
     }
     .bar-left {
+        &:hover {
+            cursor: pointer;
+        }
         .b-left {
             height: 2rem;
             width: 0.05rem;
@@ -99,6 +109,7 @@ body {
             opacity: 1;
             transition: all 0.2s linear;
             @include bg();
+            background-size: contain;
             &.short {
                 opacity: 0;
             }
@@ -115,8 +126,12 @@ body {
         }
     }
     .bar-right {
-        svg:not(:first-child) {
-            margin-left: 2rem;
+        div:hover {
+            cursor: pointer;
+        }
+        svg:not(:first-child),
+        div {
+            margin-left: 1.5rem;
         }
     }
 }
@@ -172,6 +187,12 @@ body {
         }
         p {
             margin-bottom: 0.25rem;
+        }
+        svg:hover {
+            cursor: pointer;
+        }
+        button {
+            cursor: default;
         }
     }
     .post-container {
@@ -235,7 +256,6 @@ body {
             margin-left: 1rem;
             color: $grayLight;
         }
-        
     }
     .side-part {
         position: fixed;
@@ -263,6 +283,9 @@ body {
             p {
                 font-size: .75rem;
                 color: $grayLight;
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
         .section {
@@ -349,10 +372,10 @@ body {
     .ig-login-btn {
         width: 100%;
         margin: auto;
-        @include pc-width(){
+        @include pc-width() {
             width: 30%;
         }
-        div{
+        div {
             @include bg();
             background-size: contain;
             height: 5rem;
@@ -583,7 +606,7 @@ body {
                 height: 15rem;
                 overflow-y: auto;
                 overflow-x: hidden;
-                 &::-webkit-scrollbar {
+                &::-webkit-scrollbar {
                     width: 0px;
                     background: transparent;
                 }
@@ -593,14 +616,61 @@ body {
                     color: $grayLight;
                 }
             }
-            .sign{
+            .sign {
                 color: $grayLight;
                 font-size: 1.5rem;
                 border-top: 1px solid $ig-gray;
-                svg:not(:first-child){
+                svg:not(:first-child) {
                     margin: 0 .5rem;
                 }
             }
         }
     }
+    .logout {
+        animation-name: pop;
+        animation-duration: 0.1s;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        width: 100%;
+        @include pc-width(){
+            width: 35%;
+        }
+        button {
+            font-family: "Segoe UI";
+            font-size: 14px;
+            font-style: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-weight: 400;
+            color: #000000;
+            padding: .75rem 0;
+            &:not(:last-child) {
+                border-bottom: .1rem solid $ig-gray;
+            }
+            &.disable {
+                filter: brightness(0.8);
+                border-top: .01rem solid $ig-gray;
+                border-bottom: 0;
+                &:hover {
+                    border-top: .01rem solid $ig-gray;
+                    cursor: default;
+                    background: #f8f9fa;
+                    z-index: 0;
+                }
+            }
+        }
+    }
 }
+@keyframes pop{
+    0%{
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+  }

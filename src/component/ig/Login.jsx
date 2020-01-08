@@ -3,7 +3,10 @@ import {FaFacebookSquare} from "react-icons/fa";
 import igIcon from '../../resources/igIcon.PNG';
 import igButton from '../../resources/igButton.PNG';
 
-function Login() {
+function Login(props) {
+    const enter = () =>{
+        props.history.push('/post');
+    }
     return (
         <div className="layout ig-bg d-inline-block w-100">
             <div className="login-box m-3 mx-auto p-2 pb-4">
@@ -14,7 +17,7 @@ function Login() {
                     <option>帳號一</option>
                     <option>帳號二</option>
                 </datalist>
-                <button type="button" className="btn btn-primary w-75 d-block mx-auto">登入</button>
+                <button type="button" className="btn btn-primary w-75 d-block mx-auto" onClick={enter}>登入</button>
                 <div className="d-flex justify-content-center align-items-center w-75 mx-auto my-4">
                     <div className="bottom-line"></div>
                     <h6 className="mx-3">或</h6>

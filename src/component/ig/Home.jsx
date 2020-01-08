@@ -1,39 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
 import Post from './share/Post';
+import Logout from './share/Logout';
 import { IoMdGrid } from "react-icons/io";
 import { FaRegUserCircle, FaHeart, FaComment, FaRegBookmark } from "react-icons/fa";
 import { DiAptana } from "react-icons/di";
 import { FiTv } from "react-icons/fi";
 import selfPt from '../../resources/igSelfie.jpg';
-import photo from '../../resources/igPhoto.jpg';
 import data from '../../json/ig.json';
 
 function Home() {
     const [open, setOpen] = useState(0);
+    const [root, setRoot] = useState("");
     const [post, setPhoto] = useState([]);
+    const [logOut, setlogOut] = useState(false);
     useEffect(() => {
+        setRoot(data.data.root);
         setPhoto(data.data.post);
     }, []);
     const handleClick = (index) => {
         console.log(index)
-        if(index < 0 || index >= post.length) return;
+        if (index < 0 || index >= post.length) return;
         setOpen(index + 1);
         let body = document.querySelector('body').style;
         body.height = '100%';
         body.overflow = 'hidden';
     }
-    const handleClose = (index) => {
+    const logoutOpen = () => {
+        setlogOut(true);
+        let body = document.querySelector('body').style;
+        body.height = '100%';
+        body.overflow = 'hidden';
+    }
+    const handleClose = () => {
         setOpen(0);
+        setlogOut(false);
         let body = document.querySelector('body').style;
         body.height = '';
         body.overflow = 'auto';
     }
     return (
+        Boolean(post.length) &&
         <div className="layout ig-bg">
             <Bar />
             {
-                open && <Post close={handleClose} spec={open-1} turnPage={handleClick} />
+                Boolean(open) && <Post close={handleClose} spec={open - 1} turnPage={handleClick} />
+            }
+            {
+                logOut && <Logout close={handleClose} />
             }
             <article className="home-layout mb-5">
                 <div className="d-flex justify-content-between align-items-start pt-5">
@@ -47,7 +61,9 @@ function Home() {
                             <h1>pikachu111</h1>
                             <button className="d-none d-sm-block btn btn-outline-secondary btn-sm ml-3" disabled>編輯個人檔案</button>
                             &nbsp;&nbsp;
-                            <DiAptana />
+                            <div onClick={logoutOpen}>
+                                <DiAptana />
+                            </div>
                         </div>
                         <button className="d-block d-sm-none btn btn-outline-secondary btn-sm w-75 mt-4" disabled>編輯個人檔案</button>
                         <div className=" flex-direction-row mt-4 d-none d-sm-flex">
@@ -111,35 +127,17 @@ function Home() {
                     </div>
                 </div>
                 <div className="cards">
-                    <div className="card-element" onClick={() => handleClick(0)}>
-                        <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
-                        <div className="icon">
-                            <FaHeart /><span>&nbsp;66</span>
-                            <FaComment /><span>&nbsp;2</span>
-                        </div>
-                    </div>
-                    <div className="card-element" onClick={() => handleClick(0)}>
-                        <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
-                        <div className="icon">
-                            <FaHeart /><span>&nbsp;66</span>
-                            <FaComment /><span>&nbsp;2</span>
-                        </div>
-                    </div>
-                    <div className="card-element" onClick={() => handleClick(0)}>
-                        <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
-                        <div className="icon">
-                            <FaHeart /><span>&nbsp;66</span>
-                            <FaComment /><span>&nbsp;2</span>
-                        </div>
-                    </div>
-                    <div className="card-element" onClick={() => handleClick(0)}>
-                        <div className="bg" style={{ 'backgroundImage': 'url(' + photo + ')' }}></div>
-                        <div className="icon">
-                            <FaHeart /><span>&nbsp;66</span>
-                            <FaComment /><span>&nbsp;2</span>
-                        </div>
-                    </div>
-
+                    {
+                        post.map((val, index) => (
+                            <div key={index} className="card-element" onClick={() => handleClick(index)}>
+                                <div className="bg" style={{ 'backgroundImage': 'url(' + (root + val.pt[0]) + ')' }}></div>
+                                <div className="icon">
+                                    <FaHeart /><span>&nbsp;{val.like}</span>
+                                    <FaComment /><span>&nbsp;{val.message.length}</span>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </article>
         </div>

@@ -5,7 +5,7 @@ import igSelfie2 from '../../resources/igSelfie2.jpg';
 import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 
-function Post() {
+function Post(props) {
     const [show, setShow] = useState([false]);
     const [moveState, setMove] = useState(false);
 
@@ -78,7 +78,7 @@ function Post() {
                         </div>
                     </div>
                     <div className={(moveState ? "moving " : "") + "side-part d-none d-sm-block col-sm-4"}>
-                        <div className="user d-flex align-items-center">
+                        <div className="user d-flex align-items-center" onClick={()=>props.history.push('/home')}>
                             <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie + ')' }}></div>
                             <div className="ml-2">
                                 <h6>pikachu111</h6>

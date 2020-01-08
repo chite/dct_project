@@ -16,7 +16,7 @@ function Post(props) {
             </div>
             <button className="d-none d-sm-block closes" onClick={props.close}>&times;</button>
             <div className="dark-box d-flex">
-                <button className="d-none d-md-block mr-3" onClick={() => props.turnPage(props.spec - 1)}><FaAngleLeft /></button>
+                <button className={(props.spec - 1 < 0 ? "invisible " : "visible ") + "d-none d-md-block mr-3"} onClick={() => props.turnPage(props.spec - 1)}><FaAngleLeft /></button>
                 <div className="post-container row">
                     <div className="image col-12 col-md-8" style={{ 'backgroundImage': 'url(' + (root + post[props.spec].pt[0]) + ')' }}></div>
                     <div className="d-none d-md-flex flex-column justify-content-between col-md-4">
@@ -70,7 +70,7 @@ function Post(props) {
                         </div>
                         <div className="like d-flex align-items-center">
                             <div className="like-image mr-1" style={{ 'backgroundImage': 'url(' + (root + post[props.spec].like_pt) + ')' }}></div>
-                            &nbsp;<strong>{post[props.spec].like_author}</strong>&nbsp;和&nbsp;<strong>其他{post[props.spec].like}人</strong>&nbsp;都說讚
+                            &nbsp;<strong>{post[props.spec].like_author}</strong>&nbsp;和&nbsp;<strong>其他{post[props.spec].like - 1}人</strong>&nbsp;都說讚
                         </div>
                         <p className="time m-0">{post[props.spec].time}前</p>
                         <div className="message">
@@ -80,7 +80,7 @@ function Post(props) {
                         </div>
                     </div>
                 </div>
-                <button className="d-none d-sm-block ml-3" onClick={() => props.turnPage(props.spec + 1)}><FaAngleRight /></button>
+                <button className={(props.spec + 1 >= post.length ? "invisible " : "visible ") + "d-none d-md-block ml-3"} onClick={() => props.turnPage(props.spec + 1)}><FaAngleRight /></button>
             </div>
         </>
     )

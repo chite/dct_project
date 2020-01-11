@@ -3,7 +3,7 @@ import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {IoMdLock} from "react-icons/io";
 import LineIcon from '../../resources/lineIcon.png';
 
-function IgLogin() {
+function LineLogin() {
     return (
         <div className="layout line-bg ">
             <article className="line-login-container">
@@ -44,4 +44,4 @@ function IgLogin() {
     )
 }
 
-export default IgLogin;
+export default LineLogin;

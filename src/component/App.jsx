@@ -3,7 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import Login from './ig/Login';
 import Home from './ig/Home';
 import Post from './ig/Post';
-import IgLogin from './line/IgLogin';
+import LineLogin from './line/LineLogin';
 
 class App extends Component {
     render() {
@@ -12,7 +12,7 @@ class App extends Component {
                 <Route path="/login" component={Login} />
                 <Route path="/home" component={Home} />
                 <Route path="/post" component={Post} />
-                <Route exact path="/ig" component={IgLogin} />
+                <Route exact path="/line" component={LineLogin} />
             </HashRouter>
         )
     }

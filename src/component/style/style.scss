@@ -714,8 +714,8 @@ body {
                 }
             }
         }
-        .inputs{
-            input{
+        .inputs {
+            input {
                 border-radius: 0;
                 border: 1px solid $ig-gray;
                 border-top: none;
@@ -725,42 +725,42 @@ body {
                     outline: none;
                 }
             }
-            .first-input{
+            .first-input {
                 display: flex;
-                input{
+                input {
                     width: 85%;
                     border-right: none;
                 }
-                div{
+                div {
                     align-items: center;
                     border: 1px solid $ig-gray;
                     border-left: none;
                     display: flex;
                     justify-content: center;
                     width: 15%;
-                    svg{
+                    svg {
                         color: $grayLight;
                     }
                 }
             }
         }
-        .button{
-            button{
+        .button {
+            button {
                 font-size: .9rem;
                 border-radius: 2px;
             }
         }
-        .btn-text{
+        .btn-text {
             font-size: .9rem;
             color: #7c7c7c;
             font-weight: 600;
-            &:hover{
+            &:hover {
                 color: #555555;
                 cursor: pointer;
             }
         }
     }
-    .bottom-part{
+    .bottom-part {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -769,7 +769,7 @@ body {
         transform: translateX(-50%);
         bottom: 1%;
         width: 280px;
-        button{
+        button {
             border: 1px solid $ig-gray;
             background: #FFFFFF;
             border-radius: 3px;
@@ -777,12 +777,139 @@ body {
             font-size: .9rem;
             color: #424242;
             font-weight: 600;
-            &:hover{
+            &:hover {
                 cursor: default;
             }
         }
-        .group{
+        .group {
             font-size: .75rem;
+        }
+    }
+    &.home-bg {
+        background: #D3D3D3;
+        .line-container {
+            max-width: 990px;
+            margin: auto;
+            .line-bar {
+                background: #464E65;
+                box-sizing: border-box;
+                .w-33 {
+                    width: 33.333333%;
+                    border-right: 1px solid rgb(66, 73, 94);
+                }
+                h1 {
+                    font-weight: 1000;
+                    margin: 0;
+                    &:nth-child(2) {
+                        opacity: 0.8;
+                        margin-left: .5rem;
+                    }
+                }
+                svg {
+                    &:first-child {
+                        opacity: 0.8;
+                    }
+                    &:not(:first-child) {
+                        opacity: 0.5;
+                        margin-left: 1rem;
+                    }
+                }
+                h1,
+                svg {
+                    font-size: 1.25rem;
+                    color: #FFFFFF;
+                }
+            }
+            .left-part {
+                border-right: 1px solid $ig-gray;
+                height: calc(100vh - 56px);
+                .search-bar {
+                    color: $ig-gray;
+                    padding: .5rem 0;
+                    svg {
+                        font-size: .9rem;
+                    }
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    svg,
+                    h2 {
+                        margin: 0;
+                    }
+                    input {
+                        font-size: .9rem;
+                        border: none;
+                        width: 90%;
+                        padding-left: 1rem;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .friends-box {
+                    height: 40rem;
+                    overflow-y: scroll;
+                    position: relative;
+                    left: 15px;
+                    &::-webkit-scrollbar {
+                        width: 0;
+                        background: transparent;
+                    }
+                    &:hover {
+                        &::-webkit-scrollbar {
+                            width: .25rem;
+                            background: $grayLight;
+                        }
+                    }
+                    .friend {
+                        font-size: .75rem;
+                        .img {
+                            border-radius: 100%;
+                            flex-shrink: 0;
+                            height: 3rem;
+                            width: 3rem;
+                            @include bg();
+                        }
+                        .text {
+                            p {
+                                color: $grayLight;
+                            }
+                            h6,
+                            p {
+                                text-overflow: ellipsis;
+                                margin: 0;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                width: 10rem;
+                            }
+                        }
+                        .note {
+                            .time {
+                                // font-size: .75rem;
+                                color: $grayLight;
+                                margin: 0;
+                            }
+                            .number {
+                                border-radius: 100%;
+                                background: #01BF00;
+                                color: #FFFFFF;
+                                margin: 0;
+                                height: 1.5rem;
+                                width: 1.5rem;
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    border-top: 1px solid $ig-gray;
+                    opacity: 0.8;
+                    font-size: 1.5rem;
+                    svg:not(:first-child) {
+                        opacity: 0.8;
+                    }
+                }
+            }
         }
     }
 }

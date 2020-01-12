@@ -5,7 +5,7 @@ import LineIcon from '../../resources/lineIcon.png';
 
 function LineLogin() {
     return (
-        <div className="layout line-bg ">
+        <div className="layout line-bg">
             <article className="line-login-container">
                 <h1 id="line-icon" style={{ 'backgroundImage': 'url(' + LineIcon + ')' }}></h1>
                 <div className="bar row mt-3">

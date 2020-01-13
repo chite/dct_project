@@ -5,6 +5,7 @@ import Home from './ig/Home';
 import Post from './ig/Post';
 import LineLogin from './line/LineLogin';
 import LineHome from './line/LineHome';
+import Calendar from './calendar/Calendar';
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                 <Route path="/post" component={Post} />
                 <Route exact path="/line" component={LineLogin} />
                 <Route path="/line/home" component={LineHome} />
+                <Route path="/calendar" component={Calendar} />
             </HashRouter>
         )
     }

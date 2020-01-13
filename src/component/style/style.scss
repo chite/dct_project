@@ -1029,3 +1029,108 @@ body {
         }
     }
 }
+
+.cal-bg {
+    .cal-bar {
+        border-bottom: 1px solid $ig-gray;
+        svg {
+            color: #5f6368;
+            font-size: 1.25rem;
+        }
+        .left {
+            h1 {
+                font-size: 1.25rem;
+            }
+            svg {
+                font-size: 1.5rem;
+            }
+            .img {
+                width: 40px;
+                height: 40px;
+                margin: 0 1rem;
+                @include bg();
+            }
+        }
+        .middle {
+            .btn {
+                border-color: $ig-gray;
+                padding: .25rem .75rem;
+                &:hover {
+                    background: #FFFFFF;
+                    color: #6C757D;
+                    outline: none;
+                    cursor: default;
+                }
+            }
+            h1 {
+                color: #3c4043;
+                font-size: 1.5rem;
+                margin: 0 1rem;
+            }
+            svg {
+                margin-right: 1rem;
+            }
+        }
+        .right {
+            svg {
+                font-size: 1.5rem;
+            }
+            .self {
+                background: #C2185B;
+                box-sizing: border-box;
+                border-radius: 100%;
+                color: #FFFFFF;
+                font-size: .9rem;
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+    .body {
+        height: calc(100vh - 60px);
+        .left-part {
+            border-right: 1px solid $ig-gray;
+            padding: 0 2rem;
+            button {
+                background: #FFFFFF;
+                border: none;
+                box-shadow: 0 1px 3px $grayLight;
+                border-radius: 1.5rem;
+                margin-top: 1rem;
+                padding: .5rem 1.5rem;
+            }
+            .bar {
+                span,
+                svg {
+                    font-size: 14px;
+                }
+            }
+            .left-cal {
+                color: #70757a;
+                font-size: .5rem;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 1rem;
+                td{
+                    padding: .25rem 0;
+                }
+                .currentMonth{
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+            .search{
+                background: #F1F3F4;
+                font-weight: 600;
+                font-size: .9rem;
+                border: none;
+                padding: .5rem;
+                width: 100%;
+            }
+        }
+        .check{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

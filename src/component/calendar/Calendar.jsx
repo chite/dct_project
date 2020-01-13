@@ -7,11 +7,13 @@ import calKeep from '../../resources/calKeep.png';
 import calTasks from '../../resources/calTasks.png';
 
 function Calendar() {
+    const [today, setToday] = useState([0, 0, 0]);
     const [time, setTime] = useState([0, 0, 0]);
     const [dates, setDates] = useState([[{ mark: 0, day: 0 }]]);
     useEffect(() => {
         const date = new Date();
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
+        setToday([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
     }, [])
     useEffect(() => {
         let firstDay = new Date(time[0], time[1] - 1, 1);
@@ -77,7 +79,7 @@ function Calendar() {
                 </div>
             </nav>
             <div className="row body">
-                <section className="left-part col-3 d-flex flex-column justify-content-between">
+                <section className="left-part col-12 col-sm-2 d-flex flex-column justify-content-between">
                     <button className="d-flex align-self-baseline align-items-center">
                         <svg width="36" height="36" viewBox="0 0 36 36"><path fill="#34A853" d="M16 16v14h4V20z"></path><path fill="#4285F4" d="M30 16H20l-4 4h14z"></path><path fill="#FBBC05" d="M6 16v4h10l4-4z"></path><path fill="#EA4335" d="M20 16V6h-4v14z"></path><path fill="none" d="M0 0h36v36H0z"></path></svg>
                         <span>建立</span>
@@ -108,7 +110,9 @@ function Calendar() {
                                     dates.map((arr, index) => (
                                         <tr key={index + 'tr'}>
                                             {arr.map((val, eleIndex) => (
-                                                <td key={eleIndex + 'td'} className={val.mark ? 'currentMonth' : ''}>{val.day}</td>
+                                                <td key={eleIndex + 'td'} className={val.mark ? 'currentMonth' : ''}>
+                                                    <span className={(time[0] == today[0] && time[1] === today[1] && time[2] === val.day) ? 'today' : ''}>{val.day}</span>
+                                                </td>
                                             ))
                                             }
                                         </tr>
@@ -122,19 +126,28 @@ function Calendar() {
                     </div>
                     <div>
                         <nav className="d-flex justify-content-between my-2"><h6>我的日曆</h6><FaChevronUp /></nav>
-                        <div className="check"><input type="checkbox" /><label>杜沐安</label></div>
-                        <div className="check"><input type="checkbox" /><label>生日</label></div>
-                        <div className="check"><input type="checkbox" /><label>提醒</label></div>
-                        <div className="check"><input type="checkbox" /><label>Tasks</label></div>
+                        <div className="check"><input type="checkbox" className="red" checked readOnly disabled /><label>杜沐安</label></div>
+                        <div className="check"><input type="checkbox" className="green" checked readOnly disabled /><label>生日</label></div>
+                        <div className="check"><input type="checkbox" className="purple" readOnly disabled /><label>提醒</label></div>
+                        <div className="check"><input type="checkbox" className="blue" readOnly disabled /><label>Tasks</label></div>
                     </div>
                     <div>
-                        <nav className="d-flex justify-content-between my-2"><h6>其他日曆</h6><span><FaPlus /><FaChevronUp /></span></nav>
-                        <div className="check"><input type="checkbox" /><label>Holidays In Taiwan</label></div>
+                        <nav className="other-cal d-flex justify-content-between my-2"><h6>其他日曆</h6><span><FaPlus /><FaChevronUp /></span></nav>
+                        <div className="check"><input type="checkbox" className="dark-green" checked readOnly disabled /><label>Holidays In Taiwan</label></div>
                     </div>
-                    <p>條款-隱私設定</p>
+                    <p className="security">條款 - 隱私設定</p>
                 </section>
-                <article className="cal-container col-9 col-sm-8">B</article>
-                <aside className="right-part col-sm-1">C</aside>
+                <article className="cal-container d-none d-sm-flex col-10">
+                    <section className="main">
+                        B
+                    </section>
+                    <aside className="right-part d-flex flex-column align-items-center">
+                        <div className="img" style={{ 'backgroundImage': 'url(' + calKeep + ')' }}></div>
+                        <div className="img" style={{ 'backgroundImage': 'url(' + calTasks + ')' }}></div>
+                        <span>—</span>
+                        <FaPlus />
+                    </aside>
+                </article>
             </div>
 
         </div >

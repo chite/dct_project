@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { FaSearch, FaRegQuestionCircle, FaRegSun, FaChevronUp, FaAngleLeft, FaAngleRight, FaPlus } from "react-icons/fa";
+import LeftPart from './LeftPart';
+import MiddlePart from './MiddlePart';
+import { FaSearch, FaRegQuestionCircle, FaRegSun, FaAngleLeft, FaAngleRight, FaPlus } from "react-icons/fa";
 import { FiAlignJustify } from "react-icons/fi";
 import { MdApps } from "react-icons/md";
 import jsonData from "../../json/calendar.json";
@@ -10,21 +12,21 @@ function Calendar() {
     const [today, setToday] = useState([0, 0, 0]);
     const [time, setTime] = useState([0, 0, 0]);
     const [dates, setDates] = useState([[{ mark: 0, day: 0, data: { dot: [], line: [] } }]]);
+
     useEffect(() => {
         const date = new Date();
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
         setToday([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
     }, [])
+
     useEffect(() => {
-        checkDataValid()
         let stringTime = [String(time[0]), String(time[1]), String(time[2])];
         let preStringTime = [time[1] === 1 ? String(time[0] - 1) : String(time[0]), time[1] === 1 ? "12" : String(time[1] - 1)];
         let nextStringTime = [time[1] === 12 ? String(time[0] + 1) : String(time[0]), time[1] === 12 ? "1" : String(time[1] + 1)];
         let firstDay = new Date(time[0], time[1] - 1, 1);
         let currentMonthLength = new Date(time[0], time[1], 0).getDate();
         let lastMonthLength = new Date(time[0], time[1] - 2, 0).getDate();
-        let currentMonth = [], splitedCurrentMonth = [];
-        let temparyArray = [];
+        let currentMonth = [], splitedCurrentMonth = [], temparyArray = [];
         let dataValid = checkDataValid();
         firstDay = firstDay.getDay();   //0-6
 
@@ -42,6 +44,7 @@ function Calendar() {
             currentMonth.push(date);
         }
         currentMonth = currentMonth.reverse();
+
         for (let i = 1; i <= currentMonthLength; i++) { //填寫當月
             let date = {
                 mark: 1,
@@ -55,7 +58,8 @@ function Calendar() {
             }
             currentMonth.push(date);
         }
-        if (currentMonth.length % 7) {
+        
+        if (currentMonth.length % 7) {  //避免整除
             for (let i = 1; i <= (7 - currentMonth.length % 7); i++) {    //補足後面
                 let date = {
                     mark: 0,
@@ -70,14 +74,15 @@ function Calendar() {
                 temparyArray.push(date);
             }
         }
+
         currentMonth = currentMonth.concat(temparyArray);
         for (let i = 0; i < currentMonth.length; i += 7) {  //以每周為單位切割
             splitedCurrentMonth.push(currentMonth.slice(i, i + 7));
         }
         setDates(splitedCurrentMonth);
     }, [time])
+
     function checkDataValid() {
-        let stringTime = [String(time[0]), String(time[1]), String(time[2])];
         let preData = 0, currentData = 0, nextData = 0;
         let preDateTimeStamp = new Date(time[0], time[1] - 2);
         let nextDateTimeStamp = new Date(time[0], time[1]);
@@ -100,10 +105,12 @@ function Calendar() {
         }
         return [preData, currentData, nextData];
     }
+
     function changeDate(num) {
         const date = new Date(time[0], time[1] - 1 + num);
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
     }
+    
     function toToday() {
         setTime([today[0], today[1], today[2]]);
     }
@@ -135,98 +142,18 @@ function Calendar() {
                 </div>
             </nav>
             <div className="row body">
-                <section className="left-part col-12 col-sm-2 d-flex flex-column justify-content-between">
-                    <button className="d-flex align-self-baseline align-items-center">
-                        <svg width="36" height="36" viewBox="0 0 36 36"><path fill="#34A853" d="M16 16v14h4V20z"></path><path fill="#4285F4" d="M30 16H20l-4 4h14z"></path><path fill="#FBBC05" d="M6 16v4h10l4-4z"></path><path fill="#EA4335" d="M20 16V6h-4v14z"></path><path fill="none" d="M0 0h36v36H0z"></path></svg>
-                        <span>建立</span>
-                    </button>
-                    <div>
-                        <nav className="bar d-flex justify-content-between align-items-center px-2">
-                            <span>{time[0]}年{time[1]}月</span>
-                            <div>
-                                <span className="btn-like" onClick={() => changeDate(-1)} title="上個月"><FaAngleLeft /></span>
-                                &nbsp;&nbsp;
-                                <span className="btn-like" onClick={() => changeDate(1)} title="下個月"><FaAngleRight /></span>
-                            </div>
-                        </nav>
-                        <table className="w-100 left-cal">
-                            <tbody>
-                                <tr>
-                                    <th>日</th>
-                                    <th>一</th>
-                                    <th>二</th>
-                                    <th>三</th>
-                                    <th>四</th>
-                                    <th>五</th>
-                                    <th>六</th>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                {
-                                    dates.map((arr, index) => (
-                                        <tr key={index + 'tr'}>
-                                            {arr.map((val, eleIndex) => (
-                                                <td key={eleIndex + 'td'} className={val.mark ? 'currentMonth' : ''}>
-                                                    <span className={(time[0] === today[0] && time[1] === today[1] && today[2] === val.day) ? 'today' : ''}>{val.day}</span>
-                                                </td>
-                                            ))
-                                            }
-                                        </tr>
-                                    ))
-                                }
-                            </tbody>
-                        </table>
-                        <div className="text-center">
-                            <input placeholder="搜尋使用者" className="search" readOnly />
-                        </div>
-                    </div>
-                    <div>
-                        <nav className="d-flex justify-content-between my-2"><h6>我的日曆</h6><FaChevronUp /></nav>
-                        <div className="check"><input type="checkbox" className="red" checked readOnly disabled /><label>杜沐安</label></div>
-                        <div className="check"><input type="checkbox" className="green" checked readOnly disabled /><label>生日</label></div>
-                        <div className="check"><input type="checkbox" className="purple" readOnly disabled /><label>提醒</label></div>
-                        <div className="check"><input type="checkbox" className="blue" readOnly disabled /><label>Tasks</label></div>
-                    </div>
-                    <div>
-                        <nav className="other-cal d-flex justify-content-between my-2"><h6>其他日曆</h6><span><FaPlus /><FaChevronUp /></span></nav>
-                        <div className="check"><input type="checkbox" className="dark-green" checked readOnly disabled /><label>Holidays In Taiwan</label></div>
-                    </div>
-                    <p className="security">條款 - 隱私設定</p>
-                </section>
+                <LeftPart
+                    time={time}
+                    changeDate={changeDate}
+                    dates={dates}
+                    today={today}
+                />
                 <article className="cal-container d-none d-sm-flex col-10">
-                    <section className="main">
-                        <table className={(dates.length == 5 ? 'five ' : 'six ') + "main-table"}>
-                            <tbody>
-                                {
-                                    dates.map((arr, index) => (
-                                        <tr key={index + 'tr'}>
-                                            {arr.map((val, eleIndex) => (
-                                                <td key={eleIndex + 'td'}>
-                                                    <span className={(time[0] === today[0] && time[1] === today[1] && today[2] === val.day) ? 'today' : ''}>{val.day}</span>
-                                                    {
-                                                        (val.data.line.length > 0) &&
-                                                        val.data.line.map((pElement, pIndex) => (
-                                                            <p key={pIndex} className={'p' + pElement.color}>{pElement.content}</p>
-                                                        ))
-                                                    }
-                                                    {
-                                                        (val.data.dot.length > 0) &&
-                                                        val.data.dot.map((liElement, liIndex) => (
-                                                            <ul key={liIndex} className={'li' + liElement.color}>
-                                                                <li>{liElement.content}</li>
-                                                            </ul>
-                                                        ))
-                                                    }
-
-                                                </td>
-                                            ))
-                                            }
-                                        </tr>
-                                    ))
-                                }
-                            </tbody>
-                        </table>
-                    </section>
+                    <MiddlePart
+                        dates={dates}
+                        time={time}
+                        today={today}
+                    />
                     <aside className="right-part d-flex flex-column align-items-center">
                         <div className="img" style={{ 'backgroundImage': 'url(' + calKeep + ')' }}></div>
                         <div className="img" style={{ 'backgroundImage': 'url(' + calTasks + ')' }}></div>

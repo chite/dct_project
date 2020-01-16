@@ -18,7 +18,7 @@ class App extends Component {
                 <Route exact path="/line" component={LineLogin} />
                 <Route path="/line/home" component={LineHome} />
                 <Route path="/calendar" component={Calendar} />
-                <Route path="/file" component={Folder} />
+                <Route path="/folder" component={Folder} />
             </HashRouter>
         )
     }

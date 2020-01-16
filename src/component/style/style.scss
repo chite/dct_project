@@ -1383,13 +1383,31 @@ body {
             grid-column: col / span 10;
             grid-row: row 2;
             display: flex;
+            flex-direction: column;
         }
         .img {
-            width: 56rem;
-            height: 100%;
             @include bg();
             background-size: contain;
-            background-color: #F5F6F7;
+            height: 100%;
+            width: 60rem;
+            &:first-child {
+                background-color: #FFFFFF;
+            }
+            &:last-child {
+                background-color: #F5F6F7;
+            }
+        }
+        .img-contain {
+            width: 100%;
+            border-bottom: 1px solid $ig-gray;
+            &:first-child {
+                height: 20%;
+                background-color: #FFFFFF;
+            }
+            &:last-child {
+                height: 80%;
+                background-color: #F5F6F7;
+            }
         }
         .bg-color {
             background: #F5F6F7;
@@ -1500,8 +1518,11 @@ body {
         .card-element {
             flex: 0 1 12%;
             height: 8rem;
+            border: none;
+            background: #FFFFFF;
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
             margin: .5rem 0;
             padding: .5rem 0;
@@ -1518,6 +1539,89 @@ body {
             }
             &:hover {
                 background: #D1E8FF;
+            }
+            &:focus {
+                background: #D1E8FF;
+                border: 1px solid rgb(134, 192, 250);
+            }
+        }
+    }
+}
+
+.news-wrapper {
+    background: #F7F7F7;
+    bottom:0;
+    min-height: 100vh;
+    overflow-y:auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    .bar {
+        align-items: center;
+        background: #F7F7F7;
+        border-bottom: 4px solid #777777;
+        display: flex;
+        height: 3rem;
+        padding: 0 1rem;
+        justify-content: space-between;
+        h6 {
+            font-size: 1.1rem;
+            margin: 0;
+            font-family: '微軟正黑體';
+            &:last-child{
+                &:hover{
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+        svg {
+            font-size: 2rem;
+        }
+    }
+    .main {
+        box-sizing: border-box;
+        font-family: '微軟正黑體';
+        min-height: calc(100vh - 3rem);
+        h1 {
+            font-weight: 600;
+        }
+        time {
+            color: #646464;
+            display: block;
+            margin: 1rem 0;
+        }
+        p {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+        .img-container {
+            width: 100%;
+            margin: auto;
+            @include md-width(){
+                width: 75%;
+            }
+            .img {
+                margin: auto;
+                height: 20rem;
+                width: 100%;
+                @include md-width(){
+                    width: 50%;
+                }
+                @include bg();
+            }
+            .alt{
+                background: #EAEAEA;
+                padding: .25rem 1rem;
+                margin: .25rem auto;
+                width: 100%;
+                @include md-width(){
+                    width: 75%;
+                }
+                h5{
+                    margin: 0;
+                }
             }
         }
     }

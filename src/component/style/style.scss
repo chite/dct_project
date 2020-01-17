@@ -787,7 +787,7 @@ body {
         }
     }
     &.home-bg {
-        background: #D3D3D3;
+        background-color: #d3dae2;
         .line-container {
             max-width: 990px;
             margin: auto;
@@ -872,7 +872,7 @@ body {
                         background: transparent;
                     }
                     &:hover {
-                        padding-right: 0;
+                        padding-right: .5px;
                         &::-webkit-scrollbar {
                             width: .25rem;
                             background: #FFFFFF;

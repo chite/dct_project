@@ -1,0 +1,293 @@
+{
+    "羅璟宸": {
+        "image": "ff44aa5.jpg",
+        "message": [
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 7. 3 (Tue)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "明天部門迎新你會到嗎"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "會啊會啊！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那明天見！"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 10 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝你今天幫我"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "妳沒事就好"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "下次要找研發組長之前 可以找我陪你一起"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好 我會自己注意安全的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "真的非常謝謝你"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不要這麼客氣"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 24 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "嘿，沐安，生日快樂！"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝你喔！"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天晚上請你吃飯怎麼樣？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝你啦～不過我生日固定跟家人一起吃飯"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那沒關係 要不然改天我請你吃飯？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "你之前幫我這麼多 應該是我請你吃飯才對"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啊！既然你都這麼說了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "要不然下禮拜五載你去吃一間我很喜歡的餐廳"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啊 那就這樣囉"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那好啊 最後還是祝你生日快了啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "工作方面有任何不懂的地方可以直接來問我"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 31 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "到家跟我說一聲喔"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我到了 今天謝謝你啦 還是讓你請客"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "這沒什麼啦！怎麼好意思讓一個女生付錢"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "妳太客氣了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 10. 9 (Tues)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "明天連假欸 你有什麼安排嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "沒有誒 可能就自己在家"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "要不要出去散散心"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "那好啊 反正我自己個人也很無聊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "那你有想去哪裡嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那明天去河濱公園騎腳踏車，\n晚上再去大稻埕看煙火？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你應該不會討厭運動吧？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "平常都待在辦公室，難得可以去活動一下"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那我明天早上9點去你家接你"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啊 明天見"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天早點睡喔 晚安"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "晚安"
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            },
+            {
+                "type": "",
+                "context": ""
+            }
+        ]
+    }
+}

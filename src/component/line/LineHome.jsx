@@ -1,9 +1,19 @@
-import React from 'react';
-import { FaCommentDots, FaFileAlt, FaClock, FaSearch, FaUserPlus, FaRegUser, FaRegSmile, FaLink, FaCrop } from "react-icons/fa";
+import React, { useEffect, useState, useRef } from 'react';
+import { FaCommentDots, FaFileAlt, FaClock, FaSearch, FaRegUser, FaRegSmile, FaLink, FaCrop } from "react-icons/fa";
 import { FiUsers, FiUserPlus } from "react-icons/fi";
 import photo from '../../resources/igSelfie.jpg';
+import json from '../../json/line.json';
 
-function LineHome() {
+function LineHome({ root, ...props }) {
+    const [message, setMessage] = useState([]);
+    const [target, setTarget] = useState("羅璟宸");
+    const main = useRef(null);
+    useEffect(() => {
+        setMessage(json[target].message);
+    }, []);
+    useEffect(() => {
+        main.current.scrollTop = main.current.scrollHeight;
+    }, [message]);
     return (
         <div className="layout line-bg home-bg">
             <article className="line-container">
@@ -57,8 +67,36 @@ function LineHome() {
                                 </div>
                                 <h2>&#65049;</h2>
                             </div>
-                            <section className="box">
-                                <div className="date my-3">
+                            <section className="box" id="main" ref={main}>
+                                {
+                                    message.length > 0 &&
+                                    message.map((val, index) => (
+                                        val.type === 'time' ?
+                                            <div key={index} className="date my-3">
+                                                <div className="date-text">{val.context}</div>
+                                            </div>
+                                            : (val.type === 'image' ?
+                                                <div key={index} className={(val.direction ? 'right' : 'left') + ' message d-flex align-items-end'}>
+                                                    <div className="img" style={{ 'backgroundImage': 'url(' + root + val.context + ')' }}></div>
+                                                    {/* <div className="message-time">
+                                                        <time></time>
+                                                    </div> */}
+                                                </div>
+                                                :
+                                                <div key={index} className={(val.direction ? 'right' : 'left') + ' message d-flex align-items-end sign'}>
+                                                    <div className="content">
+                                                        {val.context.split("\n").map((innerText, innerIndex) => (
+                                                            <span key={innerIndex}>{innerText}<br/></span>
+                                                        ))}
+                                                    </div>
+                                                    {/* <div className="message-time">
+                                                        <time></time>
+                                                    </div> */}
+                                                </div>
+                                            )
+                                    ))
+                                }
+                                {/* <div className="date my-3">
                                     <div className="date-text">1.12（Sun）</div>
                                 </div>
                                 <div className="message d-flex align-items-end left sign">
@@ -112,7 +150,7 @@ function LineHome() {
                                     <div className="message-time">
                                         <time>AM 10:02</time>
                                     </div>
-                                </div>
+                                </div> */}
                             </section>
                             <div className="icon d-flex justify-content-between py-3 px-4">
                                 <input placeholder="請輸入訊息。" readOnly />

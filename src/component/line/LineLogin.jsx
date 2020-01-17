@@ -3,7 +3,10 @@ import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {IoMdLock} from "react-icons/io";
 import LineIcon from '../../resources/lineIcon.png';
 
-function LineLogin() {
+function LineLogin(props) {
+    function login(){
+        props.history.push("/line/home");
+    }
     return (
         <div className="layout line-bg">
             <article className="line-login-container">
@@ -24,7 +27,10 @@ function LineLogin() {
                     <input className="w-100" placeholder="密碼" />
                 </div>
                 <div className="button w-100 mt-3">
-                    <button className="btn btn-lg w-100 bg-secondary text-white">登入</button>
+                    <button 
+                    className="btn btn-lg w-100 bg-secondary text-white"
+                    onClick={login}
+                    >登入</button>
                 </div>
                 <div className="mt-3">
                     <h6 className="btn-text">使用電話號碼登入&nbsp;&nbsp;&#65125;</h6>

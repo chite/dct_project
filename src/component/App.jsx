@@ -8,6 +8,8 @@ import LineHome from './line/LineHome';
 import Calendar from './calendar/Calendar';
 import Folder from './file/Folder';
 
+const url = 'https://raw.githubusercontent.com/chite/dct_project/master/ig/assets/';
+
 class App extends Component {
     render() {
         return (
@@ -15,8 +17,8 @@ class App extends Component {
                 <Route path="/login" component={Login} />
                 <Route path="/home" component={Home} />
                 <Route path="/post" component={Post} />
-                <Route exact path="/line" component={LineLogin} />
-                <Route path="/line/home" component={LineHome} />
+                <Route exact path="/line" render={(props)=><LineLogin root={url} {...props} />} />
+                <Route path="/line/home" render={(props)=><LineHome root={url} {...props} />} />
                 <Route path="/calendar" component={Calendar} />
                 <Route path="/folder" component={Folder} />
             </HashRouter>

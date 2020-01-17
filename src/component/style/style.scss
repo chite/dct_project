@@ -952,6 +952,19 @@ body {
                             padding: 7px 11px 8px;
                             -webkit-user-select: text;
                             user-select: text;
+                            &.blue{
+                                color: #475573;
+                                h5{
+                                    font-size: 1.5rem;
+                                    text-align: center;
+                                    margin: .5rem 0;
+                                    min-width: 4rem;
+                                    svg{
+                                        font-size: 2rem;
+                                        stroke-width: 1;
+                                    }
+                                }
+                            }
                         }
                         .message-time {
                             font-size: 11px;

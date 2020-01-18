@@ -1,5 +1,182 @@
-{
-    "羅璟宸": {
+[
+    {
+        "name":"羅信華",
+        "image": "ff44aa5.jpg",
+        "message": [
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "12. 8. 4 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸，父親節已經訂好餐廳了，早點下班喔！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好的寶貝～"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "12. 8. 8 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸～～父親節快樂♥️"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "謝謝我的寶貝女兒 愛你～"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "13. 8. 8 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸，你在天上過得好嗎？"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "13. 12. 26 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸...我都聽媽媽說了，我一定會讓一切大白於天下我跟媽媽都很好，你放心吧！我愛你"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "14. 8. 8 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸，父親節快樂，我好想你......"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "14. 12. 26 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好快又一年了，我想念爸爸以前陪伴我的日子...你怎麼就這樣離開我了..."
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "15. 8. 8 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸！在學校唸書好累喔，好希望你在......"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "15. 12. 26 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸，我跟媽媽今天去那裡看你了，感覺你在那裡很好，你在那裡也一定要好好的"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "16. 8. 8 (Mon)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "父親節快樂！爸爸，我會好好讀書的，你在天上也要好好的喔"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "16. 12. 26 (Mon)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "已經４年了...我已經大三了...但爸爸你依舊停在2012..."
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "17. 8. 8 (Tue)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸，我想你......"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "17. 12. 26 (Tue)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "每年的這個時刻，對你的思念只會越來越濃"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "18. 8. 8 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "父親節快樂！爸爸，我一直希望自己能夠遇到跟你一樣好的人，在他身上，我看到你的善良、你的正義感、你的智慧⋯⋯他好像你。我好想你。"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "18. 12. 26 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸，如果你還活著該有多好，可以看著我成長、看著我幸福的樣子我永遠愛你"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "19. 8. 8 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸，父親節快樂。希望你可以保佑我，能夠找出真相"
+            },
+            {
+                "type": "time",
+                "direction": 1,
+                "context": "19. 12. 26 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸，進到這家公司已經一年多了，但還是沒查出些什麼...爸爸你不會對我失望吧..."
+            }
+        ]
+    },
+    {
+        "name": "羅璟宸",
         "image": "ff44aa5.jpg",
         "message": [
             {
@@ -768,5 +945,501 @@
                 "context": "請你一定要來..."
             }
         ]
+    },
+    {
+        "name": "朱映文",
+        "image": "ff44aa5.jpg",
+        "message": [
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "13. 8. 24 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天早點回家，媽媽有話一定要跟你說"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "可是我要跟朋友一起慶祝耶"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "以往你生日不是都是我們一起慶祝的嗎"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "爸爸都走了......還算是「我們」一起過的嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不管怎麼樣，你還是回家吧 媽媽真的有事一定要說"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好，我知道了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 7. 15 (Tue)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "寶貝 指考成績出來了嗎"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "還沒有喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "有信心嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "當然！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那媽媽看好你喔！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 7. 17 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "成績出來了～要上第一志願沒有問題的！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "太好了，這樣你就會是爸爸的學妹了\n記得不要錯過填志願的時間！！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝媽咪！我沒有這麼笨啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "媽媽知道 但還是要提醒一下你！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 8. 6 (Wed)"
+            },
+            {
+                "type": "icon",
+                "direction": 1,
+                "context": "3:25"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 8. 24 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "寶貝女兒，生日快樂！上大學一切都要加油！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝媽咪～"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 9. 10 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "今天是我新生訓練！好期待喔！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "去學校路上小心啊！注意安全"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "放心！我已經長大了，沒問題的～"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "到宿舍了嗎？今天跟同學相處得如何"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 10. 7 (Tue)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "7:23"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "14. 12. 25 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天早點回家，我們要去看爸爸。我們得一起準備點東西"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好的"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 1. 15 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "期末考終於結束了，我今天晚上回家！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "沒問題，媽媽會準備你最愛吃的菜等你回來！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 2. 22 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，我明天可以自己回學校～清明節才會再回家！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好 那自己路上小心"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 4. 1 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天要記得早點回家，我們一起去看爸爸。"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好的，我回家路上會順道過去買花。"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 5. 30 (Sat)"
+            },
+            {
+                "type": "icon",
+                "direction": 1,
+                "context": "14:21"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 6. 21 (Sun)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "6:08"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 7. 1 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽！我要去代表領獎，晚點跟妳分享心得！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好的"
+            },
+            {
+                "type": "icon",
+                "direction": 1,
+                "context": "9:35"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "15. 8. 24 (Mon)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "寶貝20歲生日快樂，成年了 媽媽晚上帶你去吃大餐！好好慶祝慶祝"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我會早點回家的，謝謝媽咪～"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不要太晚啊！餐廳都訂好了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "17. 12. 22 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天翻到以前的照片，那時的我們，多快樂啊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，你還好嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "親愛的......如果當初沒有發生那件事，我們還會是幸福的一家....."
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽媽，要我回家陪你嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "媽媽沒事，只要你記得，一定、一定，要為爸爸復仇"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，你不要想太多，我一定會替爸爸報仇的"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 5. 12 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，我已經投昌盛的履歷，下個月就會有面試通知了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "一切順利"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 5. 30 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，我錄取了！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "恭喜你......爸爸知道了一定會很欣慰的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我會從研發部的秘書開始做起，希望能夠藉此取得一些研發資料"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "記得，取得任何的資訊都可以先備份給媽媽，但也記得，注意自己安全"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，別擔心，我會自己小心的"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "另外，醫生那邊媽媽也會繼續追問下去的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我們都加油......能掌握到越多證據越好，不過媽你也別太累了，注意休息！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "希望能夠等到真相來臨，讓爸爸沉冤得雪的一天！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 23 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "一切都還不錯"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你沒有忘記該做的事情對嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "當然不會"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那就好"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那在公司記得一切萬事小心"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "明天生日記得晚上回家吃飯"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你知道媽媽把希望都放在你身上"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 9. 28 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我已經把一些資料寄過去了，媽你可以先整理一下"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好的，辛苦你了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 10. 31 (Wed)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "如果有新的進度，再寄過來給媽媽。"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好的，我今天下班後再用私人電腦處理！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 12. 25 (Tue)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "21:04"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，今天可以帶個人回家嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "?"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "回去你就知道了。"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "媽媽等你喔"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 3. 21 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "媽，我好像找到關鍵資料了"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "13:22"
+            }
+        ]
     }
-}
+]

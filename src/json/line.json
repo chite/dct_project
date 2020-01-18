@@ -1,7 +1,8 @@
 [
     {
-        "name":"羅信華",
+        "name": "羅信華",
         "image": "ff44aa5.jpg",
+        "lastTime" : "AM 10:02",
         "message": [
             {
                 "type": "time",
@@ -178,6 +179,7 @@
     {
         "name": "羅璟宸",
         "image": "ff44aa5.jpg",
+        "lastTime" : "PM 2:56",
         "message": [
             {
                 "type": "time",
@@ -947,8 +949,1201 @@
         ]
     },
     {
+        "name": "閨蜜",
+        "image": "ff44aa5.jpg",
+        "lastTime" : "PM 3:01",
+        "message": [
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 7. 12 (Thu)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "明天下班後一起去看侏儸紀2好嗎~~"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好喔，那我就不加班了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那就這麼說定啦！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "別到時候放我鴿子！！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "不會的，工作哪有你重要"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "嘻嘻 我就知道你最愛我了♥️"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那明天見啦～"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 11 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "欸 我最近遇到一件事"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "怎麼了？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "是公司發生什麼事了嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "嗯......"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "有什麼事就說吧！別憋在心裡"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "最近研發部的組長一直對我示好，\n昨天甚至還有意圖要要求我陪他吃飯......\n他的行為讓我有點不舒服。"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "真的該把這種人雞雞剪掉！！！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "就.....剛好有一個同事出來幫我解圍，後來就沒事了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "是個男生嗎"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "對啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "英雄救美喔"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "沒有啦，他是個很好的人，我也很感謝他"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "別裝了！我知道你其實想跟我聊這個哈哈哈"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "快點跟我說說他的事"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "也沒有怎麼樣 就只是普通同事而已啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "帥嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "還不錯"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "傳張照片來看看"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哇賽！還真的滿帥的誒"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "誒誒誒 你要趕快把握機會啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "可以來一段辦公室戀情～～"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "不要亂講話啦 真的只是朋友而已"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哎呦～都從同事變成朋友了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "變成男朋友也很正常啦哈哈哈"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "這種事還是看緣分"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "要不然我們下次一起去月老廟逛逛"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 24 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我親愛捧油啊 祝你生日快樂啊 知道我很愛你吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "那我們中午一起吃個飯吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我請客 怎麼樣 餐廳妳訂"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "你知道 我想吃那間米其林餐廳很久了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啊 這有什麼問題"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "畢竟你是我好姐妹嘛 這種小事 包在我身上"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 8. 31 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "跟你說，我今天跟他去吃飯！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "欸 叛徒 是不是好事快到了？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "還沒那麼快啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不然明天一起去拜月老？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "明天最好給我從實招來喔"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "ＸＤ"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 9. 15 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "所以拜完月老後 有沒有新的發展啊？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "最近公司太忙 其實就比較少接觸了欸"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "誒誒誒 你怎就放棄這樣的大好機會"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "總是要給彼此一點空間嘛"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "小心這麼帥的同事就快被別人拿下啦！！！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "那也是命中註定啊，沒關係啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你也太不長進了吧 真的枉費我這麼努力助攻誒"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 10. 13 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "很久沒聽到你們的消息了 現在如何啊？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我們國慶那天一起去看煙火 "
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "吼～見色忘友的傢伙"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不過也太浪漫了吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "還看煙火！！！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我覺得他可能也有點喜歡我吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我就說吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "他這麼明顯！！！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你竟然之前一點感覺都沒有"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我也是現在才有一點點感覺嘛"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啦 祝福你們兩個順利喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "脫魯了我一定要第一個知道！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "放心 有好消息一定第一個跟你說～～～"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 11. 16 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "明天去看怪獸與葛林戴華德的罪行好嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啊 順便跟我更新一下你們的進度"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "說什麼啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "快說麻～一定是有發生了什麼"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "明天再跟你說啦 晚安！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "幫我計畫一下聖誕節要送他什麼禮物～"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "吼吼吼 都已經想到聖誕節去了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "18. 12. 15 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我怕送手作卡片會太明顯"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "隨便送個禮物又太沒心"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好苦惱喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不然......送他一條喀什米爾的圍巾？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好像還蠻符合他的品味"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我可是專業愛情顧問欸 聽我的準沒錯"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "是是是"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "需要的話我還可以陪你去挑圍巾喔"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啦 再約 先謝謝你啦～"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 1. 13 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "誒誒誒 你們不是最近公司尾牙！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "對啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "話說你的小宸宸跟你進展如何啊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "啊呀 你瞎說什麼啦"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我們還沒在一起好嗎"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "反正就快了麻"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "快說快說 有發生什麼嗎"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "就是...他幫我披了件外套"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "喔喔喔喔 也太暖了吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "搞不好他對每個人都這樣啊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啦先別說了 我好累 先睡啦"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 2. 16 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好久沒聊了，你最近怎樣呢？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我很好啊～倒是你 妳要不要更新一下你的進度呀"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "什麼進度啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "就是你跟你家那位啊～～～"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "什麼我家......還不是好嗎"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "反正也快了吧，春假去哪裡玩啊？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "說到這個......跟你說一件很有趣的事情，我約他去遊樂園玩，看他好像有什麼難言之隱，原來他居然怕高，玩雲霄飛車的時候抓我抓得好緊......"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "這個大男人居然有懼高症？太好笑了吧，不過這也代表你們之間的距離更近了吧！手都勾起來了呢"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "沒想到他也有會怕的東西，意外得很可愛呢"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哈哈哈哈哈"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "爽在心裡吼 看你開心成這樣"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "是還蠻開心的啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "繼續保持熱度，相信你們過幾個禮拜就能在一起了～"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 4. 14 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "妍恩！救救我！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "什麼事？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我在做給璟辰的卡片，但我不知道該寫些什麼"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "這點小事 包在我身上"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "3:29"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "太感謝你了！！！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "誰叫我是百年難得一見的好閨蜜"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 5. 11 (Sat)"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "這個超好笑的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "哈哈哈哈哈，也太鬧了吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "話說回來 上次生日禮物他還喜歡嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "他還蠻喜歡的喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "聽我的準沒錯吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "他甚至還問我要怎麼做那個卡片耶"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "蛤？為什麼？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "他要做一個給他媽媽"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哦～～原來是未來岳母的部分啊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "不要亂說啦 才沒有呢"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "害羞什麼 總有一天會跟岳母見面的 緊張什麼？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "你真的想太多了......"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啦 你們結婚那天 我再看看我姐妹的岳母長什麼樣子"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "欸！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哈哈哈 不說啦 我先去忙囉"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 6. 15 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我現在......好混亂喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "什麼很混亂？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "就是......他的事啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "喔～戀愛中的女人 很正常啦 說，發生什麼事了？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "最近晚上我們蠻常會聊天的 他也開始跟我分享他的心事了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "這是好事啊！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "但我開始有點害怕......這樣進展是不是太快了"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "欸！你們都認識快一年了 我都嫌你慢了好嗎！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "但我覺得，我還沒有準備好"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "感情這種事，需要一點衝動的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "可是我......"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "follow your heart！你已經愛上他，就不要猶豫了！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啦 我知道了"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 7. 13 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你們最近還有約會嗎？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "明天啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "欸，我等你們的愛情故事連載已經等很久了 什麼時候可以給我一個結局啊"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "欸把我當故事喔"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "開玩笑的啦"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我其實還是不確定自己的心意"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "誒誒誒"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "還是聽聽妳自己的心吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你自己也一定是對他有感覺的啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "要不然你也不會猶豫"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好吧！我知道我該怎麼做了！"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 7. 14 (Sun)"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哇賽 你們也太有效率了吧！！！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "太幸福了嗚嗚嗚"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "祝福你啦～～"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "謝謝尼～😘😘"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你們一定要好好的！"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我看好你們喔"
+            },
+            {
+                "type": "image",
+                "direction": 1,
+                "context": "ff44aa5.jpg"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "19. 8. 24 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我的親～生日快樂啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "最近過得很幸福吼"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "應該都快忘記我了吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "哪有"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "還是謝謝你啦～～"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "愛你愛你♥️"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 1. 12 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "嘿嘿嘿 我的親～最近如何啊"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "感覺我們很久沒聊啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "看到你po的那些照片真的是要甜死我！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "哎呦 只怪你最近都不知道跑去什麼鳥不生蛋的地方做志工"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "沒辦法啊 我這叫助人為樂麻"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "別只談我快說說你吧！"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "我們電話聊吧"
+            },
+            {
+                "type": "icon",
+                "direction": 1,
+                "context": "16:36"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 2. 16 (Sun)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "昨天補上班也太累了吧"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "你在公司跟妳男友一起這麼快樂"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "還說累？"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哎～果然這叫甜蜜的負荷哈哈哈"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "什麼啦"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "誒誒誒 我是真的很累好嗎"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "好啦好啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "開個玩笑"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "知道就好哈哈哈"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 3. 14 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "最近公司如何啊 我的好姐妹"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "還好啊 就是常常要開會就是了..."
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不是才放完228連假"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "沒有跟妳那位先生出門？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "當然是"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "有啦～～"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "吼吼吼 看你甜蜜的"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "羨慕吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "那你也趕快交一個啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "我就隨緣囉"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 4. 11 (Sat)"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "誒誒誒 我跟你說一件事"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "怎麼啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不會是你跟你家那位出了什麼事吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "不是不是"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "就是感覺最近怪怪的"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "怎麼說"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "就是最近眼皮一直跳...總感覺有什麼不好的是要發生"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "哎呦 怎麼會"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "是不是你太敏感啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "不用太緊張啦"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "都是民間傳說而已"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "別放在心上"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "喔喔喔 好吧"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "希望你是對的"
+            },
+            {
+                "type": "image",
+                "direction": 0,
+                "context": "ff44aa5.jpg"
+            }
+        ]
+    },
+    {
         "name": "朱映文",
         "image": "ff44aa5.jpg",
+        "lastTime" : "PM 12:56",
         "message": [
             {
                 "type": "time",

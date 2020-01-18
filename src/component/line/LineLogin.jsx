@@ -21,14 +21,14 @@ function LineLogin(props) {
                 </div>
                 <div className="inputs w-100">
                     <div className="w-100 first-input">
-                    <input placeholder="電子郵件帳號" />
+                    <input placeholder="電子郵件帳號" value="justclickit@nXcu.edu.tw" readOnly />
                     <div><AiOutlineQuestionCircle /></div>
                     </div>
-                    <input className="w-100" placeholder="密碼" />
+                    <input type="password" className="w-100" placeholder="密碼" value="111111111" readOnly />
                 </div>
                 <div className="button w-100 mt-3">
                     <button 
-                    className="btn btn-lg w-100 bg-secondary text-white"
+                    className="btn btn-lg w-100 login-btn text-white py-3"
                     onClick={login}
                     >登入</button>
                 </div>

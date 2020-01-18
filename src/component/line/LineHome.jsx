@@ -1,14 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { FaCommentDots, FaFileAlt, FaClock, FaSearch, FaRegUser, FaRegSmile, FaLink, FaCrop } from "react-icons/fa";
 import { FiUsers, FiUserPlus } from "react-icons/fi";
-import {TiPin} from "react-icons/ti";
+import { TiPin } from "react-icons/ti";
 import { MdPhoneInTalk, MdPhone } from "react-icons/md";
-// import photo from '../../resources/igSelfie.jpg';
 import json from '../../json/line.json';
 
 function LineHome({ root, ...props }) {
     const [message, setMessage] = useState([]);
-    const [target, setTarget] = useState(1);
+    const [target, setTarget] = useState(0);
     const main = useRef(null);
 
     useEffect(() => {
@@ -56,7 +55,7 @@ function LineHome({ root, ...props }) {
         }
     }
 
-    function handleClick(index){
+    function handleClick(index) {
         setTarget(index);
     }
 
@@ -90,16 +89,21 @@ function LineHome({ root, ...props }) {
                                         <div
                                             key={index}
                                             className={(target === index ? 'focus' : '') + ' friend d-flex justify-content-between align-items-center px-4'}
-                                            onClick={()=>handleClick(index)}
+                                            onClick={() => handleClick(index)}
                                         >
                                             <div className="img" style={{ 'backgroundImage': 'url(' + root + val.image + ')' }}></div>
                                             {index === 0 && <div className="dot"><TiPin /></div>}
                                             <div className="text d-none d-sm-block ml-2">
                                                 <h6>{val.name}</h6>
-                                                <p>{val.message[val.message.length - 1].context}</p>
+                                                <p>{
+                                                    val.message[val.message.length - 1].type === 'image' ?
+                                                        val.name + '傳送了貼圖'
+                                                        :
+                                                        val.message[val.message.length - 1].context
+                                                }</p>
                                             </div>
                                             <div className="note d-none d-sm-flex flex-column align-items-end">
-                                                <p className="time">AM 10:02</p>
+                                                <p className="time">{val.lastTime}</p>
                                                 {/* <p className="number d-flex justify-content-center align-items-center">11</p> */}
                                                 <p></p>
                                             </div>

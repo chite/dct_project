@@ -1069,6 +1069,16 @@ body {
 }
 
 .cal-bg {
+    .direction{
+        border: none;
+        background-color: #FFFFFF;
+        &:hover{
+            opacity: .8;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
     .cal-bar {
         border-bottom: 1px solid $ig-gray;
         svg {
@@ -1142,7 +1152,7 @@ body {
         }
         .left-part {
             padding: 0 2rem;
-            button {
+            .big-btn {
                 background: #FFFFFF;
                 border: none;
                 box-shadow: 0 1px 3px $grayLight;
@@ -1242,7 +1252,8 @@ body {
                     }
                     &.dark-green {
                         &::after {
-                            background-color: #0B8043;
+                            border:2px solid #0B8043;
+                            background-color: #FFFFFF;
                         }
                     }
                 }
@@ -1280,8 +1291,8 @@ body {
                         padding-top: .5rem;
                         vertical-align: top;
                         .today {
-                            width: 1.5rem;
-                            height: 1.5rem;
+                            width: 2.25rem;
+                            height: 2.25rem;
                         }
                         p {
                             box-sizing: border-box;

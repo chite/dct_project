@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaChevronUp, FaAngleLeft, FaAngleRight, FaPlus } from "react-icons/fa";
 
-function LeftPart({ time, changeDate, dates, today}) {
+function LeftPart({ time, changeDate, dates, today }) {
     return (
         <section className="left-part col-12 col-sm-2 d-flex flex-column justify-content-between">
-            <button className="d-flex align-self-baseline align-items-center">
+            <button className="big-btn d-flex align-self-baseline align-items-center">
                 <svg width="36" height="36" viewBox="0 0 36 36"><path fill="#34A853" d="M16 16v14h4V20z"></path><path fill="#4285F4" d="M30 16H20l-4 4h14z"></path><path fill="#FBBC05" d="M6 16v4h10l4-4z"></path><path fill="#EA4335" d="M20 16V6h-4v14z"></path><path fill="none" d="M0 0h36v36H0z"></path></svg>
                 <span>建立</span>
             </button>
@@ -12,9 +12,9 @@ function LeftPart({ time, changeDate, dates, today}) {
                 <nav className="bar d-flex justify-content-between align-items-center px-2">
                     <span>{time[0]}年{time[1]}月</span>
                     <div>
-                        <span className="btn-like" onClick={() => changeDate(-1)} title="上個月"><FaAngleLeft /></span>
+                        <button className="direction" onClick={() => changeDate(-1)} title="上個月"><FaAngleLeft /></button>
                         &nbsp;&nbsp;
-                                <span className="btn-like" onClick={() => changeDate(1)} title="下個月"><FaAngleRight /></span>
+                                <button className="direction" onClick={() => changeDate(1)} title="下個月"><FaAngleRight /></button>
                     </div>
                 </nav>
                 <table className="w-100 left-cal">
@@ -57,7 +57,7 @@ function LeftPart({ time, changeDate, dates, today}) {
             </div>
             <div>
                 <nav className="other-cal d-flex justify-content-between my-2"><h6>其他日曆</h6><span><FaPlus /><FaChevronUp /></span></nav>
-                <div className="check"><input type="checkbox" className="dark-green" checked readOnly disabled /><label>Holidays In Taiwan</label></div>
+                <div className="check"><input type="checkbox" className="dark-green" readOnly disabled /><label>Holidays In Taiwan</label></div>
             </div>
             <p className="security">條款 - 隱私設定</p>
         </section>

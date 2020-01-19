@@ -125,8 +125,8 @@ function Calendar() {
                 <div className="middle col-12 col-sm-9 d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
                         <button className="btn btn-outline-secondary mr-4" onClick={toToday}>今天</button>
-                        <span className="btn-like" onClick={() => changeDate(-1)} title="上個月"><FaAngleLeft /></span>
-                        <span className="btn-like" onClick={() => changeDate(1)} title="下個月"><FaAngleRight /></span>
+                        <button className="direction" onClick={() => changeDate(-1)} title="上個月"><FaAngleLeft /></button>
+                        <button className="direction" onClick={() => changeDate(1)} title="下個月"><FaAngleRight /></button>
                         <h1>{time[0]}年{time[1]}月</h1>
                     </div>
                     <div className="d-flex align-items-center">

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-function MiddlePart({dates, time, today}) {
+function MiddlePart({ dates, time, today }) {
     return (
         <section className="main">
             <table className={(dates.length == 5 ? 'five ' : 'six ') + "main-table"}>
@@ -14,7 +14,10 @@ function MiddlePart({dates, time, today}) {
                                         {
                                             (val.data.line.length > 0) &&
                                             val.data.line.map((pElement, pIndex) => (
-                                                <p key={pIndex} className={'p' + pElement.color}>{pElement.content}</p>
+                                                <p
+                                                    key={pIndex}
+                                                    className={(pElement.content === '' ? 'empty ' : '') + ('p' + pElement.color)}
+                                                >{pElement.content}</p>
                                             ))
                                         }
                                         {

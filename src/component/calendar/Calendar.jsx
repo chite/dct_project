@@ -24,8 +24,11 @@ function Calendar() {
         let preStringTime = [time[1] === 1 ? String(time[0] - 1) : String(time[0]), time[1] === 1 ? "12" : String(time[1] - 1)];
         let nextStringTime = [time[1] === 12 ? String(time[0] + 1) : String(time[0]), time[1] === 12 ? "1" : String(time[1] + 1)];
         let firstDay = new Date(time[0], time[1] - 1, 1);
+        let currentMonthObj = new Date(time[0], time[1]-1);
+        currentMonthObj.setMonth(currentMonthObj.getMonth()-1);
+        let lastMonthObj = new Date(currentMonthObj.getFullYear(), currentMonthObj.getMonth()+1, 0);
         let currentMonthLength = new Date(time[0], time[1], 0).getDate();
-        let lastMonthLength = new Date(time[0], time[1] - 2, 0).getDate();
+        let lastMonthLength = lastMonthObj.getDate();
         let currentMonth = [], splitedCurrentMonth = [], temparyArray = [];
         let dataValid = checkDataValid();
         firstDay = firstDay.getDay();   //0-6

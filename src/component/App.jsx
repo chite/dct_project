@@ -14,13 +14,13 @@ class App extends Component {
     render() {
         return (
             <HashRouter>
-                <Route path="/login" component={Login} />
-                <Route path="/home" component={Home} />
-                <Route path="/post" component={Post} />
+                <Route exact path="/ig" component={Login} />
+                <Route path="/ig/home" render={(props)=><Home root={url} {...props} />} />
+                <Route path="/ig/post" component={(props)=><Post root={url} {...props} />} />
                 <Route exact path="/line" render={(props)=><LineLogin root={url} {...props} />} />
                 <Route path="/line/home" render={(props)=><LineHome root={url} {...props} />} />
                 <Route path="/calendar" component={Calendar} />
-                <Route path="/folder" component={Folder} />
+                <Route path="/folder" component={(props)=><Folder root={url} {...props} />} />
             </HashRouter>
         )
     }

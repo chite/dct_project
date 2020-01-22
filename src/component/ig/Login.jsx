@@ -5,7 +5,7 @@ import igButton from '../../resources/igButton.PNG';
 
 function Login(props) {
     const enter = () =>{
-        props.history.push('/post');
+        props.history.push('/ig/post');
     }
     return (
         <div className="layout ig-bg d-inline-block w-100">

@@ -7,23 +7,24 @@ import ptBar2 from '../../resources/fileIcons2.PNG';
 import ptLeft from '../../resources/fileLeftIcons.PNG';
 import newIcon from '../../resources/fileNew.png';
 import photoIcon from '../../resources/filePhoto.png';
+import data from '../../json/folder.json';
 
 function Folder() {
     const [choose, setChoose] = useState(0);
     function handleClick(index) {
         setChoose(index + 1);
     }
-    function handleClose(){
+    function handleClose() {
         setChoose(0);
     }
     return (
         <>
             {
-                !!choose && 
-                <News 
-                    index={choose}
+                !!choose &&
+                <News
                     handleClose={handleClose}
-                 />
+                    data={data[choose - 1]}
+                />
             }
             <div className="layout grid-wrapper bg-white">
                 <div className="bar">
@@ -69,45 +70,27 @@ function Folder() {
                 </div>
                 <div className="left-part d-flex" >
                     <div className="img" style={{ 'backgroundImage': 'url(' + ptLeft + ')' }}></div>
-                    {/* <div className="b"></div> */}
                 </div>
                 <div className="main">
                     <div className="card-container">
-                        <button
-                            className="card-element"
-                            onDoubleClick={() => handleClick(0)}
-                        >
-                            <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                            <p className="text">新聞稿(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                            <p className="text">新聞稿(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                            <p className="text">新聞稿(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                            <p className="text">新聞稿(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                            <p className="text">新聞稿(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
-                            <p className="text">圖片(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
-                            <p className="text">圖片(1)</p>
-                        </button>
-                        <button className="card-element">
-                            <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
-                            <p className="text">圖片(1)</p>
-                        </button>
+                        {
+                            data.map((val, index) => (
+                                val.type === 'text' ?
+                                    <button
+                                        key={index}
+                                        className="card-element"
+                                        onDoubleClick={() => handleClick(index)}
+                                    >
+                                        <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
+                                        <p className="text">{val.title}</p>
+                                    </button>
+                                    :
+                                    <button key={index} className="card-element">
+                                        <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
+                                        <p className="text">{val.title}</p>
+                                    </button>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

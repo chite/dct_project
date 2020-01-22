@@ -9,18 +9,24 @@ import { FiTv } from "react-icons/fi";
 import selfPt from '../../resources/igSelfie.jpg';
 import data from '../../json/ig.json';
 
-function Home() {
+function Home(props) {
     const [open, setOpen] = useState(0);
-    const [root, setRoot] = useState("");
-    const [post, setPhoto] = useState([]);
-    const [logOut, setlogOut] = useState(false);
+    const [igState, setState] = useState(1);
+    const [logOut, setlogOut] = useState(false);    //顯示登出
     useEffect(() => {
-        setRoot(data.data.root);
-        setPhoto(data.data.post);
+        let state = localStorage.getItem('igState');
+        if (!state) {
+            //如果是小帳
+            let checkValid = localStorage.getItem('igValid');
+            if (checkValid) {
+                setState(0);
+            }
+        }
+        return;
     }, []);
     const handleClick = (index) => {
         console.log(index)
-        if (index < 0 || index >= post.length) return;
+        if (index < 0 || index >= data['post' + igState].length) return;
         setOpen(index + 1);
         let body = document.querySelector('body').style;
         body.height = '100%';
@@ -40,11 +46,19 @@ function Home() {
         body.overflow = 'auto';
     }
     return (
-        Boolean(post.length) &&
+        Boolean(data['post' + igState].length) &&
         <div className="layout ig-bg">
             <Bar />
             {
-                Boolean(open) && <Post close={handleClose} spec={open - 1} turnPage={handleClick} />
+                Boolean(open) && 
+                <Post 
+                close={handleClose} 
+                data={data}
+                igState={igState}
+                root={props.root}
+                spec={open - 1} 
+                turnPage={handleClick} 
+                />
             }
             {
                 logOut && <Logout close={handleClose} />
@@ -128,9 +142,9 @@ function Home() {
                 </div>
                 <div className="cards">
                     {
-                        post.map((val, index) => (
+                        data['post' + igState].map((val, index) => (
                             <div key={index} className="card-element" onClick={() => handleClick(index)}>
-                                <div className="bg" style={{ 'backgroundImage': 'url(' + (root + val.pt[0]) + ')' }}></div>
+                                <div className="bg" style={{ 'backgroundImage': 'url(' + (props.root + val.pt[0]) + ')' }}></div>
                                 <div className="icon">
                                     <FaHeart /><span>&nbsp;{val.like}</span>
                                     <FaComment /><span>&nbsp;{val.message.length}</span>

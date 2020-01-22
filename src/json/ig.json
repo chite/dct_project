@@ -1,151 +1,225 @@
 {
-    "data": {
-        "root": "https://raw.githubusercontent.com/chite/dct_project/master/ig/assets/",
-        "post": [
-            {
-                "title": "紫禁城",
-                "context": "Have a good start into your week guys",
-                "name": "pikachu111",
-                "selfPt": "0efb837.jpg",
-                "like": "66",
-                "like_author": "vv4n9_1998",
-                "like_pt": "ff44aa5.jpg",
-                "pt": [
-                    "428d332.jpg"
-                ],
-                "time": "一天",
-                "message": [
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "Why didn’t you ________ on the street? (Plz fill the space)",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    }
-                ]
-            },
-            {
-                "title": "紫禁城",
-                "context": "Have a good start into your week guys",
-                "name": "pikachu111",
-                "selfPt": "0efb837.jpg",
-                "like": "66",
-                "like_author": "vv4n9_1998",
-                "like_pt": "ff44aa5.jpg",
-                "pt": [
-                    "169ee85.JPG"
-                ],
-                "time": "一天",
-                "message": [
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "Why didn’t you ________ on the street? (Plz fill the space)",
-                        "time": "一天"
-                    }
-                ]
-            },
-            {
-                "title": "紫禁城",
-                "context": "Have a good start into your week guys",
-                "name": "pikachu111",
-                "selfPt": "0efb837.jpg",
-                "like": "66",
-                "like_author": "vv4n9_1998",
-                "like_pt": "ff44aa5.jpg",
-                "pt": [
-                    "428d332.jpg"
-                ],
-                "time": "一天",
-                "message": [
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "Why didn’t you ________ on the street? (Plz fill the space)",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    },
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
-                        "time": "一天"
-                    }
-                ]
-            },
-            {
-                "title": "紫禁城",
-                "context": "Have a good start into your week guys",
-                "name": "pikachu111",
-                "selfPt": "0efb837.jpg",
-                "like": "66",
-                "like_author": "vv4n9_1998",
-                "like_pt": "ff44aa5.jpg",
-                "pt": [
-                    "169ee85.JPG"
-                ],
-                "time": "一天",
-                "message": [
-                    {
-                        "author": "stephen___li",
-                        "selfPt": "ff44aa5.jpg",
-                        "context": "Why didn’t you ________ on the street? (Plz fill the space)",
-                        "time": "一天"
-                    }
-                ]
-            }
-        ]
-    }
+    "story": [
+        {
+            "title": "AAA",
+            "selfPt": "0efb837.jpg",
+            "time": "40分鐘前"
+        },
+        {
+            "title": "DDD",
+            "selfPt": "0efb837.jpg",
+            "time": "40分鐘前"
+        },
+        {
+            "title": "CCC",
+            "selfPt": "0efb837.jpg",
+            "time": "40分鐘前"
+        },
+        {
+            "title": "BBB",
+            "selfPt": "0efb837.jpg",
+            "time": "40分鐘前"
+        }
+    ],
+    "recommend": [
+        {
+            "title": "andypeng1031",
+            "selfPt": "0efb837.jpg"
+        },
+        {
+            "title": "andypeng1031",
+            "selfPt": "0efb837.jpg"
+        },
+        {
+            "title": "andypeng1031",
+            "selfPt": "0efb837.jpg"
+        }
+    ],
+    "userAccount": [
+        "pikachu000",
+        "pikachu111"
+    ],
+    "post1": [
+        {
+            "title": "",
+            "context": "來到這間學校不知不覺中也已經要邁入第四年了，\n規劃也一步步確實地完成了：）\n剩下最後一年的大學生活，自己要好好把握才行呢！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "66",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "428d332.jpg"
+            ],
+            "time": "2017年9月11日",
+            "message": [
+                {
+                    "author": "stephen___li",
+                    "selfPt": "ff44aa5.jpg",
+                    "context": "Why didn’t you",
+                    "time": "2017年9月11日"
+                },
+                {
+                    "author": "stephen___li",
+                    "selfPt": "ff44aa5.jpg",
+                    "context": "WWWWWWWWWWWWWWWWooooooooooowwwwwwwwwwwwww",
+                    "time": "2017年9月11日"
+                }
+            ]
+        },
+        {
+            "title": "",
+            "context": "我會愛你們一輩子！今天晚上的派對過得有夠開心的，還交換到了超棒的耶誕禮物喔！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "73",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2017年12月25日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "第一次面臨到社會真實的面試，雖然是有些害怕沒錯啦......\n但，我絕對要進這間公司。\n加油啊我！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "47",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年5月28日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "終於畢業了！好捨不得也好愛我身旁這群朋友兼戰友，希望我們未來都能夠順順利利地完成自己的目標！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "93",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年6月9日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "謝謝在路上幫助過我的所有人，讓我終於進入我夢寐以求的公司！\n接下來的日子，我一定會好好努力，達成我的目標的。\n#昌盛集團\n#人生目標之一達成\n#朝未來繼續邁進",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "73",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年7月2日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "今天聊得非常盡興，原本非常混亂的心情也因為你的陪伴而豁然開朗了，謝謝你囉~ 下次我們再約去看電影吧！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "51",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年9月1日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "第二集還滿不錯的，但還是有些遺憾......果然我還是覺得第一集比較好看！等下一集又要好幾年了嗚嗚......",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "66",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年10月15日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "謝謝你，感覺有了這個手套這個冬天就沒那麼冷了~\n也祝大家聖誕節快樂囉~",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "89",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2018年12月25日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "很開心可以在工作職場上遇到這些同事，以後也請你們多多指教了！",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "41",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2019年6月14日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "轉眼之間人生就已經過了23年，而我不再感到孤單。\n謝謝你送的戒指，願我們可以這樣一直幸福下去。",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "82",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2019年8月24日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "2020年，接下來的日子，也繼續麻煩大家了<3",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "61",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2020年1月1日",
+            "message": []
+        },
+        {
+            "title": "",
+            "context": "我不知道......",
+            "name": "pikachu111",
+            "selfPt": "0efb837.jpg",
+            "like": "96",
+            "like_author": "vv4n9_1998",
+            "like_pt": "ff44aa5.jpg",
+            "pt": [
+                "169ee85.JPG"
+            ],
+            "time": "2020年4月18日",
+            "message": []
+        }
+    ]
 }

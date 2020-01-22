@@ -14,7 +14,7 @@ function Logout(props) {
                 <button type="button" className="btn btn-light btn-lg disable" >登入活動</button>
                 <button type="button" className="btn btn-light btn-lg disable" >Instagram 寄送的電子郵件</button>
                 <button type="button" className="btn btn-light btn-lg disable" >回報問題</button>
-                <button type="button" className="btn btn-light btn-lg " onClick={()=>props.history.push('/login')}>登出</button>
+                <button type="button" className="btn btn-light btn-lg " onClick={()=>props.history.push('/ig')}>登出</button>
                 <button type="button" className="btn btn-light btn-lg " onClick={props.close}>取消</button>
             </div>
         </>

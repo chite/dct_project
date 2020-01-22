@@ -18,7 +18,7 @@ function Bar(props) {
     }, []);
     return (
         <div className={(moveState ? "short " : "") + "ig-bar bg-white w-100"}>
-            <div className="bar-left d-inline-flex flex-row align-items-center" onClick={()=>props.history.push('/post')}>
+            <div className="bar-left d-inline-flex flex-row align-items-center" onClick={()=>props.history.push('/ig/post')}>
                 <FaInstagram />
                 <div className="b-left mx-2"></div>
                 <div className={(moveState ? "short " : "") + "bar-img"} style={{ 'backgroundImage': 'url(' + igIcon + ')' }}></div>
@@ -29,7 +29,7 @@ function Bar(props) {
             <div className="bar-right d-inline-flex flex-row align-items-center">
                 <FaRegCompass />
                 <FaRegHeart />
-                <div onClick={()=>props.history.push('/home')}><FaRegUser /></div>
+                <div onClick={()=>props.history.push('/ig/home')}><FaRegUser /></div>
             </div>
         </div>
     )

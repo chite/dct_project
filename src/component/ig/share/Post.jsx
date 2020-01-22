@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleLeft, FaAngleRight, FaRegHeart, FaRegPaperPlane, FaRegComment, FaRegBookmark } from "react-icons/fa";
-import data from '../../../json/ig.json';
 
-function Post(props) {
-    const [root, setRoot] = useState("");
-    const [post, setPhoto] = useState([]);
+function Post({ data, root, ...props }) {
+    const [post, setPost] = useState([]);
     useEffect(() => {
-        setRoot(data.data.root);
-        setPhoto(data.data.post);
+        setPost(data['post' + props.igState]);
     }, []);
     return (
         post.length &&

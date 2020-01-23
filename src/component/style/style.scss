@@ -4,7 +4,9 @@ $grayLight: #999999;
 $ig-blue: #3897F0;
 $line-bg:#d3dae2;
 $fb: rgb(36, 55, 94);
-$link: 'http://localhost:9000/ig/assets';
+// $link: 'http://localhost:9000/ig/assets';
+$link: 'https://raw.githubusercontent.com/chite/dct_project/master/ig/assets';
+
 // construct
 //style
 .font-075 {
@@ -1447,12 +1449,6 @@ body {
             background-size: contain;
             height: 100%;
             width: 60rem;
-            &:first-child {
-                background-color: #FFFFFF;
-            }
-            &:last-child {
-                background-color: #F5F6F7;
-            }
         }
         .img-contain {
             width: 100%;

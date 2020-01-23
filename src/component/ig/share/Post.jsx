@@ -22,7 +22,7 @@ function Post({ data, root, ...props }) {
                                 <div className="image-border d-flex justify-content-center align-items-center">
                                     <div className="image" style={{ 'backgroundImage': 'url(' + (root + post[props.spec].selfPt) + ')' }}></div>
                                 </div>
-                                <h6 className="ml-2">pikachu111</h6>
+                                <h6 className="ml-2">{data.userAccount[props.igState]}</h6>
                             </div>
                             <h3 className="text-secondary">&#183;&#183;&#183;</h3>
                         </div>
@@ -34,7 +34,13 @@ function Post({ data, root, ...props }) {
                                     </div>
                                 </div>
                                 <div className="col-9 pl-1 ml-2">
-                                    <h6>pikachu111<span className="ml-2 reg-text">{post[props.spec].context}</span></h6>
+                                    <h6>{data.userAccount[props.igState]}&nbsp;&nbsp;
+                                        {
+                                            post[props.spec].context.split('\n').map((text, indexElement) => (
+                                                <span key={indexElement} className="reg-text">{text}<br /></span>
+                                            ))
+                                        }
+                                    </h6>
                                     <h6 className="time">{post[props.spec].time}</h6>
                                 </div>
                             </div>

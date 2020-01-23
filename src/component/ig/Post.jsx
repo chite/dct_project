@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
 import igSelfie from '../../resources/igSelfie.jpg';
 import igSelfie2 from '../../resources/igSelfie2.jpg';
-import igPhoto from '../../resources/igPost.JPG';
+// import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import data from '../../json/ig.json';
 
@@ -31,10 +31,10 @@ function Post(props) {
 
     useEffect(() => {
         let state = localStorage.getItem('igState');
-        if (!state) {
+        if (!Number(state)) {
             //如果是小帳
             let checkValid = localStorage.getItem('igValid');
-            if (checkValid) {
+            if (checkValid === 'true') {
                 setState(0);
             }
         }
@@ -78,7 +78,7 @@ function Post(props) {
                                         &nbsp;
                                         <strong>{val.like_author}</strong>
                                         &nbsp;和&nbsp;
-                                        <strong>其他{val.like - 1}人</strong>
+                                        <strong>其他&nbsp;{val.like - 1}&nbsp;人</strong>
                                         &nbsp;都說讚
                                     </p>
                                     <div className="text">

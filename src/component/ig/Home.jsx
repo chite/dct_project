@@ -15,10 +15,10 @@ function Home(props) {
     const [logOut, setlogOut] = useState(false);    //顯示登出
     useEffect(() => {
         let state = localStorage.getItem('igState');
-        if (!state) {
+        if (!Number(state)) {
             //如果是小帳
             let checkValid = localStorage.getItem('igValid');
-            if (checkValid) {
+            if (checkValid === 'true') {
                 setState(0);
             }
         }
@@ -50,14 +50,14 @@ function Home(props) {
         <div className="layout ig-bg">
             <Bar />
             {
-                Boolean(open) && 
-                <Post 
-                close={handleClose} 
-                data={data}
-                igState={igState}
-                root={props.root}
-                spec={open - 1} 
-                turnPage={handleClick} 
+                Boolean(open) &&
+                <Post
+                    close={handleClose}
+                    data={data}
+                    igState={igState}
+                    root={props.root}
+                    spec={open - 1}
+                    turnPage={handleClick}
                 />
             }
             {
@@ -72,7 +72,7 @@ function Home(props) {
                     </div>
                     <div className="document">
                         <div className="d-flex flex-direction-row">
-                            <h1>pikachu111</h1>
+                            <h1>{data.userAccount[igState]}</h1>
                             <button className="d-none d-sm-block btn btn-outline-secondary btn-sm ml-3" disabled>編輯個人檔案</button>
                             &nbsp;&nbsp;
                             <div onClick={logoutOpen}>

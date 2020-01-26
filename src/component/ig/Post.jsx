@@ -18,6 +18,7 @@ function Post(props) {
     }
 
     useEffect(() => {
+        document.title = '杜沐安 • Instagram 相片與影片';
         function handleScroll() {
             if (window.pageYOffset) {
                 setMove(true);
@@ -74,12 +75,19 @@ function Post(props) {
                                         <FaRegBookmark />
                                     </div>
                                     <p className="text px-3 mt-2 d-flex align-items-center">
-                                        <span className="d-inline-block image" style={{ 'backgroundImage': 'url(' + (props.root + val.like_pt) + ')' }}></span>
-                                        &nbsp;
-                                        <strong>{val.like_author}</strong>
-                                        &nbsp;和&nbsp;
-                                        <strong>其他&nbsp;{val.like - 1}&nbsp;人</strong>
-                                        &nbsp;都說讚
+
+                                        {
+                                            (val.like_author === '') ?
+                                                <span>{val.like}&nbsp;個讚</span>
+                                                : <>
+                                                    <span className="d-inline-block image" style={{ 'backgroundImage': 'url(' + (props.root + val.like_pt) + ')' }}></span>
+                                                    &nbsp;
+                                                    <strong>{val.like_author}</strong>
+                                                    &nbsp;和&nbsp;
+                                                    <strong>其他&nbsp;{val.like - 1}&nbsp;人</strong>
+                                                    &nbsp;都說讚
+                                                </>
+                                        }
                                     </p>
                                     <div className="text">
                                         <p className={show[index] ? "" : "hide"} onClick={() => handleClick(index)}>

@@ -17,23 +17,20 @@ function Calendar() {
         const date = new Date();
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
         setToday([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
+        document.title = '杜沐安 - 日曆';
     }, [])
 
     useEffect(() => {
         let stringTime = [String(time[0]), String(time[1]), String(time[2])];
         let preStringTime = [time[1] === 1 ? String(time[0] - 1) : String(time[0]), time[1] === 1 ? "12" : String(time[1] - 1)];
         let nextStringTime = [time[1] === 12 ? String(time[0] + 1) : String(time[0]), time[1] === 12 ? "1" : String(time[1] + 1)];
-        let firstDay = new Date(time[0], time[1] - 1, 1);
         let currentMonthObj = new Date(time[0], time[1]-1);
         currentMonthObj.setMonth(currentMonthObj.getMonth()-1);
-        let lastMonthObj = new Date(currentMonthObj.getFullYear(), currentMonthObj.getMonth()+1, 0);
-        let currentMonthLength = new Date(time[0], time[1], 0).getDate();
-        let lastMonthLength = lastMonthObj.getDate();
+        let lastMonthLength = (new Date(currentMonthObj.getFullYear(), currentMonthObj.getMonth()+1, 0)).getDate();
         let currentMonth = [], splitedCurrentMonth = [], temparyArray = [];
         let dataValid = checkDataValid();
-        firstDay = firstDay.getDay();   //0-6
 
-        for (let i = lastMonthLength; i > lastMonthLength - firstDay; i--) {    //補足前面
+        for (let i = lastMonthLength; i > lastMonthLength - (new Date(time[0], time[1] - 1, 1)).getDay(); i--) {    //補足前面
             let date = {
                 mark: 0,
                 day: i,
@@ -48,7 +45,7 @@ function Calendar() {
         }
         currentMonth = currentMonth.reverse();
 
-        for (let i = 1; i <= currentMonthLength; i++) { //填寫當月
+        for (let i = 1; i <= (new Date(time[0], time[1], 0)).getDate(); i++) { //填寫當月
             let date = {
                 mark: 1,
                 day: i,

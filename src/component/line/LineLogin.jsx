@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {IoMdLock} from "react-icons/io";
 import LineIcon from '../../resources/lineIcon.png';
 
 function LineLogin(props) {
+    useEffect(()=>{
+        document.title = 'LINE';
+    },[])
     function login(){
         props.history.push("/line/home");
     }

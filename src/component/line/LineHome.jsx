@@ -9,7 +9,9 @@ function LineHome({ root, ...props }) {
     const [message, setMessage] = useState([]);
     const [target, setTarget] = useState(0);
     const main = useRef(null);
-
+    useEffect(()=>{
+        document.title = 'LINE';
+    },[])
     useEffect(() => {
         setMessage(json[target].message);
     }, [target]);

@@ -6,6 +6,7 @@ import igButton from '../../resources/igButton.PNG';
 function Login(props) {
     const [psd, setPsd] = useState('');
     useEffect(() => {
+        document.title = 'Instagram';
         localStorage.setItem('igState', 1);
         localStorage.setItem('igValid', true);
     }, []);
@@ -35,7 +36,7 @@ function Login(props) {
         <div className="layout ig-bg d-inline-block w-100">
             <div className="login-box m-3 mx-auto p-2 pb-4">
                 <div className="ig-login-title" style={{ 'backgroundImage': 'url(' + igIcon + ')' }}></div>
-                <input placeholder="電話號碼、用戶名稱或電子郵件" className="d-block mx-auto w-75" />
+                <input placeholder="電話號碼、用戶名稱或電子郵件" className="d-block mx-auto w-75" value="udonneed@nccu.edu.tw" readOnly />
                 <input placeholder="密碼" className="d-block mx-auto my-3 w-75" list="ps" onInput={(e) => handleChange(e.target.value)} />
                 <datalist id="ps">
                     <option value="大帳">大帳</option>

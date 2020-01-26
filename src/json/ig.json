@@ -36,14 +36,26 @@
         }
     ],
     "userAccount": [
-        "pikachu000",
-        "pikachu111"
+        "behind_ann",
+        "muan0824"
+    ],
+    "userIntro":[
+        {
+            "followers": 0,
+            "followings": 0,
+            "introduction":"有時，尋找本身就是答案"
+        },
+        {
+            "followers": 314,
+            "followings": 455,
+            "introduction":"TFG | NCCUBA\nwe live once, and it’s short."
+        }
     ],
     "post1": [
         {
             "title": "",
             "context": "來到這間學校不知不覺中也已經要邁入第四年了，\n規劃也一步步確實地完成了：）\n剩下最後一年的大學生活，自己要好好把握才行呢！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "66",
             "like_author": "vv4n9_1998",
@@ -70,7 +82,7 @@
         {
             "title": "",
             "context": "我會愛你們一輩子！今天晚上的派對過得有夠開心的，還交換到了超棒的耶誕禮物喔！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "73",
             "like_author": "vv4n9_1998",
@@ -84,7 +96,7 @@
         {
             "title": "",
             "context": "第一次面臨到社會真實的面試，雖然是有些害怕沒錯啦......\n但，我絕對要進這間公司。\n加油啊我！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "47",
             "like_author": "vv4n9_1998",
@@ -98,7 +110,7 @@
         {
             "title": "",
             "context": "終於畢業了！好捨不得也好愛我身旁這群朋友兼戰友，希望我們未來都能夠順順利利地完成自己的目標！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "93",
             "like_author": "vv4n9_1998",
@@ -112,7 +124,7 @@
         {
             "title": "",
             "context": "謝謝在路上幫助過我的所有人，讓我終於進入我夢寐以求的公司！\n接下來的日子，我一定會好好努力，達成我的目標的。\n#昌盛集團\n#人生目標之一達成\n#朝未來繼續邁進",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "73",
             "like_author": "vv4n9_1998",
@@ -126,7 +138,7 @@
         {
             "title": "",
             "context": "今天聊得非常盡興，原本非常混亂的心情也因為你的陪伴而豁然開朗了，謝謝你囉~ 下次我們再約去看電影吧！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "51",
             "like_author": "vv4n9_1998",
@@ -140,7 +152,7 @@
         {
             "title": "",
             "context": "第二集還滿不錯的，但還是有些遺憾......果然我還是覺得第一集比較好看！等下一集又要好幾年了嗚嗚......",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "66",
             "like_author": "vv4n9_1998",
@@ -154,7 +166,7 @@
         {
             "title": "",
             "context": "謝謝你，感覺有了這個手套這個冬天就沒那麼冷了~\n也祝大家聖誕節快樂囉~",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "89",
             "like_author": "vv4n9_1998",
@@ -168,7 +180,7 @@
         {
             "title": "",
             "context": "很開心可以在工作職場上遇到這些同事，以後也請你們多多指教了！",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "41",
             "like_author": "vv4n9_1998",
@@ -182,7 +194,7 @@
         {
             "title": "",
             "context": "轉眼之間人生就已經過了23年，而我不再感到孤單。\n謝謝你送的戒指，願我們可以這樣一直幸福下去。",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "82",
             "like_author": "vv4n9_1998",
@@ -196,7 +208,7 @@
         {
             "title": "",
             "context": "2020年，接下來的日子，也繼續麻煩大家了<3",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "61",
             "like_author": "vv4n9_1998",
@@ -210,7 +222,7 @@
         {
             "title": "",
             "context": "我不知道......",
-            "name": "pikachu111",
+            "name": "muan0824",
             "selfPt": "0efb837.jpg",
             "like": "96",
             "like_author": "vv4n9_1998",
@@ -226,32 +238,25 @@
         {
             "title": "",
             "context": "我知道事情肯定會變 不缺錢的生活大概是回不來了 但我相信一家人在一起 我們能夠度過難關的！希望爸爸能趕快振作起來...",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
             "time": "2012年8月9日",
-            "message": [
-                {
-                    "author": "stephen___li",
-                    "selfPt": "ff44aa5.jpg",
-                    "context": "Why didn’t you",
-                    "time": "2012年8月9日"
-                }
-            ]
+            "message": []
         },
         {
             "title": "",
             "context": "從此我就沒有爸爸了....\n爸，為什麼你要離開我們？不是說好要一起克服這一切的嗎？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "3",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -261,11 +266,11 @@
         {
             "title": "",
             "context": "原來爸爸是被誣陷的 我從小以為爸爸是無所不能的 原來 也會受人操控 也會被人擺佈 原來我們家就這樣成為被更有錢的人犧牲的角色呀",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "1",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -275,11 +280,11 @@
         {
             "title": "",
             "context": "你離開第三年了\n一開始我真的一點都不想原諒你的\n你怎麼可以一走了之\n我跟媽媽 我們活該看那些親戚的臉色嗎\n我們過什麼生活 你都不在乎嗎\n我單方面跟你冷戰了好久 但我還是決定要跟你合好了\n你記不記得以前 每次我生你氣 你都會帶我去的那個小公園\n現在 我都自己去那邊盪鞦韆 怎麼盪都沒有之前的高\n好想你喔 爸 我上大學了 是你的母校喔\n我有做到我們的約定 你一定很驕傲吧",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -289,11 +294,11 @@
         {
             "title": "",
             "context": "第四年了 我慢慢習慣 \n那些以前回頭去找你要答案的問題\n得自己一個人解決\n大學應該要交到很多朋友的\n不知道為什麼我好像失去跟人相處的能力了\n就算不談同年齡的人 \n連媽媽很多時候也不懂我在想什麼 我也不喜歡說太多\n我不是不愛她 只是我不可能像你這樣愛她呀\n爸 活著寂寞才是常態嗎？我以前都不覺得寂寞的\n你離開之後 寂寞的感覺就再也沒停過",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -303,11 +308,11 @@
         {
             "title": "",
             "context": "五年啦 懶鬼！\n那個世界是什麼樣子啊？\n可以到處跑來跑去回人間看看嗎？\n你曾不曾回來看我啊？\n昨天媽媽好像又夢到你了\n你知道的 關於你的事她老是很愛哭\n\n我一直在想你當年到底有沒有其他選擇\n但對於當年發生的事 我真的知道的太少了\n當小孩真可憐 明明是家庭的一員 可是永遠是被控的一方\n我以後才不會像你這樣!\n\n不過 你還是我最棒的爸爸 畢竟我也只有你這個爸爸嘛",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -317,11 +322,11 @@
         {
             "title": "",
             "context": "我一直好希望接近當年的事實\n每一年都回去找醫生 但我從來沒有覺得更靠近真相過\n到底該怎麼樣我才能幫爸爸討回公道．．",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "1",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -331,11 +336,11 @@
         {
             "title": "",
             "context": "對於畢業 又開心 又捨不得\n大家說大學的三大必修學分 除了課業 我什麼都沒有\n我一直都 好努力好努力\n因為我一直都知道 我想去哪裡 想做什麼\n學業之路的結束 象徵的是\n復仇之路的正式啟航:)\n爸 你家小公主再也不是公主啦",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "1",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -345,11 +350,11 @@
         {
             "title": "",
             "context": "這是我成功進入到昌盛公司的第五天了，接下來的任務是要慢慢地挖掘這間公司的內幕，好為爸爸報仇。\n但這幾天我察覺到有一個同事一直和我對到眼，\n看他做事都非常穩重踏實，和其他人相處的也滿融洽的... 我想，應該不是個壞人吧？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -359,11 +364,11 @@
         {
             "title": "",
             "context": "今天跟羅一起吃宵夜 慶祝接下大case boss越來越賞識我了 不枉費我天天加班 不過羅明明沒事 幹嘛也老是待到這麼晚啊",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -373,11 +378,11 @@
         {
             "title": "",
             "context": "我知道媽媽想復仇\n我也想 一直都想\n可是媽媽真的讓我壓力好大...\n有時候我會想拋下復仇這些事\n假裝我的家正常 我沒背負恨\n這樣想的我是不是很對不起爸爸媽媽？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -387,11 +392,11 @@
         {
             "title": "",
             "context": "羅璟宸帶我去看煙火 好多人 大家都好開心\n整個場景都好少女\n好像在爸爸走以後我就再也沒碰過了\n因為我隨口一句話帶我去圓夢的 爸爸之後他是第一個",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -401,11 +406,11 @@
         {
             "title": "",
             "context": "好難平衡那種\n又想表現好\n又想找到公司漏洞的心情\n被升職了是一種肯定\n但也莫名其妙地增加了一點對公司的認同感\n這種東西絕對是不能多的吧...再多還怎麼復仇呀",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -415,11 +420,11 @@
         {
             "title": "",
             "context": "新的一年 喜氣洋洋！璟宸竟然跟我要紅包！應該要是他給我紅包吧！？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -429,11 +434,11 @@
         {
             "title": "",
             "context": "幫xx慶生",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -443,11 +448,11 @@
         {
             "title": "",
             "context": "以前明明也有很多人追過我\n但我就沒喜歡上誰過\n現在對他這種在乎 到底算不算是喜歡？\n他對我這麼好 到底是不是喜歡？\n現在我打這篇文 是不是喜歡？\n好希望這些都可以有正確答案..",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -457,11 +462,11 @@
         {
             "title": "",
             "context": "在爸爸死後 終於有一個夢 是能夠實現的了\n我希望這場夢沒有終點...我們一直在一起吧？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -471,11 +476,11 @@
         {
             "title": "",
             "context": "他這麼手拙的人竟然親自為我雕戒指 怎麼可以這麼讓人感動...我也要想辦法對他好才行！真希望每一年生日他都在...",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -485,11 +490,11 @@
         {
             "title": "",
             "context": "其實每次見到小恩都想把家裡的事全部告訴她 但我想沒有人能夠理解的吧 這種狀況實在不是一般人會碰到的 我好希望塵埃落定可以把家庭的是跟別人輕鬆提起的那一天 小恩會理解的吧？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -499,11 +504,11 @@
         {
             "title": "",
             "context": "從爸爸離開我們那天開始到今天我都在為這一刻努力 但真的找到我們的施力點了 我卻沒有想像中的開心 復仇不是一件簡單開心的事 我該和媽媽說嗎？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -513,11 +518,11 @@
         {
             "title": "",
             "context": "仔細想起來 好多細節都顯示你本來就不是一般職員\n我也知道 你一直有事沒說\n但就像我也沒說的那些 是我們共有的默契\n只是 現在秘密被揭開卻是最不堪的時候\n怎麼會是你...為什麼是你...\n我所要做的所有一切 是不是都將傷害到你\n或者 你也是共犯？",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],
@@ -527,11 +532,11 @@
         {
             "title": "",
             "context": "愛情跟親情 現在我還選不出來\n可是好像 也容不得我不選擇了..\n我一點都不想離開你的 真的\n只是我也做不成茱麗葉 下不了決心\n我這種人 難怪愛情親情都亂七八糟",
-            "name": "pikachu111",
+            "name": "behind_ann",
             "selfPt": "0efb837.jpg",
-            "like": "2",
-            "like_author": "vv4n9_1998",
-            "like_pt": "ff44aa5.jpg",
+            "like": "0",
+            "like_author": "",
+            "like_pt": "",
             "pt": [
                 "428d332.jpg"
             ],

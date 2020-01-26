@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import News from './News';
 import { IoIosClose, IoIosRemove, IoIosSquareOutline, IoIosArrowRoundBack, IoIosArrowRoundForward, IoIosArrowRoundUp, IoIosArrowDown, IoIosFolderOpen, IoIosSearch, IoIosRefresh } from "react-icons/io";
 import ptTop from '../../resources/fileTopIcons.PNG';
@@ -6,24 +6,33 @@ import ptBar1 from '../../resources/fileIcons1.PNG';
 import ptBar2 from '../../resources/fileIcons2.PNG';
 import ptLeft from '../../resources/fileLeftIcons.PNG';
 import newIcon from '../../resources/fileNew.png';
-import photoIcon from '../../resources/filePhoto.png';
+// import photoIcon from '../../resources/filePhoto.png';
 import data from '../../json/folder.json';
 
 function Folder() {
-    const [choose, setChoose] = useState(0);
+    const [choose, setChoose] = useState(-1);
+    const [open, setOpen] = useState(false);
+
+    useEffect(()=>{
+        document.title = '我的資料夾';
+    },[])
     function handleClick(index) {
-        setChoose(index + 1);
+        setChoose(index);
+    }
+    function handleOpen() {
+        setOpen(true);
     }
     function handleClose() {
-        setChoose(0);
+        setOpen(false);
+        setChoose(-1);
     }
     return (
         <>
             {
-                !!choose &&
+                open &&
                 <News
                     handleClose={handleClose}
-                    data={data[choose - 1]}
+                    data={data[choose]}
                 />
             }
             <div className="layout grid-wrapper bg-white">
@@ -75,20 +84,21 @@ function Folder() {
                     <div className="card-container">
                         {
                             data.map((val, index) => (
-                                val.type === 'text' ?
-                                    <button
-                                        key={index}
-                                        className="card-element"
-                                        onDoubleClick={() => handleClick(index)}
-                                    >
-                                        <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
-                                        <p className="text">{val.title}</p>
-                                    </button>
-                                    :
-                                    <button key={index} className="card-element">
-                                        <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
-                                        <p className="text">{val.title}</p>
-                                    </button>
+                                // val.type === 'text' ?
+                                <button
+                                    key={index}
+                                    className="card-element"
+                                    onDoubleClick={handleOpen}
+                                    onClick={() => handleClick(index)}
+                                >
+                                    <div className="img" title="Icons made by Dimitry Miroliubov from www.flaticon.com" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
+                                    <p className={`text ${index === choose ? 'wrap' : ''}`}>{val.title}</p>
+                                </button>
+                                // :
+                                // <button key={index} className="card-element">
+                                //     <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
+                                //     <p className="text">{val.title}</p>
+                                // </button>
                             ))
                         }
                     </div>

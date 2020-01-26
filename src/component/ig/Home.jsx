@@ -14,6 +14,7 @@ function Home(props) {
     const [igState, setState] = useState(1);
     const [logOut, setlogOut] = useState(false);    //顯示登出
     useEffect(() => {
+        document.title = '杜沐安 • Instagram 相片與影片';
         let state = localStorage.getItem('igState');
         if (!Number(state)) {
             //如果是小帳
@@ -81,21 +82,17 @@ function Home(props) {
                         </div>
                         <button className="d-block d-sm-none btn btn-outline-secondary btn-sm w-75 mt-4" disabled>編輯個人檔案</button>
                         <div className=" flex-direction-row mt-4 d-none d-sm-flex">
-                            <h6>1,949 貼文</h6>
-                            <h6 className="ml-4">635千 位追蹤者</h6>
-                            <h6 className="ml-4">558 追蹤中</h6>
+                            <h6>{data['post' + igState].length} 貼文</h6>
+                            <h6 className="ml-4">{data.userIntro[igState].followers} 位追蹤者</h6>
+                            <h6 className="ml-4">{data.userIntro[igState].followings} 追蹤中</h6>
                         </div>
-                        <div className="d-none d-sm-block">
-                            <h6>k0000000</h6>
-                            <p>有仼何活動 電影 戲劇 節目邀約</p>
-                            <p>E-mail: sharon_701111@hotmail.com</p>
+                        <div className="d-none d-sm-block pre-line">
+                            <p>{data.userIntro[igState].introduction}</p>
                         </div>
                     </div>
                 </div>
-                <div className="ml-3 mt-3 d-sm-none">
-                    <h6>k0000000</h6>
-                    <p>有仼何活動 電影 戲劇 節目邀約</p>
-                    <p>E-mail: sharon_701111@hotmail.com</p>
+                <div className="ml-3 mt-3 d-sm-none pre-line">
+                    <p>{data.userIntro[igState].introduction}</p>
                 </div>
                 <div className="history w-100">
                     <div className="history-container">
@@ -118,9 +115,9 @@ function Home(props) {
                     </div>
                 </div>
                 <div className="s-follow flex-direction-row justify-content-around d-flex d-sm-none">
-                    <h6 className="text-center"><span>1,949</span><br />貼文</h6>
-                    <h6 className="ml-4 text-center"><span>635千</span><br />位追蹤者</h6>
-                    <h6 className="ml-4 text-center"><span>558</span><br />追蹤中</h6>
+                    <h6 className="text-center"><span>{data['post' + igState].length}</span><br />貼文</h6>
+                    <h6 className="ml-4 text-center"><span>{data.userIntro[igState].followers}</span><br />位追蹤者</h6>
+                    <h6 className="ml-4 text-center"><span>{data.userIntro[igState].followings}</span><br />追蹤中</h6>
                 </div>
                 <div className="post-banner d-flex justify-content-center">
                     <div className="mx-4">

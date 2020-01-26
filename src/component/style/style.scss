@@ -6,7 +6,6 @@ $line-bg:#d3dae2;
 $fb: rgb(36, 55, 94);
 // $link: 'http://localhost:9000/ig/assets';
 $link: 'https://raw.githubusercontent.com/chite/dct_project/master/ig/assets';
-
 // construct
 //style
 .font-075 {
@@ -146,6 +145,9 @@ body {
     margin: auto;
     padding-top: 3.75rem;
     overflow: hidden;
+    .pre-line{
+        white-space: pre-line;
+    }
     .self-photo {
         flex: 1 0 30px;
         @include pc-width() {
@@ -234,6 +236,7 @@ body {
             font-size: 14px;
             margin-bottom: .5rem;
             padding-left: .75rem;
+            width: 95%;
             p {
                 margin-bottom: .25rem;
             }
@@ -616,9 +619,10 @@ body {
                     background: transparent;
                 }
                 svg {
-                    font-size: 2rem;
+                    font-size: 1rem;
                     margin-left: 1rem;
                     color: $grayLight;
+                    flex: 0 0 1rem;
                 }
             }
             .sign {
@@ -1148,8 +1152,8 @@ body {
             border-radius: 100%;
             color: #fff;
             padding: .25rem;
-            width: 20px;
-            height: 20px;
+            width: 17px;
+            height: 17px;
             justify-content: center;
         }
         .left-part {
@@ -1566,17 +1570,17 @@ body {
             }
         }
         .card-element {
+            // align-self: baseline;
             flex: 0 1 12%;
-            height: 8rem;
+            display: flex;
+            flex-wrap: wrap;
+            height: 10rem;
             border: none;
             background: #FFFFFF;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             margin: .5rem 0;
-            min-width: 122px;
+            width: 122px;
             padding: .5rem 0;
+            position: relative;
             .img {
                 width: 5rem;
                 height: 5rem;
@@ -1586,11 +1590,16 @@ body {
             }
             .text {
                 margin: 1rem 0 0;
+                min-height: 3rem;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 width: 120px;
+                &.wrap {
+                    white-space: initial;
+                    width: 100%;
+                }
             }
             &:hover {
                 background: #D1E8FF;
@@ -1598,6 +1607,7 @@ body {
             &:focus {
                 background: #D1E8FF;
                 border: 1px solid rgb(134, 192, 250);
+                border-bottom: none;
             }
         }
     }

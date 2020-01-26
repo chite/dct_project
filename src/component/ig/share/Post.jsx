@@ -72,8 +72,15 @@ function Post({ data, root, ...props }) {
                             <FaRegBookmark />
                         </div>
                         <div className="like d-flex align-items-center">
-                            <div className="like-image mr-1" style={{ 'backgroundImage': 'url(' + (root + post[props.spec].like_pt) + ')' }}></div>
-                            &nbsp;<strong>{post[props.spec].like_author}</strong>&nbsp;和&nbsp;<strong>其他{post[props.spec].like - 1}人</strong>&nbsp;都說讚
+                            {
+                                (post[props.spec].like_author === '') ?
+                                    <span>{post[props.spec].like}&nbsp;個讚</span>
+                                    :    <>
+                                        <div className="like-image mr-1" style={{ 'backgroundImage': 'url(' + (root + post[props.spec].like_pt) + ')' }}></div>
+                                        <strong>{post[props.spec].like_author}</strong>&nbsp;和&nbsp;<strong>其他{post[props.spec].like - 1}人</strong>&nbsp;都說讚
+                                        </>
+                            }
+
                         </div>
                         <p className="time m-0">{post[props.spec].time}前</p>
                         <div className="message">

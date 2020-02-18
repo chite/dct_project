@@ -7,6 +7,8 @@ function Login(props) {
     const [psd, setPsd] = useState('');
     useEffect(() => {
         document.title = 'Instagram';
+        document.getElementsByTagName('link')[0].href = props.root + '/ig/shortcuticon.png';
+        
         localStorage.setItem('igState', 1);
         localStorage.setItem('igValid', true);
     }, []);

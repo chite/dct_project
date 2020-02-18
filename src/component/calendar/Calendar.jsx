@@ -8,7 +8,7 @@ import jsonData from "../../json/calendar.json";
 import calKeep from '../../resources/calKeep.png';
 import calTasks from '../../resources/calTasks.png';
 
-function Calendar() {
+function Calendar(props) {
     const [today, setToday] = useState([0, 0, 0]);
     const [time, setTime] = useState([0, 0, 0]);
     const [dates, setDates] = useState([[{ mark: 0, day: 0, data: { dot: [], line: [] } }]]);
@@ -18,6 +18,7 @@ function Calendar() {
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
         setToday([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
         document.title = '杜沐安 - 日曆';
+        document.getElementsByTagName('link')[0].href = props.root + '/calendar/shortcut.png';
     }, [])
 
     useEffect(() => {

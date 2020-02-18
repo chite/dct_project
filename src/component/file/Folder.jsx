@@ -9,12 +9,13 @@ import newIcon from '../../resources/fileNew.png';
 // import photoIcon from '../../resources/filePhoto.png';
 import data from '../../json/folder.json';
 
-function Folder() {
+function Folder(props) {
     const [choose, setChoose] = useState(-1);
     const [open, setOpen] = useState(false);
 
     useEffect(()=>{
         document.title = '我的資料夾';
+        document.getElementsByTagName('link')[0].href = props.root + '/folder/folder.png';
     },[])
     function handleClick(index) {
         setChoose(index);

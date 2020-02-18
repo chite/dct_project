@@ -11,6 +11,7 @@ function LineHome({ root, ...props }) {
     const main = useRef(null);
     useEffect(()=>{
         document.title = 'LINE';
+        document.getElementsByTagName('link')[0].href = root + '/line/shortcuticon.png';
     },[])
     useEffect(() => {
         setMessage(json[target].message);

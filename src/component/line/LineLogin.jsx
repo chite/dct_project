@@ -6,6 +6,7 @@ import LineIcon from '../../resources/lineIcon.png';
 function LineLogin(props) {
     useEffect(()=>{
         document.title = 'LINE';
+        document.getElementsByTagName('link')[0].href = props.root + '/line/shortcuticon.png';
     },[])
     function login(){
         props.history.push("/line/home");

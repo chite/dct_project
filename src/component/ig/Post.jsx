@@ -19,6 +19,8 @@ function Post(props) {
 
     useEffect(() => {
         document.title = '杜沐安 • Instagram 相片與影片';
+        document.getElementsByTagName('link')[0].href = props.root + '/ig/shortcuticon.png';
+
         function handleScroll() {
             if (window.pageYOffset) {
                 setMove(true);

@@ -15,6 +15,8 @@ function Home(props) {
     const [logOut, setlogOut] = useState(false);    //顯示登出
     useEffect(() => {
         document.title = '杜沐安 • Instagram 相片與影片';
+        document.getElementsByTagName('link')[0].href = props.root + '/ig/shortcuticon.png';
+
         let state = localStorage.getItem('igState');
         if (!Number(state)) {
             //如果是小帳

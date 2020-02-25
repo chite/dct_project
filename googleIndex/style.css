@@ -1,0 +1,369 @@
+body {
+  font-family: 微軟正黑體;
+  font-size: 13px;
+}
+
+.page {
+  padding-top: 20vh;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 25vh;
+}
+
+.logo {
+  padding-bottom: 15px;
+  max-width: 272px;
+}
+
+.search {
+  width: 45vw;
+  padding: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius:50px;
+  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat;*/
+  /*background-position: 97%;*/
+  background-size: 1.25em;
+  box-shadow:0 1px 6px 0 rgba(32, 33, 36, .28);
+  font-size: 16px;
+  /*font-weight:bold;*/
+  color: #828282;
+  flex-grow:2;
+}
+
+.search:hover {
+  /*border: 1px solid #b9b9b9;*/
+  /*border-top-color: #a0a0a0;*/
+}
+
+.search:focus {
+  outline: none;
+  /*border: 1px solid #4d90fe;*/
+}
+
+.Bcontainer {
+  text-align: center;
+  margin: 0 auto;
+  width: 270px;
+  padding-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  /*background: #f2f2f2;*/
+  /*padding: 8px 12px;*/
+  /*font-weight: 700;*/
+  /*font-size: 13px;*/
+  /*border: 1px solid #f2f2f2;*/
+  /*border-radius: 2px;*/
+  /*color: #757575;*/
+  /*font-family: arial, sans-serif;*/
+}
+
+.button:hover {
+  border: 1px solid #c6c6c6;
+  color: #222;
+  cursor: default;
+}
+
+#fakebox-container {
+  display: block;
+  margin: 0 auto 0 auto;
+  min-width: 410px;
+  width: var(--content-width);
+  --searchbox-height: 44px;
+  flex-shrink: 0;
+}
+
+#fakebox {
+  display: block;
+  cursor: text;
+  margin: 0 auto;
+  max-width: 584px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  background: white;
+  border-radius: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: var(--searchbox-height);
+  opacity: 1;
+  position: relative;
+  transition: none;
+}
+
+.searching {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #828282;
+  /*font-weight:bold;*/
+}
+
+.searching:focus {
+  outline: none;
+}
+
+#fakebox-cursor {
+    display: block;
+    background: #333;
+    bottom: 14px;
+    left: 48px;
+    position: absolute;
+    top: 14px;
+    visibility: hidden;
+    width: 1px;
+}
+
+.microphone{
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat center;
+  background-size: 21px 21px;
+  bottom: 0;
+  cursor: pointer;
+  margin-inline-end: 16px;
+  padding: 22px 11px 0;
+  position: absolute;
+  right: 16;
+  top: 0;
+  width: 21px;
+  border: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.left {
+  float: left;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+  flex-direction: row-reverse ;
+}
+.nav > li > a {
+  padding: 0;
+  color: #000;
+  opacity: 1;
+}
+
+.nav > li > .colorfix {
+  opacity: 1;
+}
+
+.nav>li>a:hover,
+.nav>li>a:visited,
+.nav>li>a:focus {
+  background-color: white;
+  text-decoration: underline;
+}
+
+.nav-pills {
+  margin: 15px 5px;
+}
+
+.nav li {
+  float: right;
+  margin-right: 15px;
+}
+
+.firstsbuttons {
+  margin-top: 4.5px;
+}
+
+.btn,
+.btn:active {
+  color: white;
+  font-weight: 700;
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+  padding: 4px 10.5px;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover,
+.btn:visited,
+.btn:active {
+  color: white;
+  cursor: default;
+}
+
+
+.nav>li>a>div{
+  padding: 0px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.nav>li>a>div:hover {
+  opacity: 1;
+  cursor: default;
+  background-color: rgba(181, 181, 181, 0.16);
+}
+
+footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  max-height: 40px;
+  width: 100%;
+  padding: 15px 20px 5px 10px;
+  margin-bottom: 0;
+  clear: both;
+  position:absolute;
+  bottom:0;
+}
+
+.bottomone {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.bottomone li a {
+  color: #666;
+  letter-spacing: 0.2px;
+}
+
+.bottomone li {
+  margin-right: 27px;
+  list-style-type: none;
+}
+
+.leftone {
+  float: left;
+}
+
+.rightone {
+  float: right;
+  padding-right: 0;
+}
+
+.app {
+  position:absolute;
+  right:30;
+  background: white;
+  border-radius: 10px;
+  float: right;
+  box-sizing: border-box;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  width: 340px;
+  height: 468px;
+  padding: 17px 0 20px 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  z-index: 100;
+  display: none;
+}
+
+.appImage {
+    display: inline-block;
+    justify-content: space-between;
+  box-sizing: content-box;
+  width: 307px;
+  margin: 0;
+    padding: 10px 7px 10px 7px;
+}
+
+.apps{
+  text-align: center;
+  list-style: none;
+  /*padding: 10px 7px 10px 7px;*/
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  transition: transform .2s cubic-bezier(.333,0,0,1);
+  vertical-align: top;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 5;
+  margin-bottom: 5;
+}
+
+.apps.searchapp{
+  background:url(Search_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.YT{
+  background:url(YouTube_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.map{
+  background:url(Maps_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.cloud{
+  background:url(Drive_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.play{
+  background:url(Play_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.contact{
+  background:url(Contacts_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.mail{
+  background:url(Gmail_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.calender{
+  background:url(Calendar_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps.photo{
+  background:url(Photos_icon.png);
+  background-repeat:no-repeat;
+  background-position: 12.5px 12.5px;
+  background-size: 75px 75px;
+}
+
+.apps:hover {
+  /*opacity: 1;*/
+  cursor: default;
+  background-color: rgba(196, 211, 238, 0.17);
+  /*padding: 1px 7px 1px 7px;*/
+}
+
+.search-icon {
+  -webkit-mask-size: 20px;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  left: 16px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background:url(搜尋框.png);
+  background-repeat:no-repeat;
+  background-position: 1px 15px;
+  background-size: 14px 14px;
+}

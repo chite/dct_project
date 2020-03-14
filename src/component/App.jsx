@@ -8,8 +8,8 @@ import LineHome from './line/LineHome';
 import Calendar from './calendar/Calendar';
 import Folder from './file/Folder';
 
-const url = 'https://raw.githubusercontent.com/chite/dct_project/master/ig/assets/';
-// const url = 'http://localhost:9000/ig/assets'
+// const url = 'https://raw.githubusercontent.com/chite/dct_project/master/ig/assets/';
+const url = 'http://localhost:9000/ig/assets/'
 
 class App extends Component {
     render() {

@@ -70,7 +70,7 @@ function Home(props) {
                 <div className="d-flex justify-content-between align-items-start pt-5">
                     <div className="self-photo" >
                         <div className="photo-container mx-auto">
-                            <div className="photo" style={{ 'backgroundImage': 'url(' + selfPt + ')' }}></div>
+                            <div className="photo" style={{ 'backgroundImage': 'url(' + props.root + data.userProfilePt[igState] + ')' }}></div>
                         </div>
                     </div>
                     <div className="document">
@@ -96,7 +96,7 @@ function Home(props) {
                 <div className="ml-3 mt-3 d-sm-none pre-line">
                     <p>{data.userIntro[igState].introduction}</p>
                 </div>
-                <div className="history w-100">
+                {/* <div className="history w-100">
                     <div className="history-container">
                         <div className="photo-container">
                             <div className="bg history-photo" style={{ 'backgroundImage': 'url(' + selfPt + ')' }}></div>
@@ -115,7 +115,7 @@ function Home(props) {
                         </div>
                         <h6>AAAAAAAAAAAAAAAA</h6>
                     </div>
-                </div>
+                </div> */}
                 <div className="s-follow flex-direction-row justify-content-around d-flex d-sm-none">
                     <h6 className="text-center"><span>{data['post' + igState].length}</span><br />貼文</h6>
                     <h6 className="ml-4 text-center"><span>{data.userIntro[igState].followers}</span><br />位追蹤者</h6>

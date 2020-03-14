@@ -11,7 +11,9 @@
 2. 日曆：<https://chite.github.io/dct_project/ig/index.html#/calendar> 
 3. Line：<https://chite.github.io/dct_project/ig/index.html#/line> 
 4. 資料夾：<https://chite.github.io/dct_project/ig/index.html#/folder> 
-
+5. Google首頁：<https://chite.github.io/dct_project/googleIndex/googleIndex.html>
+6. FB個人頁：<https://chite.github.io/dct_project/fb/fbIndex.html>
+7. FB動態消息：<https://chite.github.io/dct_project/fb/main.html>
 
 
 ## 下載Git

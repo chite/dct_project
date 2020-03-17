@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google 地圖</title>
+    <link rel=stylesheet type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body style="overflow: hidden;margin: 0" class="allPage" id="allPage">
+
+<div class="map">
+<img id="myimage" src="place/商院2.png" alt="my image" style="width: 2880px;position: relative;left: 50%;top: 50%;-webkit-transform: translateY(-50%) translateX(-50%);"/>
+<!--<img id="pic" src="place/商院2.png" onmousewheel="return zoomPic('pic');" alt="用滑鼠滾輪來縮放圖片">-->
+</div>
+
+<div class="beginLeft">
+    <div class="inputContainer">
+        <div class="input">
+            <button class="items" id="items"></button>
+            <button class="wayIcon"></button>
+            <button class="searchIcon"></button>
+
+            <input class="searching" title="Search" type="text" value="搜尋 Google 地圖" onfocus="if(value=='搜尋 Google 地圖')value=''" onblur="if(!value)value='搜尋 Google 地圖'">
+        </div>
+
+    </div>
+
+    <div class="infoContainer">
+        <div class="info">
+            <img class="infoIcon" src="icon/house.png">
+            <div style="padding-left: 1vw;text-align: left">
+                <span style="font-size: 17px"><b>住家</b></span><br>
+                <span style="font-size: 13px; color: gray"> <b>設定位置資訊</b></span>
+            </div>
+        </div>
+        <hr style="width:90%;align: center;border: 0.5px solid #e4e4e4;margin-top: 0;margin-bottom: 0;">
+        <div class="info">
+            <img class="infoIcon" src="icon/work.png">
+            <div style="padding-left: 1vw;text-align: left">
+                <span style="font-size: 17px"><b>公司</b></span><br>
+                <span style="font-size: 13px; color: gray"> <b>設定位置資訊</b></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="noContainer">
+        <span style="padding-left: 2vw;font-size: 13px; color: #b4b4b4"><i><b>沒有可顯示的路況資訊</b></i></span>
+    </div>
+
+    <div class="TaipeiContainer">
+        <div class="weather" >
+            <span style="font-size: 15px"><b>台北市</b></span>
+            <img src="icon/cloud.jpg" class="cloud">
+            <span class="temp">24°</span>
+        </div>
+        <div class="find">
+            <img class="findBtn" src="icon/restaurant.png">
+            <img class="findBtn" src="icon/hotel.png">
+            <img class="findBtn" src="icon/bar.png">
+            <img class="findBtn" src="icon/coffee.png">
+            <img class="findBtn" src="icon/all.png">
+        </div>
+    </div>
+
+</div>
+
+<div class="satellite"></div>
+
+<div class="human">
+    <img src="icon/people.png" style="width: 2vw;height: 2vw;border-right: 0.5px solid #f4f4f4;padding: 0 1px 0 1px;">
+    <img src="icon/left.png" style="width: 2vw;height: 2vw">
+    <img src="icon/middle.png" style="width: 2vw;height: 2vw;margin-left: -7px">
+    <img src="icon/right.png" style="width: 2vw;height: 2vw;margin-left: -7px">
+    <img src="icon/雙箭頭.png" style="width: 2vw;height: 2vw;float: right;opacity: 0.8">
+</div>
+
+<div class="zoom">
+    <img src="icon/加號.png" style="width: 1.5vw;height: 1.5vw;padding:0.2vw 0.2vw 0.3vw 0.2vw;border-bottom: 1px solid #d7d7d7;opacity: 0.8">
+    <img src="icon/減號.png" style="width: 1.75vw;height: 1.75vw;">
+</div>
+
+<div class="where">
+    <img src="icon/座標.png" style="width: 1.75vw;height: 1.75vw;">
+</div>
+
+<div id="layer" class="layer" onclick="listBack()"></div>
+
+<div class="itemsLeft" id="itemsLeft">
+
+    <ul style="padding: 0">
+        <li class="itemsList">
+            <img src="icon/logo.png" style="width: 6vw; padding-left: 0.5vw">
+            <img class="listBack" src="icon/listBack.png" onclick="listBack()">
+        </li>
+        <hr style="margin-top: 8px;margin-bottom: 4px; border: 0.5px solid lightgray">
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/map b.png">
+            <span class="itemsTitle" style="color: dodgerblue"><b>地圖</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Satellite g.png">
+            <span class="itemsTitle"><b>衛星</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Terrain g.png">
+            <span class="itemsTitle"><b>地形</b></span>
+        </li>
+        <hr style="margin-top: 4px;margin-bottom: 4px; border: 0.5px solid lightgray">
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Globe g.png">
+            <span class="itemsTitle"><b>地球</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Traffic g.png">
+            <span class="itemsTitle"><b>路況</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Transit g.png">
+            <span class="itemsTitle"><b>大眾運輸</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/bicycling.png">
+            <span class="itemsTitle"><b>單車路線</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Street View g.png">
+            <span class="itemsTitle"><b>街景</b></span>
+        </li>
+        <hr style="margin-top: 4px;margin-bottom: 4px; border: 0.5px solid lightgray">
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/bell g.png">
+            <span class="itemsTitle"><b>通知</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Location g.png">
+            <span class="itemsTitle"><b>位置資訊分享</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Your Places g.png">
+            <span class="itemsTitle"><b>你的位置</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/contributions g.png">
+            <span class="itemsTitle"><b>你的貢獻</b></span>
+        </li>
+        <li id="timeline" class="itemsList" onmouseover="timelineOn()" onmouseout="timelineOff()">
+            <img id="tlImage" class="itemsBtn" src="icon/Time line g.png">
+            <span id="tlTitle" class="itemsTitle"><b>你的時間軸</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/share g.png">
+            <span class="itemsTitle"><b>分享或嵌入地圖</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/print g.png">
+            <span class="itemsTitle"><b>列印</b></span>
+        </li>
+        <li class="itemsList">
+            <img class="itemsBtn" src="icon/Your Data g.png">
+            <span class="itemsTitle"><b>你在Google地圖中的資料</b></span>
+        </li>
+        <hr style="margin-top: 4px;margin-bottom: 4px; border: 0.5px solid lightgray">
+        <li class="itemsList">
+            <span class="otherTitle"><b>開始導覽</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>語言</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>提示和秘訣</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>取得說明</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>消費者資訊</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>新增遺漏的地點</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>加入你的商家</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>提供意見</b></span>
+        </li>
+        <hr style="margin-top: 4px;margin-bottom: 4px; border: 0.5px solid lightgray">
+        <li class="itemsList">
+            <span class="otherTitle"><b>搜尋設定</b></span>
+        </li>
+        <li class="itemsList">
+            <span class="otherTitle"><b>地圖活動</b></span>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+
+<script>
+
+
+    // let itemsLeft = document.getElementById("itemsLeft");
+    // let layer = document.getElementById("layer");
+    // function test(){
+    //     itemsLeft.style.left = 0;
+    //     layer.style.visibility = "visible";
+    // }
+
+    let tlImage = document.getElementById("tlImage");
+    let tlTitle = document.getElementById("tlTitle");
+    function timelineOn(){
+        tlImage.src = "icon/Time Line b.png";
+        tlTitle.style.color = "dodgerblue";
+    }
+    function timelineOff(){
+        tlImage.src = "icon/Time Line g.png";
+        tlTitle.style.color = "#4d4d4d";
+    }
+
+   let myimage = document.getElementById("myimage");
+
+   if (myimage.addEventListener) {
+       // IE9, Chrome, Safari, Opera
+       myimage.addEventListener("mousewheel", MouseWheelHandler, false);
+       // Firefox
+       myimage.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+   }
+   // IE 6/7/8
+   else myimage.attachEvent("onmousewheel", MouseWheelHandler);
+
+   let originW = myimage.width;
+   let nowScale = 2;
+   // console.log(myimage.width);
+
+   function MouseWheelHandler(e) {
+   // cross-browser wheel delta
+       var e = window.event || e; // old IE support
+       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+       // var t = originW*0.05*delta;
+       myimage.style.width = Math.max(1048, Math.min(originW,  myimage.width + (100 * delta))) + "px";
+
+       if(nowScale == 2 && myimage.width <= 1048){
+           myimage.src = "place/商院1.png";
+           myimage.style.width = "2880px";
+           nowScale = 1;
+       }else if(nowScale == 2 && myimage.width >= 2880){
+          myimage.src = "place/商院3.png";
+           myimage.style.width = "1048px";
+           nowScale = 3;
+       }else if(nowScale == 3 && myimage.width <= 1048){
+           myimage.src = "place/商院2.png";
+           myimage.style.width = "2880px";
+           nowScale = 2;
+       }else if(nowScale == 1 && myimage.width >= 2880){
+          myimage.src = "place/商院2.png";
+           myimage.style.width = "1048px";
+           nowScale = 2;
+       }
+
+       console.log(myimage.width);
+       return false;
+   }
+
+    // 	//預設原圖大小為100%
+	// var percent = 100;
+	// //縮放圖片用，參數obj為欲被縮放的圖片id
+	// function zoomPic(obj){
+	// 	//判斷滾輪是往上滾則加10%
+	// 	if (event.wheelDelta >= 100)	percent +=5;
+	// 	//若是往下滾則減10%，但最小是10%
+	// 	else if (event.wheelDelta <= -100  && percent >5)	percent -=5;
+	// 	//縮放圖片用zoom
+	// 	document.getElementById(obj).style.zoom = percent + "%";
+	// 	//顯示目前是幾%用的
+	// 	document.getElementById("perc").innerText = percent + "%";
+	// 	//回傳false好讓頁面不會跟著滾輪上下滾
+	// 	return false;
+	// }
+
+    let allPage = document.getElementById('allPage');
+    let itemsLeft = document.getElementById('itemsLeft');
+    let items = document.getElementById('items');
+    let layer = document.getElementById("layer");
+
+    function listBack() {
+        let listStyle = window.getComputedStyle(itemsLeft).getPropertyValue('left').replace('px','');
+        if(listStyle > -1) {
+                layer.style.visibility = 'hidden';
+                itemsLeft.style.left = '-30vw';
+
+        }
+    }
+
+    items.onclick = function() {
+        let listStyle = window.getComputedStyle(itemsLeft).getPropertyValue('left').replace('px','');
+
+        itemsLeft.style.left = '0';
+        layer.style.visibility = 'visible';
+
+        console.log(listStyle);
+    }
+
+
+
+
+
+</script>

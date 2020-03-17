@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 11pt;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    background-color: black;
+    background-image: url("https://media.giphy.com/media/e5rHVwosWkEbS/giphy.gif");
+    /*https://media.giphy.com/media/1lvotGQwhzi6O0gQtV/giphy.gif      010101*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.error {
+    margin: auto;
+}
+
+.error p {
+    font-size: 4rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.blink {
+    -webkit-animation: blink 1s steps(1, start) infinite alternate;
+    animation: blink 1s steps(1, start) infinite alternate;
+}

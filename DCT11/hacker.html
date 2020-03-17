@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <script type="text/javascript" src="hacker.js"></script>
+    <link rel="stylesheet" type="text/css" href="hacker.css" />
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d"); //全屏c.height = window.innerHeight;c.width = window.innerWidth;//文字var txts = "0123456789";//轉為陣列txts = txts.split("");var font_size = 16;var columns = c.width/font_size; //用於計算輸出文字時座標,所以長度即為列數var drops = [];//初始值for(var x = 0; x < columns; x++) drops[x] = 1; //輸出文字function draw(){ //讓背景逐漸由透明到不透明 ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; ctx.fillRect(0, 0, c.width, c.height); ctx.fillStyle = "#0F0"; //文字顏色 ctx.font = font_size + "px arial"; //逐行輸出文字 for(var i = 0; i < drops.length; i++) { //隨機取要輸出的文字 var text = txts[Math.floor(Math.random()*txts.length)]; //輸出文字,注意座標的計算 ctx.fillText(text, i*font_size, drops[i]*font_size); //如果繪滿一屏或隨機數大於0.95(此數可自行調整,效果會不同) if(drops[i]*font_size > c.height || Math.random() > 0.95) drops[i] = 0; //用於Y軸座標增加 drops[i]++; }}setInterval(draw, 33);
+  </script>
+  <body>
+    <p class="date">Last login:<span>on ttys000</span></p>
+    <p id="passwordTag"></p>
+    <div class="commands"></div>
+  </body>
+</html>

@@ -259,7 +259,7 @@
             {
                 "type": "image",
                 "direction": 0,
-                "context": "/line/03.png"
+                "context": "/line/33.png"
             },
             {
                 "type": "text",
@@ -809,7 +809,7 @@
             {
                 "type": "image",
                 "direction": 0,
-                "context": "ff44aa5.jpg"
+                "context": "line/christmas.jpg"
             },
             {
                 "type": "text",
@@ -834,7 +834,7 @@
             {
                 "type": "image",
                 "direction": 0,
-                "context": "ff44aa5.jpg"
+                "context": "line/firelight.jpg"
             },
             {
                 "type": "text",
@@ -950,7 +950,7 @@
     },
     {
         "name": "閨蜜",
-        "image": "ff44aa5.jpg",
+        "image": "line/friend.png",
         "lastTime" : "PM 3:01",
         "message": [
             {
@@ -1616,7 +1616,7 @@
             {
                 "type": "image",
                 "direction": 0,
-                "context": "ff44aa5.jpg"
+                "context": "line/fun.jpg"
             },
             {
                 "type": "text",
@@ -1831,7 +1831,7 @@
             {
                 "type": "image",
                 "direction": 1,
-                "context": "ff44aa5.jpg"
+                "context": "line/love.jpg"
             },
             {
                 "type": "text",

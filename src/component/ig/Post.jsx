@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
 import igSelfie from '../../resources/igSelfie.jpg';
 import igSelfie2 from '../../resources/igSelfie2.jpg';
-// import igPhoto from '../../resources/igPost.JPG';
+import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import data from '../../json/ig.json';
 
@@ -58,7 +58,7 @@ function Post(props) {
                                     <nav className="post-bar p-3">
                                         <div className="d-flex justify-content-between w-100">
                                             <div className="d-flex justify-content-between">
-                                                <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie2 + ')' }}></div>
+                                                <div className="image" style={{ 'backgroundImage': 'url(' + props.root + data.userProfilePt[igState] + ')' }}></div>
                                                 <div className="ml-3 d-flex align-items-center">
                                                     <h6>{data.userAccount[igState]}</h6>
                                                     {/* <h6>{val.title}</h6> */}
@@ -116,7 +116,7 @@ function Post(props) {
                     </div>
                     <div className={(moveState ? "moving " : "") + "side-part d-none d-sm-block col-sm-4"}>
                         <div className="user d-flex align-items-center" onClick={() => props.history.push('/ig/home')}>
-                            <div className="image" style={{ 'backgroundImage': 'url(' + igSelfie + ')' }}></div>
+                            <div className="image" style={{ 'backgroundImage': 'url(' + props.root + data.userProfilePt[igState] + ')' }}></div>
                             <div className="ml-2">
                                 <h6>{data.userAccount[igState]}</h6>
                                 <p>杜沐安</p>

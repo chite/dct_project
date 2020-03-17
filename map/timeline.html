@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google 地圖</title>
+    <link rel=stylesheet type="text/css" href="tlStyle.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body style="overflow: hidden;margin: 0" class="allPage" id="allPage">
+
+<div class="map">
+<img id="myimage" name="商院" src="place/商院2.png" alt="my image" style="width: 2880px;position: relative;left: 50%;top: 50%;-webkit-transform: translateY(-50%) translateX(-50%);"/>
+<!--<img id="pic" src="place/商院2.png" onmousewheel="return zoomPic('pic');" alt="用滑鼠滾輪來縮放圖片">-->
+</div>
+
+<div class="beginRight">
+    <img class="list" id="appBtn" src="icon/list.png">
+    <img class="id" src="icon/list.png">
+</div>
+
+<div id="app" class="app">
+
+      <ul class="appImage">
+        <li class="apps searchapp">
+        </li>
+        <li class="apps YT">
+        </li>
+        <li class="apps Map">
+        </li>
+        <li class="apps cloud">
+        </li>
+        <li class="apps play">
+        </li>
+        <li class="apps contact">
+        </li>
+        <li class="apps mail">
+        </li>
+        <li class="apps calender">
+        </li>
+        <li class="apps photo">
+        </li>
+      </ul>
+
+  </div>
+
+<div class="beginLeft">
+    <div class="titleContainer">
+        <img class="titleIcon" src="icon/googleMap.png">
+        <span class="title">時間軸</span>
+        <img class="lock" src="icon/lock.png">
+        <button class="today">今天</button>
+    </div>
+    <div class="date">
+        <div class="choose">
+            <span class="year">年</span>
+            <img class="dropdown" src="icon/dropdown.png">
+        </div>
+         <div class="choose">
+            <span class="month">月</span>
+            <img class="dropdown" src="icon/dropdown.png">
+        </div>
+         <div class="choose" style="border: none">
+            <span class="day">日</span>
+            <img class="dropdown" src="icon/dropdown.png">
+        </div>
+        <div class="timelineBtn">
+            <img class="timelineImg" src="icon/timeline.png">
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+        <div class="time"></div>
+    </div>
+
+</div>
+
+<div class="see">
+    <button class="mapSee">地圖</button>
+    <button class="satelliteSee">衛星檢視</button>
+</div>
+
+<div class="setIcon">
+    <img class="icons" src="icon/delete.png">
+    <img class="icons" src="icon/question.png">
+    <img class="icons" src="icon/setting.png">
+</div>
+
+<div class="zoom">
+    <img src="icon/加號.png" style="width: 2vw;height: 2vw;padding:0.25vw 0.25vw 0.25vw 0.25vw;border-bottom: 1px solid #e8e8e8;opacity: 0.8">
+    <img src="icon/減號.png" style="width: 2.5vw;height: 2.5vw;">
+</div>
+
+<div class="beginBottom">
+    <div class="oftenGoContainer">
+        <div class="oftenGoContent" onclick="often()">
+                <span class="oftenGoTitle">35 個地點</span>
+                <br>
+                <span class="oftenGoInfo">查看你最常造訪的地點以及你去過的所有地點(資料來源為你的定位紀錄)</span>
+        </div>
+    </div>
+    <div class="goTaipeiContainer">
+        <div class="goTaipeiContent">
+            <span class="goTaipeiTitle">台北市</span>
+            <br>
+            <span class="goTaipeiInfo">2020年</span>
+            <span class="goTaipeiMore">更多旅遊足跡</span>
+        </div>
+        <div class="goTaipeiImg">
+        </div>
+    </div>
+    <div class="recordContainer">
+        <div class="recordContent">
+            <span class="recordTitle">定位記錄功能已開啟</span>
+            <br>
+            <span class="recordInfo">你的行動裝置會回報你的位置資訊，而且這類資訊只有你自己看得到。</span>
+
+            <button class="recordBtn">管理定位記錄</button>
+        </div>
+    </div>
+        <div class="addressContainer">
+        <div class="addressContent">
+            <span class="addressTitle">住家和公司地址</span>
+        </div>
+        <div class="addressContent">
+            <img class="addressIcon" src="icon/addressHome.png">
+            <div class="addressInfo">
+                <span class="addressAdd">新增你的住家地址</span>
+            </div>
+        </div>
+        <div class="addressContent">
+            <img class="addressIcon" src="icon/addressWork.png">
+            <div class="addressInfo">
+                <span class="addressAdd">新增你的公司地址</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="placeBottom" class="placeBottom">
+    <div class="wentContainer">
+        <div class="wentContent">
+            <div style="display: inline-block">
+                <button class="placeBack" onclick="oftenBack()"></button>
+            </div>
+            <div style="display: inline-block">
+                <div class="wentTitle">
+                    <span>35 個地點</span>
+                </div>
+                <div  class="wentInfo">
+                    <span>最常造訪的地點</span>
+                </div>
+                <div class="otherInfo">
+                    <span>已造訪</span>
+                    <hr>
+                    <span>72個地點未確認</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="placeContainer" class="placeContainer">
+        <div class="places">
+            <div class="onePlace" onclick="setImg('家')">
+                <span class="placeNumber">1</span>
+                <img class="placePhoto" src="icon/home icon.png">
+                <div>
+                    <span class="placeInfo">家</span>
+                    <span class="placeInfo">2020年3月18日與另外200天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" >
+                <span class="placeNumber">2</span>
+                <img class="placePhoto" src="icon/Company icon.png">
+                <div>
+                    <span class="placeInfo">公司</span>
+                    <span class="placeInfo">2020年3月18日與另外200天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" onclick="setImg('媽媽家')">
+                <span class="placeNumber" >3</span>
+                <img class="placePhoto" src="icon/Mom's Home icon.png">
+                <div>
+                    <span class="placeInfo">老家</span>
+                    <span class="placeInfo">2020年3月18日與另外200天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+        </div>
+        <div class="places">
+            <div class="onePlace" onclick="setImg('商院')">
+                <span class="placeNumber">4</span>
+                <img class="placePhoto" src="icon/School icon.png">
+                <div>
+                    <span class="placeInfo">臺灣國立政治大學</span>
+                    <span class="placeInfo">2020年</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" onclick="setImg('舊公司')">
+                <span class="placeNumber">5</span>
+                <img class="placePhoto" src="icon/Company2 icon.png">
+                <div>
+                    <span class="placeInfo">舊公司</span>
+                    <span class="placeInfo">2008年3月18日與另外200天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" onclick="setImg('墳墓')">
+                <span class="placeNumber">6</span>
+                <img class="placePhoto" src="icon/Tomb icon.png">
+                <div>
+                    <span class="placeInfo">墓</span>
+                    <span class="placeInfo">2020年3月18日與另外10天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+        </div>
+        <div class="places">
+            <div class="onePlace" >
+                <span class="placeNumber">7</span>
+                <img class="placePhoto" src="icon/icon 1.png">
+                <div>
+                    <span class="placeInfo">土城看守所</span>
+                    <span class="placeInfo">2020年</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" onclick="setImg('樂園')">
+                <span class="placeNumber">8</span>
+                <img class="placePhoto" src="icon/Heart1 icon.png">
+                <div>
+                    <span class="placeInfo">不重要的場所</span>
+                    <span class="placeInfo">2020年3月18日與另外20天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+            <div class="onePlace" onclick="setImg('約會')">
+                <span class="placeNumber">9</span>
+                <img class="placePhoto" src="icon/Heart2 icon.png">
+                <div>
+                    <span class="placeInfo">不重要的地方</span>
+                    <span class="placeInfo">2020年3月18日與另外200天</span>
+                </div>
+                <img class="placeMore" src="icon/placeMore.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+
+
+    let myimage = document.getElementById("myimage");
+    let originW = myimage.width;
+    let nowScale = 2;
+
+    function setImg(place){
+        if(myimage.name != place) {
+            myimage.src = "place/" + place + "2.png";
+            myimage.name = place;
+            nowScale = 2;
+        }
+    }
+
+    if (myimage.addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        myimage.addEventListener("mousewheel", MouseWheelHandler, false);
+        // Firefox
+        myimage.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+    }
+    // IE 6/7/8
+    else myimage.attachEvent("onmousewheel", MouseWheelHandler);
+
+    function MouseWheelHandler(e) {
+    // cross-browser wheel delta
+        var e = window.event || e; // old IE support
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        // var t = originW*0.05*delta;
+        myimage.style.width = Math.max(1300, Math.min(originW,  myimage.width + (100 * delta))) + "px";
+
+        let nowImg = myimage.name;
+
+        if(nowScale == 2 && myimage.width <= 1300){
+            myimage.src = "place/" + nowImg +"1.png";
+            myimage.style.width = "2880px";
+            nowScale = 1;
+        }else if(nowScale == 2 && myimage.width >= 2880){
+           myimage.src = "place/" + nowImg +  "3.png";
+            myimage.style.width = "1300px";
+            nowScale = 3;
+        }else if(nowScale == 3 && myimage.width <= 1300){
+            myimage.src = "place/" + nowImg + "2.png";
+            myimage.style.width = "2880px";
+            nowScale = 2;
+        }else if(nowScale == 1 && myimage.width >= 2880){
+           myimage.src = "place/" + nowImg + "2.png";
+            myimage.style.width = "1300px";
+            nowScale = 2;
+        }
+
+        console.log(myimage.name);
+        return false;
+    }
+
+    let placeBottom = document.getElementById('placeBottom');
+    let placeContainer = document.getElementById('placeContainer');
+    function often(){
+        // console.log('test');
+        placeBottom.style.visibility = 'visible';
+        placeContainer.style.transition = '0.6s';
+        placeContainer.style.right = '0vw';
+    }
+    function oftenBack(){
+        placeBottom.style.visibility = 'hidden';
+         placeContainer.style.transition = '0s';
+        placeContainer.style.right = '-81vw';
+    }
+
+
+    let allPage = document.querySelector('#allPage');
+    let app = document.querySelector('#app');
+    let appBtn = document.querySelector('#appBtn');
+
+    appBtn.onclick = function() {
+      let appStyle = window.getComputedStyle(app).getPropertyValue('display');
+      if (appStyle === 'none') {
+        app.style.display = 'inline-block';
+
+      } else {
+        app.style.display = 'none';
+      }
+    }
+
+    $(document).mouseup(function (e) {
+
+        if(app.style.display !== 'none') {
+
+            let container = $("#app");
+            let btn = $("#appBtn");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0 && !btn.is(e.target)) {
+                container.hide();
+            }
+        }
+    });
+
+
+
+
+</script>

@@ -1,0 +1,687 @@
+body {
+  font-family: 微軟正黑體;
+  /*font-size: 13px;*/
+}
+
+.map{
+    width: 100vw;
+    height: 100vh;
+    /*display: inline-block;*/
+    overflow: hidden;
+    float:right
+}
+
+.beginRight{
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    display:flex;
+    align-items:center;
+}
+
+.list{
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    padding-right: 1.5vw;
+}
+
+.id{
+    width: 4.5vh;
+    height: 4.5vh;
+    border-radius: 50px;
+    cursor: pointer;
+    background: gray;
+}
+
+.app {
+  position:absolute;
+  right:2vw;
+    top:10vh;
+  background: white;
+  border-radius: 10px;
+  float: right;
+  box-sizing: border-box;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  width: 22.5vw;
+  height: 70vh;
+  padding: 1vh 1vh 1vh 1vh;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  z-index: 150;
+  display: none;
+}
+
+.appImage {
+    display: inline-block;
+    justify-content: space-between;
+  box-sizing: content-box;
+  width: 22.5vw;
+  margin: 0;
+    padding: 10px 7px 10px 7px;
+}
+
+.apps{
+  text-align: center;
+  list-style: none;
+  /*padding: 10px 7px 10px 7px;*/
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  transition: transform .2s cubic-bezier(.333,0,0,1);
+  vertical-align: top;
+  height: 6.5vw;
+  width: 6.5vw;
+  border-radius: 10px;
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+}
+
+.apps.searchapp{
+  background:url(icon/Search_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.YT{
+  background:url(icon/YouTube_icon.png);
+  background-repeat:no-repeat;
+   background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.Map{
+  background:url(icon/Maps_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.cloud{
+  background:url(icon/Drive_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.play{
+  background:url(icon/Play_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.contact{
+  background:url(icon/Contacts_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.mail{
+  background:url(icon/Gmail_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.calender{
+  background:url(icon/Calendar_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.photo{
+  background:url(icon/Photos_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps:hover {
+  /*opacity: 1;*/
+  cursor: default;
+  background-color: rgba(196, 211, 238, 0.17);
+  /*padding: 1px 7px 1px 7px;*/
+}
+
+.beginLeft{
+    z-index: 10;
+    width: 37.5vw;
+    height: 29.5vh;
+    margin: 0;
+    float: left;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    background: #ffffff;
+    /*display: inline-block;*/
+}
+
+.titleContainer{
+    background: white;
+    width: 36.5vw;
+    height: 7.5vh;
+    padding: 1vh;
+    display:flex;
+    align-items:center;
+    border-bottom: 0.5px solid lightgray;
+}
+
+.titleIcon{
+    width: 3.5vh;
+    height: 3.5vh;
+    padding: 3vh;
+}
+
+.title{
+    font-size: 18px;
+}
+
+.lock{
+    width: 2.25vh;
+    height: 2.25vh;
+    padding: 2vh;
+}
+
+.today{
+    width: 9vh;
+    height: 5.5vh;
+    font-size: 12.5px;
+    color: gray;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 1vh;
+}
+
+.today:hover{
+    background: #ececec;
+}
+
+.date{
+    background: #eeeeee;
+    width: 36.5vw;
+    height: 5vh;
+    padding: 1vh;
+    display:flex;
+    align-items:center;
+    border-bottom: 0.5px solid lightgray;
+}
+
+.choose{
+    height: 4vh;
+    /*border-right: 0.5px solid lightgray;*/
+    padding: 1vh 0vw 1vh 1.25vw;
+}
+.choose:hover{
+    background: #f8f8f8;
+}
+
+.choose:after{
+    content: ""; /* This is necessary for the pseudo element to work. */
+    margin: 0 auto; /* This will center the border. */
+    height: 80%; /* Change this to whatever width you want. */
+    padding-left: 2vh;
+    border-right: 1px solid lightgray; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.year{
+    font-size: 12px;
+    color: gray;
+    padding-right: 2vw;
+}
+
+.dropdown{
+    width: 1.75vh;
+}
+
+.month{
+    font-size: 12px;
+    color: gray;
+    padding-right: 4.5vw;
+}
+
+.day{
+    font-size: 12px;
+    color: gray;
+    padding-right: 3.5vw;
+}
+
+.timelineBtn{
+    width: 5vw;
+    height: 5vh;
+    padding: 1vh 0 1vh 0;
+    position: absolute;
+    right: 0;
+    display:flex;
+    align-items:center;
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    background: white;
+}
+
+.timelineImg{
+    margin: auto;
+    width: 1.75vw;
+    height: 1.75vw;
+    opacity: 0.8;
+}
+.timelineBtn:hover > .timelineImg{
+    opacity: 1;
+}
+
+.timeline{
+    width: 36.5vw;
+    height: 9vh;
+    padding: 1vh 1vh 2vh 1vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.time{
+    width:0.75vw;
+    height:0.4vh;
+    margin: 0.2vh;
+    background: #c2c2c2;
+    display: inline-block;
+}
+
+.time:hover{
+    border: 0.5px solid gray;
+}
+
+.see{
+    z-index: 10;
+    position: absolute;
+    right:1vw;
+    bottom: 26vh;
+    width: 12vw;
+    height: 6vh;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+}
+
+.mapSee{
+    width: 40%;
+    height: 6vh;
+    border: none;
+    border-right: 1px solid #ececec;
+    display: inline-block;
+    background: #ffffff;
+    font-size: 15px;
+}
+
+.satelliteSee{
+    width: 60%;
+    height: 6vh;
+    border: none;
+    display: inline-block;
+    background: #ffffff;
+    font-size: 15px;
+}
+
+.mapSee:hover{
+    background: #eeeeee;
+}
+
+.satelliteSee:hover{
+    background: #eeeeee;
+}
+
+.setIcon{
+    position: absolute;
+    right: 15vw;
+    bottom: 26vh;
+}
+
+.icons{
+    width: 3.5vh;
+    height: 3.5vh;
+    padding-left: 1vh;
+    cursor: pointer;
+}
+
+.zoom{
+    z-index: 10;
+    width: 2.5vw;
+    height: 5vw;
+    margin: 0;
+    padding: 1px;
+    box-shadow: 0px 0px 5px #9f9f9f;
+    position: absolute;
+    right: 1vw;
+    bottom: 35vh;
+    background: #ffffff;
+    border: 2px solid white;
+}
+
+.beginBottom{
+    z-index: 10;
+    width: 100vw;
+    height: 22vh;
+    padding: 1vh;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 5px -5px 5px rgba(0,0,0,0.1);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+.oftenGoContainer{
+    background-image: url("icon/oftenGo.png");
+    background-size: 100%;
+    width: 24vw;
+    height: 22vh;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5), 0 2px 5px 0 rgba(0,0,0,0.24);
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+.oftenGoContent{
+    background: rgba(199,48,39,0.9);
+    width: 91%;
+    height: 88%;
+    padding: 4% 4.5% 4% 4.5%;
+    cursor: pointer;
+}
+
+
+.oftenGoTitle{
+    font-size: 18px;
+    color: white;
+}
+
+.oftenGoContent:hover > .oftenGoTitle{
+    text-decoration: underline;
+}
+
+.oftenGoInfo{
+    margin-top: 2vh;
+    font-size: 12px;
+    color: white;
+}
+
+.goTaipeiContainer{
+    width: 24vw;
+    height: 22vh;
+    display: inline-block;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5), 0 2px 5px 0 rgba(0,0,0,0.24);
+    background: rgba(255, 61, 50, 0);
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.goTaipeiContent{
+    width: 57.5%;
+    height: 88%;
+    padding: 4% 4.5% 4% 4.5%;
+    background: white;
+    display: inline-block;
+    position: relative;
+}
+
+.goTaipeiTitle{
+    font-size: 18px;
+}
+
+.goTaipeiInfo{
+    margin-top: 2vh;
+    font-size: 11px;
+    color: gray;
+}
+
+.goTaipeiMore{
+    position: absolute;
+    bottom: 5vh;
+    left: 2vh;
+    font-size: 13px;
+}
+
+.goTaipeiMore:hover{
+    text-decoration: underline;
+}
+
+.goTaipeiImg{
+    background-image: url("icon/goTaipei.png");
+    background-size: 150%;
+    display: inline-block;
+    width: 42.5%;
+    height: 100%;
+}
+
+.recordContainer{
+    background-image: url("icon/record.png");
+    background-size: 100%;
+    width: 24vw;
+    height: 22vh;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5), 0 2px 5px 0 rgba(0,0,0,0.24);
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+.recordContent{
+    background: rgba(255, 255, 255, 0.8);
+    width: 91%;
+    height: 88%;
+    padding: 4% 4.5% 4% 4.5%;
+    position: relative;
+}
+.recordTitle{
+    font-size: 18px;
+}
+
+.recordInfo{
+    margin-top: 2vh;
+    font-size: 11px;
+}
+
+.recordBtn{
+    width: 8vw;
+    height: 5vh;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5vh;
+    left: 2.5vh;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 1px 5px rgba(0,0,0,.24);
+    cursor: pointer;
+}
+
+.recordBtn:hover{
+    background: #3e7de6;
+}
+
+.addressContainer{
+    width: 22vw;
+    height: 20vh;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5), 0 2px 5px 0 rgba(0,0,0,0.24);
+    display: inline-block;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.addressContent{
+    width: 24vw;
+    height: 32%;
+    display: flex;
+    align-items: center;
+}
+
+.addressTitle{
+    font-size: 18px;
+}
+
+.addressIcon{
+    width: 4vh;
+    height: 4vh;
+    padding-right: 2.5vh;
+}
+
+.addressInfo{
+    width: 18vw;
+    height: 4vh;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: text;
+}
+
+.addressAdd{
+    font-size: 12px;
+    color: gray;
+}
+
+.placeBottom{
+    z-index: 100;
+    width: 100vw;
+    height: 24vh;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 5px -5px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    visibility: hidden;
+
+}
+
+.wentContainer{
+    background-image: url("icon/oftenGo.png");
+    background-size: 100%;
+    width: 19vw;
+    height: 24vh;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2), 3px 4px 24px rgba(0,0,0,0.34);
+    display: inline-block;
+}
+
+.wentContent{
+    background: rgba(199,48,39,0.9);
+    width: 91%;
+    height: 88%;
+    padding: 4% 4.5% 4% 4.5%;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+}
+
+.placeBack{
+    background-color: transparent;
+    background-image: url("icon/placeBack.png");
+    background-size: 3.5vh 3.5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    width: 3vh;
+    height: 3vh;
+    margin: 1vh 3vh 1vh 1vh;
+    border: none;
+    cursor: pointer;
+}
+
+.placeBack:hover{
+    opacity: 0.9;
+}
+
+.wentTitle{
+    margin: 0 0 1.5vh 0;
+    color: white;
+    font-size: 20px;
+}
+
+.wentTitle:hover{
+    text-decoration: underline;
+}
+
+.wentInfo{
+    color: white;
+    font-size: 15px;
+}
+
+.otherInfo{
+    color: white;
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 1vh;
+    line-height: 25px;
+}
+
+.placeContainer{
+    width: 81vw;
+    height: 24vh;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    right: -81vw;
+   /* -webkit-transition: 1.2s;*/
+   /*-moz-transition: 1.2s;*/
+   /*-ms-transition: 1.2s;*/
+   /*-o-transition: 1.2s;*/
+   transition: 1.2s;
+}
+
+.places{
+    width: 28%;
+    height: 100%;
+    margin-right: 5%;
+    padding: 1vh 0vw 1vh 2vw;
+}
+
+.onePlace{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 0 1vh 0 1vh;
+    position: relative;
+    -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   transition: 0.5s;
+}
+
+.onePlace:hover{
+    background: #e5e5e5;
+}
+
+.placeNumber{
+    font-size: 20px;
+    color: #c7210f;
+    font-family: Roboto;
+    font-weight: 800;
+}
+
+.placePhoto{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0 1vh 0 2vh;
+}
+
+.placeInfo{
+    font-size: 13px;
+    display: block;
+    opacity: 0.75;
+}
+
+.placeMore{
+    position: absolute;
+    right: 1vw;
+    width: 3vh;
+    height: 3vh;
+}
+

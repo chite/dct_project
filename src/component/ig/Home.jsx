@@ -149,7 +149,7 @@ function Home(props) {
                                     <FaComment /><span>&nbsp;{val.message.length}</span>
                                 </div>
                             </div>
-                        ))
+                        )).reverse()
                     }
                 </div>
             </article>

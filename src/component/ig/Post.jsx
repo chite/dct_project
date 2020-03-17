@@ -111,7 +111,7 @@ function Post(props) {
                                         <span>留言……</span><span className="text-primary">發佈</span>
                                     </div>
                                 </div>
-                            ))
+                            )).reverse()
                         }
                     </div>
                     <div className={(moveState ? "moving " : "") + "side-part d-none d-sm-block col-sm-4"}>

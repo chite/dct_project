@@ -6,13 +6,14 @@ import { IoMdGrid } from "react-icons/io";
 import { FaRegUserCircle, FaHeart, FaComment, FaRegBookmark } from "react-icons/fa";
 import { DiAptana } from "react-icons/di";
 import { FiTv } from "react-icons/fi";
-import selfPt from '../../resources/igSelfie.jpg';
+// import selfPt from '../../resources/igSelfie.jpg';
 import data from '../../json/ig.json';
 
 function Home(props) {
     const [open, setOpen] = useState(0);
     const [igState, setState] = useState(1);
     const [logOut, setlogOut] = useState(false);    //顯示登出
+
     useEffect(() => {
         document.title = '杜沐安 • Instagram 相片與影片';
         document.getElementsByTagName('link')[0].href = props.root + '/ig/shortcuticon.png';
@@ -25,7 +26,6 @@ function Home(props) {
                 setState(0);
             }
         }
-        return;
     }, []);
     const handleClick = (index) => {
         console.log(index)
@@ -149,7 +149,7 @@ function Home(props) {
                                     <FaComment /><span>&nbsp;{val.message.length}</span>
                                 </div>
                             </div>
-                        )).reverse()
+                        ))
                     }
                 </div>
             </article>

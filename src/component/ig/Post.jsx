@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
-import igSelfie from '../../resources/igSelfie.jpg';
-import igSelfie2 from '../../resources/igSelfie2.jpg';
-import igPhoto from '../../resources/igPost.JPG';
+// import igSelfie from '../../resources/igSelfie.jpg';
+// import igSelfie2 from '../../resources/igSelfie2.jpg';
+// import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import data from '../../json/ig.json';
 
@@ -28,7 +28,7 @@ function Post(props) {
                 setMove(false);
             }
         }
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
@@ -111,7 +111,7 @@ function Post(props) {
                                         <span>留言……</span><span className="text-primary">發佈</span>
                                     </div>
                                 </div>
-                            )).reverse()
+                            ))
                         }
                     </div>
                     <div className={(moveState ? "moving " : "") + "side-part d-none d-sm-block col-sm-4"}>
@@ -122,31 +122,34 @@ function Post(props) {
                                 <p>杜沐安</p>
                             </div>
                         </div>
-                        <section className="section mt-3 bg-white pt-3 pl-3">
-                            <div className="section-bar d-flex justify-content-between pr-3">
-                                <h6>限時動態</h6>
-                                <h6>全部觀看</h6>
-                            </div>
-                            <div className="friend-list">
-                                {
-                                    data.story.map((val, index) => (
-                                        <div className="friends" key={index}>
-                                            <div className="d-flex">
-                                                <div className="image-border">
-                                                    <div className="image" style={{ 'backgroundImage': 'url(' + props.root + val.selfPt + ')' }}></div>
-                                                </div>
-                                                <div className="ml-2">
-                                                    <div>
-                                                        <h6>{val.title}</h6>
-                                                        <p>{val.time}</p>
+                        {
+                            igState == 1 &&
+                            <section className="section mt-3 bg-white pt-3 pl-3">
+                                <div className="section-bar d-flex justify-content-between pr-3">
+                                    <h6>限時動態</h6>
+                                    <h6>全部觀看</h6>
+                                </div>
+                                <div className="friend-list">
+                                    {
+                                        data.story.map((val, index) => (
+                                            <div className="friends" key={index}>
+                                                <div className="d-flex">
+                                                    <div className="image-border">
+                                                        <div className="image" style={{ 'backgroundImage': 'url(' + props.root + val.selfPt + ')' }}></div>
+                                                    </div>
+                                                    <div className="ml-2">
+                                                        <div>
+                                                            <h6>{val.title}</h6>
+                                                            <p>{val.time}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                        </section>
+                                        ))
+                                    }
+                                </div>
+                            </section>
+                        }
                         <section className="section mt-3 bg-white pt-3 px-3">
                             <div className="section-bar d-flex justify-content-between">
                                 <h6>推薦用戶</h6>

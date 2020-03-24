@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LeftPart from './LeftPart';
 import MiddlePart from './MiddlePart';
+import Th from './Th';
 import { FaSearch, FaRegQuestionCircle, FaRegSun, FaAngleLeft, FaAngleRight, FaPlus } from "react-icons/fa";
 import { FiAlignJustify } from "react-icons/fi";
 import { MdApps } from "react-icons/md";
@@ -12,6 +13,7 @@ function Calendar(props) {
     const [today, setToday] = useState([0, 0, 0]);
     const [time, setTime] = useState([0, 0, 0]);
     const [dates, setDates] = useState([[{ mark: 0, day: 0, data: { dot: [], line: [] } }]]);
+    const [showTh, toggleTh] = useState(false);
 
     useEffect(() => {
         const date = new Date();
@@ -25,9 +27,9 @@ function Calendar(props) {
         let stringTime = [String(time[0]), String(time[1]), String(time[2])];
         let preStringTime = [time[1] === 1 ? String(time[0] - 1) : String(time[0]), time[1] === 1 ? "12" : String(time[1] - 1)];
         let nextStringTime = [time[1] === 12 ? String(time[0] + 1) : String(time[0]), time[1] === 12 ? "1" : String(time[1] + 1)];
-        let currentMonthObj = new Date(time[0], time[1]-1);
-        currentMonthObj.setMonth(currentMonthObj.getMonth()-1);
-        let lastMonthLength = (new Date(currentMonthObj.getFullYear(), currentMonthObj.getMonth()+1, 0)).getDate();
+        let currentMonthObj = new Date(time[0], time[1] - 1);
+        currentMonthObj.setMonth(currentMonthObj.getMonth() - 1);
+        let lastMonthLength = (new Date(currentMonthObj.getFullYear(), currentMonthObj.getMonth() + 1, 0)).getDate();
         let currentMonth = [], splitedCurrentMonth = [], temparyArray = [];
         let dataValid = checkDataValid();
 
@@ -59,7 +61,7 @@ function Calendar(props) {
             }
             currentMonth.push(date);
         }
-        
+
         if (currentMonth.length % 7) {  //避免整除
             for (let i = 1; i <= (7 - currentMonth.length % 7); i++) {    //補足後面
                 let date = {
@@ -111,7 +113,7 @@ function Calendar(props) {
         const date = new Date(time[0], time[1] - 1 + num);
         setTime([date.getFullYear(), date.getMonth() + 1, date.getDate()]);
     }
-    
+
     function toToday() {
         setTime([today[0], today[1], today[2]]);
     }
@@ -138,7 +140,10 @@ function Calendar(props) {
                     </div>
                 </div>
                 <div className="right col-sm-1 d-none d-sm-flex align-items-center justify-content-between">
-                    <MdApps />
+                    <span className="th-icon" onClick={()=>toggleTh(!showTh)}>
+                        <MdApps />
+                        <Th root={props.root} show={showTh} />
+                    </span>
                     <span className="self d-flex justify-content-center align-items-center">沐安</span>
                 </div>
             </nav>

@@ -92,7 +92,7 @@ function Folder(props) {
                                     onDoubleClick={handleOpen}
                                     onClick={() => handleClick(index)}
                                 >
-                                    <div className="img" title="Icons made by Dimitry Miroliubov from www.flaticon.com" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
+                                    <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
                                     <p className={`text ${index === choose ? 'wrap' : ''}`}>{val.title}</p>
                                 </button>
                                 // :

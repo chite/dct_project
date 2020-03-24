@@ -2,11 +2,11 @@
     let tlImage = document.getElementById("tlImage");
     let tlTitle = document.getElementById("tlTitle");
     function timelineOn(){
-        tlImage.src = "icon/Time Line b.png";
+        tlImage.src = "icon/Time line b.png";
         tlTitle.style.color = "dodgerblue";
     }
     function timelineOff(){
-        tlImage.src = "icon/Time Line g.png";
+        tlImage.src = "icon/Time line g.png";
         tlTitle.style.color = "#4d4d4d";
     }
 

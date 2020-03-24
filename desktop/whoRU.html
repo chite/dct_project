@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <title>whoRU</title>
+        <style>
+            body {
+                background-color: #151515;
+
+            }
+            #words {
+                font-size: 2rem;
+                text-align: center;
+                color: white;
+            }
+            #cameraPlayer {
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            #originVideo {
+                width: 30%;
+                float: left;
+                visibility: hidden;
+            }
+            #snapPhoto {
+                position: relative;
+                float: right;
+                visibility: hidden;
+            }
+            #footer {
+                position: relative;
+                visibility: hidden;
+                margin-top: -180px;
+                /* negative value of footer height */
+                height: 180px;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <div id="words"></div>
+            </section>
+            <section>
+                <div id="originVideo">
+                    <video id="cameraPlayer" width="640" height="480"  autoplay></video>
+                </div>
+                <div id="snapPhoto">
+                    <canvas id="cameraSnapshot" width="640" height="480"></canvas>
+                </div>
+            </section>
+            <section>
+                <div id="footer">
+                    <p>夠了</p>
+                    <p>不要再來找我</p>
+
+                </div>
+            </section>
+
+        </div>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            const cameraPlayer = document.getElementById('cameraPlayer');
+            const snapshotCanvas = document.getElementById('cameraSnapshot');
+            //words to say
+            var typed = new Typed('#words', {
+                strings: [
+                    "你是誰", "為什麼要看我的電腦", ""
+                ],
+                typeSpeed: 100,
+                backSpeed: 30,
+                showCursor: false,
+                autoInsertCss: true
+            });
+
+            function main() {
+                setTimeout(timer, 1000);
+
+                // init camera
+                navigator
+                    .mediaDevices
+                    .getUserMedia({video: true})
+                    .then(function (stream) {
+                        cameraPlayer.srcObject = stream;
+                    });
+            }
+            main();
+            function timer() {
+                setTimeout(showScreen, 4000);
+                setTimeout(snap, 500);
+                setTimeout(download_img, 500); //存截圖
+                setTimeout(function openVoyeur() {
+                    window.open("voyeur.html");
+                }, 10000);
+            }
+            //open camera
+            function showScreen() {
+                document
+                    .getElementById("cameraPlayer")
+                    .style
+                    .visibility = "visible";
+                document
+                    .getElementById("cameraSnapshot")
+                    .style
+                    .visibility = "visible";
+                document
+                    .getElementById("words")
+                    .style
+                    .visibility = "hidden";
+            }
+            // Elements for taking the snapshot
+            var canvas = document.getElementById('cameraSnapshot');
+            var context = canvas.getContext('2d');
+            var video = document.getElementById('cameraPlayer');
+
+            // Trigger photo take
+            function snap() {
+                context.drawImage(video, 0, 0, 640, 480);
+            }
+
+            function download_img() {
+                var d = new Date();
+                var link = document.createElement('a');
+                link.download = d
+                    .toString()
+                    .slice(0, 24);
+                link.href = document
+                    .getElementById('cameraSnapshot')
+                    .toDataURL()
+                link.click();
+            }
+        </script>
+    </body>
+</html>

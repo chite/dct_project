@@ -1,0 +1,96 @@
+body {
+  font-family: 微軟正黑體;
+  /*font-size: 13px;*/
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display:flex;
+    align-items:center;
+}
+
+.leftContainer{
+    width: 30vw;
+    height: 100vh;
+    background-color: rgb(32,32,32);
+    border-right: 1px solid black;
+    overflow-y: scroll;
+
+}
+
+.leftContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.diary{
+    width: 100%;
+    height: 16.66%;
+    cursor: pointer;
+    margin: 0 0 1px 0;
+    /*background-color: transparent;*/
+}
+
+/*.diary:hover{*/
+/*    background-color: rgb(200,150,27);!important*/
+/*}*/
+
+/*.diary:hover .diaryDescription{*/
+/*    color: white;!important*/
+/*}*/
+
+.titleContainer{
+    width: 90%;
+    height: 100%;
+    float: right;
+    border-bottom: 1px solid rgb(54,54,54);
+
+    display:flex;
+    align-items:center;
+}
+
+.diaryTitle{
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+.diaryDate{
+    color: white;
+}
+
+.diaryDescription{
+    margin-left: 1vw;
+    color: rgb(159,159,159);
+}
+
+.rightContainer{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(38,38,38);
+}
+
+.contentTop{
+    text-align: center;
+    height: 5%;
+    padding: 2vh 0 2vh 0;
+}
+
+.contentDate{
+    color: rgb(138,138,138);
+}
+
+.content{
+    padding: 1vh 0 0 7.5vh;
+}
+
+.contentLine{
+    color: white;
+    display: block;
+    line-height: 30px;
+}
+
+/*.contents{*/
+/*    display: none;*/
+/*}*/

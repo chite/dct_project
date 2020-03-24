@@ -17,6 +17,7 @@
 8. Gmail：<https://chite.github.io/dct_project/gmail/index.html> 
 9. desktop：<https://chite.github.io/dct_project/desktop/desktop.html> 
 10. 駭客頁面：<https://chite.github.io/dct_project/desktop/hackTool.html>
+11. 備忘錄：<https://chite.github.io/dct_project/dairy/dairy.html>
 
 
 

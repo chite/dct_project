@@ -14,7 +14,10 @@
 5. Google首頁：<https://chite.github.io/dct_project/googleIndex/googleIndex.html>
 6. FB個人頁：<https://chite.github.io/dct_project/fb/fbIndex.html>
 7. FB動態消息：<https://chite.github.io/dct_project/fb/main.html> 
-8. Gmail：<https://chite.github.io/dct_project/gmail/index.html>
+8. Gmail：<https://chite.github.io/dct_project/gmail/index.html> 
+9. desktop：<https://chite.github.io/dct_project/desktop/desktop.html> 
+10. 駭客頁面：<https://chite.github.io/dct_project/desktop/hackTool.html>
+
 
 
 ## 下載Git

@@ -79,5 +79,32 @@
     }
 
 
+    // let allPage = document.querySelector('#allPage');
+    let app = document.querySelector('#app');
+    let appBtn = document.querySelector('#appBtn');
+
+    appBtn.onclick = function() {
+      let appStyle = window.getComputedStyle(app).getPropertyValue('display');
+      if (appStyle === 'none') {
+        app.style.display = 'inline-block';
+
+      } else {
+        app.style.display = 'none';
+      }
+    }
+
+    $(document).mouseup(function (e) {
+
+        if(app.style.display !== 'none') {
+
+            let container = $("#app");
+            let btn = $("#appBtn");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0 && !btn.is(e.target)) {
+                container.hide();
+            }
+        }
+    });
 
 

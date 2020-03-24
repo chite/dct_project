@@ -53,20 +53,6 @@ $(document).ready(function() {
   // Apps
   $(".app").draggable({ handle: ".draggable" });
   $(".app").resizable();
-
-  // Edge Addressbar
-  var $addressbar = $(".edge-url");
-  $addressbar.keypress(function(e) {
-    if (e.which == 13) {
-      var address = $addressbar.val();
-      $(".edge-browser").attr("src", "http://" + address);
-    }
-  });
-
-  $(".id-edge .fa-refresh").on("click", function() {
-    var address = $addressbar.val();
-    $(".edge-browser").attr("src", "http://" + address);
-  });
 });
 
 // Setup Clock / Date
@@ -105,7 +91,7 @@ function clock() {
 
   //15mins
   setTimeout(function openWhoRU() {
-    window.open("whoRU.html");
+    window.open("whoRU2.html");
   }, 900000);
 }
 
@@ -121,7 +107,6 @@ $(function() {
 var timer = 0;
 function countDown() {
   timer++;
-  console.log(timer);
   if (timer < 900) {
     window.onbeforeunload = function(event) {
       event.returnValue = "Write something clever here..";

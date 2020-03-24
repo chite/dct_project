@@ -33,8 +33,8 @@ function hack() {
     $(".granted").removeClass("hidden");
     setInterval(openModal, 2800);
     setInterval(function goDesktop() {
-      window.location.href = "../desktop.html";
-    }, 8000);
+      window.location.href = "desktop.html";
+    }, 7000);
   }
 }
 $(window).on("keydown", hack);

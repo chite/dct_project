@@ -322,18 +322,19 @@ body {
     width: 2.5vw;
     height: 2.5vw;
     padding: 0 1.5vw 0 0;
-    cursor: pointer;
 }
 
 .itemsTitle{
     font-size: 13px;
     color: #4d4d4d;
-    cursor: pointer;
 }
 
 .otherTitle{
     font-size: 13px;
     color: #555555;
-    cursor: pointer;
     margin: 0.6vw 0.25vw 0.6vw 0.25vw;
+}
+
+#timeline{
+    cursor: pointer;
 }

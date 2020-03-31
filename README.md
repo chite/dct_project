@@ -19,7 +19,8 @@
 10. 駭客頁面：<https://chite.github.io/dct_project/desktop/hackTool.html>
 11. 備忘錄：<https://chite.github.io/dct_project/diary/diary.html>
 12. Google地圖：<https://chite.github.io/dct_project/map/mapIndex.html>
-13. Google時間軸：<https://chite.github.io/dct_project/map/timeline.html>
+13. Google時間軸：<https://chite.github.io/dct_project/map/timeline.html> 
+14. whoRU：<https://chite.github.io/dct_project/desktop/whoRU2.html>
 
 
 ## 下載Git

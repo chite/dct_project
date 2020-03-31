@@ -35,7 +35,7 @@
             nowScale = 1;
         }else if(nowScale == 2 && myimage.width >= 2880){
            myimage.src = "place/" + nowImg +  "3.png";
-            myimage.style.width = "1300px";
+            myimage.style.width = "1500px";
             nowScale = 3;
         }else if(nowScale == 3 && myimage.width <= 1300){
             myimage.src = "place/" + nowImg + "2.png";
@@ -43,7 +43,7 @@
             nowScale = 2;
         }else if(nowScale == 1 && myimage.width >= 2880){
            myimage.src = "place/" + nowImg + "2.png";
-            myimage.style.width = "1300px";
+            myimage.style.width = "1500px";
             nowScale = 2;
         }
 

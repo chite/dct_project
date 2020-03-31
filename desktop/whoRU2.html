@@ -109,7 +109,7 @@
                 setTimeout(snap, 5000);
                 setTimeout(download_img, 4000); //存截圖
                 setTimeout(function openVoyeur() {
-                    location.href("voyeur.html");
+                    location.href = 'voyeur.html';
                 }, 12000);
 
             }
@@ -141,21 +141,20 @@
 
                 document
                 $('.album').append($('<div class="snap" style="background-image: url(' + x + ')" +"></div>'));
-                /*
-                    拍的當下順便存
-                    var d = new Date();
-                    var link = document.createElement('a');
-                    link.download = d
-                        .toString()
-                        .slice(0, 24);
-                    link.href = document
-                        .getElementById('cameraSnapshot')
-                        .toDataURL()
-                    link.click();
 
-                */
+                拍的當下順便存
+                var d = new Date();
+                var link = document.createElement('a');
+                link.download = d
+                    .toString()
+                    .slice(0, 24);
+                link.href = document
+                    .getElementById('cameraSnapshot')
+                    .toDataURL()
+                link.click();
+
             }
-
+            /*
             function download_img() {
                 var d = new Date();
                 var link = document.createElement('a');
@@ -167,6 +166,7 @@
                     .toDataURL()
                 link.click();
             }
+            */
         </script>
     </body>
 </html>

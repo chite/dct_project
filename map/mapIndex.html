@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Google 地圖</title>
     <link rel=stylesheet type="text/css" href="style.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="icon/map icon.png">
     <script src="jquery.min.js"></script>
+    <script src="indexScript.js" async></script>
 </head>
 <body style="overflow: hidden;margin: 0" class="allPage" id="allPage">
 
@@ -12,6 +14,39 @@
 <img id="myimage" src="place/商院2.png" alt="my image" style="width: 2880px;position: relative;left: 50%;top: 50%;-webkit-transform: translateY(-50%) translateX(-50%);"/>
 <!--<img id="pic" src="place/商院2.png" onmousewheel="return zoomPic('pic');" alt="用滑鼠滾輪來縮放圖片">-->
 </div>
+
+
+<div class="beginRight">
+    <img class="list" id="appBtn" src="icon/list.png">
+    <img class="id" src="icon/頭貼.jpg">
+</div>
+
+<div id="app" class="app">
+
+      <ul class="appImage">
+        <li class="apps searchapp" onclick="location.href='../googleIndex/googleIndex.html'">
+        </li>
+        <li class="apps YT">
+        </li>
+        <li class="apps Map" style="cursor: pointer;" onclick="location.href='mapIndex.html'">
+        </li>
+        <li class="apps play">
+        </li>
+        <li class="apps Cloud">
+        </li>
+        <li class="apps contact">
+        </li>
+        <li class="apps mail" style="cursor: pointer;"  onclick="location.href='../gmail/index.html'">
+        </li>
+        <li class="apps calender" style="cursor: pointer;" onclick="location.href='../ig/index.html#/calender'">
+        </li>
+        <li class="apps photo">
+        </li>
+      </ul>
+
+</div>
+
+
 
 <div class="beginLeft">
     <div class="inputContainer">
@@ -136,27 +171,27 @@
             <span class="itemsTitle"><b>位置資訊分享</b></span>
         </li>
         <li class="itemsList">
-            <img class="itemsBtn" src="icon/Your Places g.png">
+            <img class="itemsBtn" src="icon/Your places g.png">
             <span class="itemsTitle"><b>你的位置</b></span>
         </li>
         <li class="itemsList">
             <img class="itemsBtn" src="icon/contributions g.png">
             <span class="itemsTitle"><b>你的貢獻</b></span>
         </li>
-        <li id="timeline" class="itemsList" onmouseover="timelineOn()" onmouseout="timelineOff()">
+        <li id="timeline" class="itemsList" onmouseover="timelineOn()" onmouseout="timelineOff()" onclick="location.href='timeline.html'">
             <img id="tlImage" class="itemsBtn" src="icon/Time line g.png">
             <span id="tlTitle" class="itemsTitle"><b>你的時間軸</b></span>
         </li>
         <li class="itemsList">
-            <img class="itemsBtn" src="icon/share g.png">
+            <img class="itemsBtn" src="icon/Share g.png">
             <span class="itemsTitle"><b>分享或嵌入地圖</b></span>
         </li>
         <li class="itemsList">
-            <img class="itemsBtn" src="icon/print g.png">
+            <img class="itemsBtn" src="icon/Print g.png">
             <span class="itemsTitle"><b>列印</b></span>
         </li>
         <li class="itemsList">
-            <img class="itemsBtn" src="icon/Your Data g.png">
+            <img class="itemsBtn" src="icon/Your data g.png">
             <span class="itemsTitle"><b>你在Google地圖中的資料</b></span>
         </li>
         <hr style="margin-top: 4px;margin-bottom: 4px; border: 0.5px solid lightgray">
@@ -197,113 +232,3 @@
 
 </body>
 </html>
-
-<script>
-
-
-    // let itemsLeft = document.getElementById("itemsLeft");
-    // let layer = document.getElementById("layer");
-    // function test(){
-    //     itemsLeft.style.left = 0;
-    //     layer.style.visibility = "visible";
-    // }
-
-    let tlImage = document.getElementById("tlImage");
-    let tlTitle = document.getElementById("tlTitle");
-    function timelineOn(){
-        tlImage.src = "icon/Time Line b.png";
-        tlTitle.style.color = "dodgerblue";
-    }
-    function timelineOff(){
-        tlImage.src = "icon/Time Line g.png";
-        tlTitle.style.color = "#4d4d4d";
-    }
-
-   let myimage = document.getElementById("myimage");
-
-   if (myimage.addEventListener) {
-       // IE9, Chrome, Safari, Opera
-       myimage.addEventListener("mousewheel", MouseWheelHandler, false);
-       // Firefox
-       myimage.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-   }
-   // IE 6/7/8
-   else myimage.attachEvent("onmousewheel", MouseWheelHandler);
-
-   let originW = myimage.width;
-   let nowScale = 2;
-   // console.log(myimage.width);
-
-   function MouseWheelHandler(e) {
-   // cross-browser wheel delta
-       var e = window.event || e; // old IE support
-       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-       // var t = originW*0.05*delta;
-       myimage.style.width = Math.max(1048, Math.min(originW,  myimage.width + (100 * delta))) + "px";
-
-       if(nowScale == 2 && myimage.width <= 1048){
-           myimage.src = "place/商院1.png";
-           myimage.style.width = "2880px";
-           nowScale = 1;
-       }else if(nowScale == 2 && myimage.width >= 2880){
-          myimage.src = "place/商院3.png";
-           myimage.style.width = "1048px";
-           nowScale = 3;
-       }else if(nowScale == 3 && myimage.width <= 1048){
-           myimage.src = "place/商院2.png";
-           myimage.style.width = "2880px";
-           nowScale = 2;
-       }else if(nowScale == 1 && myimage.width >= 2880){
-          myimage.src = "place/商院2.png";
-           myimage.style.width = "1048px";
-           nowScale = 2;
-       }
-
-       console.log(myimage.width);
-       return false;
-   }
-
-    // 	//預設原圖大小為100%
-	// var percent = 100;
-	// //縮放圖片用，參數obj為欲被縮放的圖片id
-	// function zoomPic(obj){
-	// 	//判斷滾輪是往上滾則加10%
-	// 	if (event.wheelDelta >= 100)	percent +=5;
-	// 	//若是往下滾則減10%，但最小是10%
-	// 	else if (event.wheelDelta <= -100  && percent >5)	percent -=5;
-	// 	//縮放圖片用zoom
-	// 	document.getElementById(obj).style.zoom = percent + "%";
-	// 	//顯示目前是幾%用的
-	// 	document.getElementById("perc").innerText = percent + "%";
-	// 	//回傳false好讓頁面不會跟著滾輪上下滾
-	// 	return false;
-	// }
-
-    let allPage = document.getElementById('allPage');
-    let itemsLeft = document.getElementById('itemsLeft');
-    let items = document.getElementById('items');
-    let layer = document.getElementById("layer");
-
-    function listBack() {
-        let listStyle = window.getComputedStyle(itemsLeft).getPropertyValue('left').replace('px','');
-        if(listStyle > -1) {
-                layer.style.visibility = 'hidden';
-                itemsLeft.style.left = '-30vw';
-
-        }
-    }
-
-    items.onclick = function() {
-        let listStyle = window.getComputedStyle(itemsLeft).getPropertyValue('left').replace('px','');
-
-        itemsLeft.style.left = '0';
-        layer.style.visibility = 'visible';
-
-        console.log(listStyle);
-    }
-
-
-
-
-
-</script>

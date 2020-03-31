@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Desktop(勿關)</title>
+    <link rel="Shortcut Icon" href="img/windows.png">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'>
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./desktop.css">
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script  src="./desktop.js"></script>
+
+  </head>
+  <body>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <img src="img/cross.png" class="close cursor" onclick="closeModal()" style="width:40px;"></img>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/IMG_5546.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/IMG_5517.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/IMG_5572.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/IMG_5517.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <img src="img/back.png" class="prev" onclick="plusSlides(-1)" style="width:50px;"></img>
+        <img src="img/next.png" class="next" onclick="plusSlides(1)" style="width:50px;"></img>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="img/IMG_5546.jpg" style="width:100%" onclick="currentSlide(1)" alt="這裡要打什麼？A">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/IMG_5517.jpg" style="width:100%" onclick="currentSlide(2)" alt="這裡要打什麼？B">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/IMG_5572.jpg" style="width:100%" onclick="currentSlide(3)" alt="這裡要打什麼？C">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/IMG_5517.jpg" style="width:100%" onclick="currentSlide(4)" alt="這裡要打什麼？D">
+        </div>
+      </div>
+    </div>
+    <div class="desktop">
+
+      <div class="desktopApplications">
+        <div class="desktopApp drag" ondblclick="window.open('../ig/index.html#/line');">
+          <image src="img/line.png" height="60px" width="60px" ></image>
+          <p class="appLabel">line</p>
+        </div>
+        <div class="desktopApp drag " ondblclick="window.open('../googleIndex/googleIndex.html');">
+          <image src="img/chrome.png" height="60px" width="60px" ></image>
+          <p class="appLabel">chrome</p>
+        </div>
+        <div class="desktopApp drag " ondblclick="window.open('../ig/index.html#/folder');">
+          <image src="img/folder1.png" height="60px" width="60px" ></image>
+          <p class="appLabel">資料夾</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- desktopApplications end-->
+  </div>
+  <!-- desktop end-->
+  <div class="taskbar">
+
+    <div class="programs">
+      <div class="icon win" data-target=".startmenu, .icon.win">
+        <i class="fa fa-windows"></i>
+      </div>
+      <div class="icon " title="Search" id="search">
+        <input id="searchBar"type="text" placeholder="在這裡輸入文字來搜尋">
+      </div>
+      <div class="icon application chrome"  style="cursor:pointer;" onclick="window.open('../googleIndex/googleIndex.html');">
+        <image src="img/chrome.png" height="40px" width="40px"></image>
+      </div>
+      <div class="icon application line" style="cursor:pointer;" onclick="window.open('../ig/index.html#/line');">
+        <image src="img/line.png" height="40px" width="40px"></image>
+      </div>
+    </div>
+
+    <div class="tray">
+      <div class="ico more-icons">
+        <div class="all-icons">
+          <i class="fa fa-bluetooth" title="Bluetooth Devices"></i>
+          <i class="fa fa-cloud" title="OneDrive up to date"></i>
+          <i class="fa fa-envelope" title="You have new unread e-mail messages"></i>
+          <i class="fa fa-flag" title="Windows Defender requires attention"></i>
+          <i class="fa fa-keyboard-o" title="Keyboard En-NZ"></i>
+          <i class="fa fa-shield" title="Your computer is protected"></i>
+          <i class="fa fa-wifi" title="Internet Access"></i>
+          <i class="fa fa-dropbox" title="Dropbox Synced"></i>
+        </div>
+        <div class="fa fa-chevron-up" title="Show hidden icons"></div>
+      </div>
+      <div class="ico volume" title="Volume">
+        <div class="speaker">
+          <input type="range" min="0" max="100" step="1" value="50">
+        </div>
+        <i class="fa fa-volume-up"></i>
+      </div>
+      <div class="ico" title="50% remaining">
+        <i class="fa fa-battery-half"></i>
+      </div>
+      <div class="ico time">
+        <div class="clock">0:00 PM</div>
+        <div class="date">03/18/2020</div>
+      </div>
+      <div class="ico" title="No new notifications">
+        <i class="fa fa-commenting-o"></i>
+      </div>
+      <div class="peek"></div>
+    </div>
+
+    <div class="startmenu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col icons">
+            <div class="icon top bars" title="Expand">
+              <i class="fa fa-bars"></i>
+              <span class="start">開始</span></div>
+            <div class="bottom">
+              <div class="icon user" title="User">
+                <i class="fa fa-user"></i>
+                <span>Ann</span></div>
+              <div class="icon file-explorer" title="File Explorer">
+                <i class="fa fa-folder"></i>
+                <span>搜尋</span></div>
+              <div class="icon settings" title="Settings">
+                <i class="fa fa-cog"></i>
+                <span>設定</span></div>
+              <div class="icon power" title="Power">
+                <i class="fa fa-power-off"></i>
+                <span>電源</span></div>
+            </div>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2 programs">
+            <p class="title">最近使用</p>
+            <div class="item">
+              <img class="fa " src="img/powerPoint.png" style="width:30px; height:30px"></img>
+              <span>Powerpoint</span></div>
+            <div class="item">
+              <img class="fa " src="img/word.png" style="width:30px; height:30px"></img>
+              <span>Word</span></div>
+            <div class="item">
+              <img class="fa " src="img/trashCan.png" style="width:30px; height:30px"></img>
+              <span>垃圾桶</span></div>
+            <p class="title">最常使用</p>
+            <div class="item" style="cursor:pointer;" onclick="window.open('../googleIndex/googleIndex.html');">
+              <img class="fa " src="img/chromeIcon.png" style="width:30px; height:30px"></img>
+              <span>Google Chrome</span></div>
+            <div class="item" style="cursor:pointer;" onclick="window.open('../ig/index.html#/line');">
+              <img class="fa " src="img/lineIcon.png" style="width:30px; height:30px"></img>
+              <span>Line</span></div>
+            <div class="item" style="cursor:pointer;" onclick="window.open('../ig/index.html#/folder');">
+              <img class="fa " src="img/folderIcon.png" style="width:30px; height:30px"></img>
+              <span>資料夾A</span></div>
+            <div class="item" style="cursor:pointer;" onclick="window.open('../diary/diary.html');">
+              <img class="fa " src="img/memo.png" style="width:30px; height:30px"></img>
+              <span>備忘錄</span></div>
+            <div class="item">
+              <img class="fa " src="img/photoshop.png" style="width:30px; height:30px"></img>
+              <span>Adobe Photoshop</span></div>
+          </div>
+          <div class="col-xs-6 tiles">
+            <p class="title">探索
+            <div class="tile wide" onclick="window.open('../ig/index.html#/calendar');">
+                <img src="img/calendar.png" style="height:50px;width:50px;"></img>
+                <span>Calendar<i class="fa fa-calendar"></i></span></div>
+              <div id="zoom" class="tile medium photos" onclick="openModal();currentSlide(1)">
+                <span>Photos<i class="fa fa-picture-o"></i></span></div>
+              <div class="tile gmail" onclick="window.open('../gmail/index.html');">
+                <img src="img/gmail.png" style="height:30px;width:30px;"></img>
+                <span>Mail<i class="fa fa-envelope"></i></span></div>
+              <div class="tile wide news" >
+                <span>News<i class="fa fa-newspaper-o"></i></span></div>
+              <div class="tile medium" >
+                <i class="fa fa-calculator"></i>
+                <span>Calculator</span></div>
+              <div class="tile medium" >
+                <i class="fa fa-camera"></i>
+                <span>Camera</span></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="id-edge app minimized">
+    <div class="toolbar draggable">
+      <div class="tab">
+        <i class="fa fa-list-alt"></i>
+        <span>Start</span>
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+    <div class="addressbar draggable">
+      <i class="fa fa-arrow-left"></i>
+      <i class="fa fa-arrow-right"></i>
+      <i class="fa fa-refresh"></i>
+      <span class="divider"></span>
+    </div>
+  </div>
+
+</body>
+</html>

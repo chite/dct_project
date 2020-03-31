@@ -15,6 +15,12 @@ body {
   max-width: 272px;
 }
 
+.quad{
+  border-radius: 50px;
+  width: 5vh;
+  height: 5vh;
+}
+
 .search {
   width: 45vw;
   padding: 14px;
@@ -301,6 +307,7 @@ footer {
   background-repeat:no-repeat;
   background-position: 12.5px 12.5px;
   background-size: 75px 75px;
+  cursor: ;
 }
 
 .apps.cloud{

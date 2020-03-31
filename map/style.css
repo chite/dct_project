@@ -185,8 +185,8 @@ body {
 }
 
 .findBtn{
-    width: 11vh;
-    height: 14vh;
+    width: 10vh;
+    height: 13vh;
     padding: 1vh 0.1vh 1vh 0.1vh;
     display: inline-block;
     background-color: transparent;
@@ -322,18 +322,157 @@ body {
     width: 2.5vw;
     height: 2.5vw;
     padding: 0 1.5vw 0 0;
-    cursor: pointer;
 }
 
 .itemsTitle{
     font-size: 13px;
     color: #4d4d4d;
-    cursor: pointer;
 }
 
 .otherTitle{
     font-size: 13px;
     color: #555555;
-    cursor: pointer;
     margin: 0.6vw 0.25vw 0.6vw 0.25vw;
+}
+
+#timeline{
+    cursor: pointer;
+}
+
+
+.beginRight{
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    display:flex;
+    align-items:center;
+}
+
+.list{
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    padding-right: 1.5vw;
+}
+.id{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50px;
+    cursor: pointer;
+    background: gray;
+}
+
+.app {
+  position:absolute;
+  right:2vw;
+    top:10vh;
+  background: white;
+  border-radius: 10px;
+  float: right;
+  box-sizing: border-box;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  width: 22.5vw;
+  height: 70vh;
+  padding: 1vh 1vh 1vh 1vh;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  z-index: 150;
+  display: none;
+}
+
+.appImage {
+    display: inline-block;
+    justify-content: space-between;
+  box-sizing: content-box;
+  width: 22.5vw;
+  margin: 0;
+    padding: 10px 7px 10px 7px;
+}
+
+.apps{
+  text-align: center;
+  list-style: none;
+  /*padding: 10px 7px 10px 7px;*/
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  transition: transform .2s cubic-bezier(.333,0,0,1);
+  vertical-align: top;
+  height: 6.5vw;
+  width: 6.5vw;
+  border-radius: 10px;
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+}
+
+.apps.searchapp{
+  background:url(icon/Search_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.YT{
+  background:url(icon/YouTube_icon.png);
+  background-repeat:no-repeat;
+   background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.Map{
+  background:url(icon/Maps_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.Cloud{
+  background:url(icon/Drive_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.play{
+  background:url(icon/Play_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.contact{
+  background:url(icon/Contacts_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.mail{
+  background:url(icon/Gmail_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.calender{
+  background:url(icon/Calendar_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps.photo{
+  background:url(icon/Photos_icon.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.apps:hover {
+  /*opacity: 1;*/
+  cursor: default;
+  background-color: rgba(196, 211, 238, 0.17);
+  /*padding: 1px 7px 1px 7px;*/
 }

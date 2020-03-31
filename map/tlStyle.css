@@ -28,8 +28,8 @@ body {
 }
 
 .id{
-    width: 4.5vh;
-    height: 4.5vh;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50px;
     cursor: pointer;
     background: gray;
@@ -175,6 +175,7 @@ body {
     width: 3.5vh;
     height: 3.5vh;
     padding: 3vh;
+    cursor: pointer;
 }
 
 .title{

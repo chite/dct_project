@@ -20,7 +20,7 @@ function Login(props) {
     }, [psd]);
     function handlePsd(e){
         setShowPsd(e.target.value);
-        if(e.target.value === '112'){   //小帳密碼
+        if(e.target.value === '20121226'){   //小帳密碼
             localStorage.setItem('igValid', true);
         }
     }

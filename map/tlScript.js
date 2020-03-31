@@ -25,7 +25,7 @@
         var e = window.event || e; // old IE support
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         // var t = originW*0.05*delta;
-        myimage.style.width = Math.max(1300, Math.min(originW,  myimage.width + (100 * delta))) + "px";
+        myimage.style.width = Math.max(1500, Math.min(originW,  myimage.width + (100 * delta))) + "px";
 
         let nowImg = myimage.name;
 

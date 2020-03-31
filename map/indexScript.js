@@ -30,7 +30,7 @@
        var e = window.event || e; // old IE support
        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
        // var t = originW*0.05*delta;
-       myimage.style.width = Math.max(1048, Math.min(originW,  myimage.width + (100 * delta))) + "px";
+       myimage.style.width = Math.max(1350, Math.min(originW,  myimage.width + (100 * delta))) + "px";
 
        if(nowScale == 2 && myimage.width <= 1048){
            myimage.src = "place/商院1.png";

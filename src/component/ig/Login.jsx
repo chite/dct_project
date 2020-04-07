@@ -26,9 +26,9 @@ function Login(props) {
     }
     function handleAccount(val){
         let value = '';
-        if (val === '大帳') {
+        if (val === 'muan0824') {
             value = '1';
-        } else if (val === '小帳') {
+        } else if (val === 'behind_ann') {
             value = '0';
         } else {
             return;
@@ -52,8 +52,8 @@ function Login(props) {
                 <div className="ig-login-title" style={{ 'backgroundImage': 'url(' + igIcon + ')' }}></div>
                 <input placeholder="電話號碼、用戶名稱或電子郵件" className="d-block mx-auto w-75" list="ps" onInput={(e) => handleAccount(e.target.value)}/>
                 <datalist id="ps">
-                    <option value="大帳">大帳</option>
-                    <option value="小帳">小帳</option>
+                    <option value="muan0824">muan0824</option>
+                    <option value="behind_ann">behind_ann</option>
                 </datalist>
                 <input placeholder="密碼" className="d-block mx-auto my-3 w-75" type="password" value={showPsd} onChange={handlePsd} />
                 <button type="button" className="btn btn-primary w-75 d-block mx-auto" onClick={enter}>登入</button>

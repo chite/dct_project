@@ -142,7 +142,7 @@ function Home(props) {
                 <div className="cards">
                     {
                         data['post' + igState].map((val, index) => (
-                            <div key={index} className="card-element" onClick={() => handleClick(index)}>
+                            <div key={ val.pt[0]+index} className="card-element" onClick={() => handleClick(index)}>
                                 <div className="bg" style={{ 'backgroundImage': 'url(' + (props.root + val.pt[0]) + ')' }}></div>
                                 <div className="icon">
                                     <FaHeart /><span>&nbsp;{val.like}</span>

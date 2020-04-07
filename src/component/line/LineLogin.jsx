@@ -25,7 +25,7 @@ function LineLogin(props) {
                 </div>
                 <div className="inputs w-100">
                     <div className="w-100 first-input">
-                    <input placeholder="電子郵件帳號" value="justclickit@nXcu.edu.tw" readOnly />
+                    <input placeholder="電子郵件帳號" value="ann0824@gmail.com" readOnly />
                     <div><AiOutlineQuestionCircle /></div>
                     </div>
                     <input type="password" className="w-100" placeholder="密碼" value="111111111" readOnly />

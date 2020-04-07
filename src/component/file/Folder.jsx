@@ -42,7 +42,9 @@ function Folder(props) {
                     <div className="buttons">
                         <IoIosRemove />
                         <IoIosSquareOutline />
+                        <span onClick={()=>window.history.back()}>
                         <IoIosClose />
+                        </span>
                     </div>
                 </div>
                 <div className="box">

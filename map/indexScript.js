@@ -38,7 +38,7 @@
            nowScale = 1;
        }else if(nowScale == 2 && myimage.width >= 2880){
           myimage.src = "place/商院3.png";
-           myimage.style.width = "1048px";
+           myimage.style.width = "1350px";
            nowScale = 3;
        }else if(nowScale == 3 && myimage.width <= 1048){
            myimage.src = "place/商院2.png";
@@ -46,7 +46,7 @@
            nowScale = 2;
        }else if(nowScale == 1 && myimage.width >= 2880){
           myimage.src = "place/商院2.png";
-           myimage.style.width = "1048px";
+           myimage.style.width = "1350px";
            nowScale = 2;
        }
 

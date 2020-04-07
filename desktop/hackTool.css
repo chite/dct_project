@@ -24,8 +24,6 @@
 #canvas {
     z-index: 2;
     background-color: #000000;
-    height: 100%;
-    width: 100%;
 }
 
 body {
@@ -114,11 +112,13 @@ body {
     background-color: #000;
     margin: auto;
     padding: 0;
-    width: 60%;
-    max-width: 1200px;
+    height: 100%;
 }
 
 .logo {
+    left: 50%;
+    transform: translateX(-50%);
     margin: auto;
-    width: 100%;
+    height: 100%;
+    position: relative;
 }

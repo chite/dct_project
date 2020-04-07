@@ -7,6 +7,7 @@ function timer() {
     "Last login:" + today.toString().slice(0, 24);
 }
 setInterval("timer()", 1000);
+
 //hack
 var passwords = ["Voyeur"];
 var indexOld;
@@ -49,8 +50,8 @@ $(".start").on("click", function() {
 //rain of text
 function FontRain(op) {
   this.oCan = document.getElementById("canvas");
-  this.oCan.width = 1200 || window.outerWidth;
-  this.oCan.height = 800 || window.outerHeight;
+  this.oCan.width = window.innerWidth;
+  this.oCan.height = window.innerHeight;
   this.oCtx = this.oCan.getContext("2d");
   this.reset(op);
   this.aFont = ["0", "1", "0", "1"];

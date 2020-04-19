@@ -1,6 +1,6 @@
 [
     {
-        "name": "羅信華",
+        "name": "杜明川",
         "image": "line/dad.png",
         "lastTime" : "AM 10:02",
         "message": [
@@ -864,6 +864,91 @@
             {
                 "type": "time",
                 "direction": 0,
+                "context": "20. 2. 4 (Tue)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "今天下班後一起吃飯？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "好啊"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 2. 20 (Mon)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "18:36"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 3. 4 (Wed)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "29:37"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 3. 10 (Tue)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "24:12"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 3. 25 (Wed)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "48:03"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 4. 3 (Fri)"
+            },
+            {
+                "type": "text",
+                "direction": 0,
+                "context": "最近看你心情不太好，聊聊？"
+            },
+            {
+                "type": "text",
+                "direction": 1,
+                "context": "沒事，是我自己的問題"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "28:13"
+            },
+            {
+                "type": "time",
+                "direction": 0,
+                "context": "20. 4. 12 (Sun)"
+            },
+            {
+                "type": "icon",
+                "direction": 0,
+                "context": "51:14"
+            },
+            {
+                "type": "time",
+                "direction": 0,
                 "context": "20. 4. 17 (Fri)"
             },
             {
@@ -949,7 +1034,7 @@
         ]
     },
     {
-        "name": "閨蜜",
+        "name": "妍恩<3",
         "image": "line/friend.png",
         "lastTime" : "PM 3:01",
         "message": [
@@ -2468,7 +2553,7 @@
             {
                 "type": "text",
                 "direction": 1,
-                "context": "媽，我已經投昌盛的履歷，下個月就會有面試通知了"
+                "context": "媽，我已經投昌盛的履歷，不久就會有面試通知了"
             },
             {
                 "type": "text",

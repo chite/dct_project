@@ -7,6 +7,7 @@ $fb: rgb(36, 55, 94);
 // $link: 'http://localhost:9000/ig/assets';
 $link: "https://raw.githubusercontent.com/chite/dct_project/master/ig/assets";
 // construct
+
 //style
 .font-075 {
   font-size: 0.75rem;
@@ -244,12 +245,27 @@ body {
         font-weight: 600;
       }
       .hide {
-        display: -webkit-box;
-        -webkit-line-clamp: 1; // 限制行數
-        -webkit-box-orient: vertical;
+        // display: -webkit-inline-box;
+        // -webkit-line-clamp: 1; // 限制行數
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;
+        // margin-right: -5px;
+        position: relative;
+        height: 40px;
         overflow: hidden;
         &:hover {
           cursor: pointer;
+        }
+        &::after{
+          content: '...更多';
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+          top: 20px;
+          width: 100%;
+          color: gray;
+          padding-left: .5rem;
+          background: white;
         }
       }
       .image {
@@ -1137,7 +1153,8 @@ body {
         cursor: pointer;
       }
       .self {
-        background: #c2185b;
+        @include bg;
+        background-image: url($link + '/ig/profilePt1.jpg');
         box-sizing: border-box;
         border-radius: 100%;
         color: #ffffff;

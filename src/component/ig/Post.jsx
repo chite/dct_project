@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Bar from './share/Bar';
-// import igSelfie from '../../resources/igSelfie.jpg';
-// import igSelfie2 from '../../resources/igSelfie2.jpg';
-// import igPhoto from '../../resources/igPost.JPG';
 import { FaRegComment, FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import data from '../../json/ig.json';
 
@@ -92,7 +89,7 @@ function Post(props) {
                                         }
                                     </p>
                                     <div className="text">
-                                        <p className={show[index] ? "" : "hide"} onClick={() => handleClick(index)}>
+                                        <p className={!show[index] && (~val.context.indexOf('\n') || val.context.length > 34) ? 'hide' : ''} onClick={() => handleClick(index)}>
                                             <strong>{data.userAccount[igState]} </strong>
                                             {
                                                 val.context.split('\n').map((text, indexElement) => (

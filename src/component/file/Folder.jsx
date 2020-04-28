@@ -6,26 +6,38 @@ import ptBar1 from '../../resources/fileIcons1.PNG';
 import ptBar2 from '../../resources/fileIcons2.PNG';
 import ptLeft from '../../resources/fileLeftIcons.PNG';
 import newIcon from '../../resources/fileNew.png';
-// import photoIcon from '../../resources/filePhoto.png';
 import data from '../../json/folder.json';
 
 function Folder(props) {
     const [choose, setChoose] = useState(-1);
     const [open, setOpen] = useState(false);
 
-    useEffect(()=>{
+    useEffect(() => {
         document.title = '我的資料夾';
         document.getElementsByTagName('link')[0].href = props.root + '/folder/folder.png';
-    },[])
+
+        // 監聽使用者按後退鍵
+        window.onhashchange = function () {
+            let index = location.hash.split('folder')[1].slice(1);
+            if (index) {
+                if (Number.isNaN(Number(index)) || index > 2) return;
+                setOpen(true);
+                setChoose(index);
+            } else {
+                setOpen(false);
+                setChoose(-1);
+            }
+        }
+        return () => window.onhashchange = null;
+    }, [])
     function handleClick(index) {
         setChoose(index);
     }
     function handleOpen() {
-        setOpen(true);
+        props.history.push('/folder/' + String(choose));
     }
     function handleClose() {
-        setOpen(false);
-        setChoose(-1);
+        props.history.goBack();
     }
     return (
         <>
@@ -42,8 +54,8 @@ function Folder(props) {
                     <div className="buttons">
                         <IoIosRemove />
                         <IoIosSquareOutline />
-                        <span onClick={()=>window.history.back()}>
-                        <IoIosClose />
+                        <span onClick={() => window.history.back()}>
+                            <IoIosClose />
                         </span>
                     </div>
                 </div>
@@ -87,7 +99,6 @@ function Folder(props) {
                     <div className="card-container">
                         {
                             data.map((val, index) => (
-                                // val.type === 'text' ?
                                 <button
                                     key={index}
                                     className="card-element"
@@ -97,11 +108,6 @@ function Folder(props) {
                                     <div className="img" style={{ 'backgroundImage': 'url(' + newIcon + ')' }}></div>
                                     <p className={`text ${index === choose ? 'wrap' : ''}`}>{val.title}</p>
                                 </button>
-                                // :
-                                // <button key={index} className="card-element">
-                                //     <div className="img" style={{ 'backgroundImage': 'url(' + photoIcon + ')' }}></div>
-                                //     <p className="text">{val.title}</p>
-                                // </button>
                             ))
                         }
                     </div>

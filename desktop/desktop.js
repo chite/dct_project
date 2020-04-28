@@ -1,49 +1,49 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Desktop
-  $(".icon.win").on("click", function() {
+  $(".icon.win").on("click", function () {
     var target = $(this).attr("data-target");
     $(target).toggleClass("open");
     $(".all-icons, .volume").removeClass("open");
   });
 
-  $(".icon.top.bars").on("click", function() {
+  $(".icon.top.bars").on("click", function () {
     $(".startmenu .col.icons").toggleClass("open");
   });
 
   $(".desktop, .app, .program, .icon.application, .modal").on(
     "click",
-    function() {
+    function () {
       $(".startmenu, .icons, .icon.win, .all-icons, .volume").removeClass(
         "open"
       );
     }
   );
 
-  $(".tray .peek").on("mouseenter", function() {
+  $(".tray .peek").on("mouseenter", function () {
     $("body").addClass("peek");
   });
 
-  $(".tray .peek").on("mouseleave", function() {
+  $(".tray .peek").on("mouseleave", function () {
     $("body").removeClass("peek");
   });
 
-  $(".tray .more-icons").on("click", function() {
+  $(".tray .more-icons").on("click", function () {
     $(".all-icons").toggleClass("open");
     $(".speaker").removeClass("open");
   });
-  $(".tray .volume").on("click", function() {
+  $(".tray .volume").on("click", function () {
     $(".speaker").toggleClass("open");
     $(".all-icons").removeClass("open");
   });
 
-  $(".taskbar .icon.application").on("click", function() {
+  $(".taskbar .icon.application").on("click", function () {
     var target = $(this).attr("data-target");
     $(target).toggleClass("open minimized");
     $(this).toggleClass("open");
   });
 
   // App Preview
-  $(".icon.edge").on("mouseenter", function() {
+  $(".icon.edge").on("mouseenter", function () {
     var $browserWindow = $(".id-edge iframe").clone();
     var $previewWindow = $(".app-preview.preview-edge .content");
     $previewWindow.html("");
@@ -92,14 +92,14 @@ function clock() {
   //15mins
   setTimeout(function openWhoRU() {
     window.open("whoRU2.html");
-  }, 900000);
+  }, 1200000);
 }
 
 clock();
 $(".date").text(month + "/" + day + "/" + year);
 
 //Draggable
-$(function() {
+$(function () {
   $(".drag").draggable();
 });
 
@@ -108,7 +108,7 @@ var timer = 0;
 function countDown() {
   timer++;
   if (timer < 900) {
-    window.onbeforeunload = function(event) {
+    window.onbeforeunload = function (event) {
       event.returnValue = "Write something clever here..";
     };
   } else {

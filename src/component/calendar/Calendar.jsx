@@ -144,7 +144,7 @@ function Calendar(props) {
                         <MdApps />
                         <Th root={props.root} show={showTh} />
                     </span>
-                    <span className="self d-flex justify-content-center align-items-center">沐安</span>
+                    <span className="self d-flex justify-content-center align-items-center"></span>
                 </div>
             </nav>
             <div className="row body">

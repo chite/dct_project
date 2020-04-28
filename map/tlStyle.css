@@ -31,7 +31,7 @@ body {
     width: 5vh;
     height: 5vh;
     border-radius: 50px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     background: gray;
 }
 
@@ -196,7 +196,7 @@ body {
     border: none;
     border-radius: 3px;
     background: transparent;
-    cursor: pointer;
+    /*cursor: pointer;*/
     position: absolute;
     right: 1vh;
 }
@@ -422,7 +422,7 @@ body {
     background: rgba(255, 61, 50, 0);
     display: flex;
     align-items: flex-start;
-    cursor: pointer;
+    /*cursor: pointer;*/
     margin-right: 1vw;
 }
 

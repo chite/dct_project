@@ -32,7 +32,7 @@
        // var t = originW*0.05*delta;
        myimage.style.width = Math.max(1350, Math.min(originW,  myimage.width + (100 * delta))) + "px";
 
-       if(nowScale == 2 && myimage.width <= 1048){
+       if(nowScale == 2 && myimage.width <= 1350){
            myimage.src = "place/商院1.png";
            myimage.style.width = "2880px";
            nowScale = 1;
@@ -40,7 +40,7 @@
           myimage.src = "place/商院3.png";
            myimage.style.width = "1350px";
            nowScale = 3;
-       }else if(nowScale == 3 && myimage.width <= 1048){
+       }else if(nowScale == 3 && myimage.width <= 1350){
            myimage.src = "place/商院2.png";
            myimage.style.width = "2880px";
            nowScale = 2;

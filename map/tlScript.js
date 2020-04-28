@@ -29,7 +29,7 @@
 
         let nowImg = myimage.name;
 
-        if(nowScale == 2 && myimage.width <= 1300){
+        if(nowScale == 2 && myimage.width <= 1500){
             myimage.src = "place/" + nowImg +"1.png";
             myimage.style.width = "2880px";
             nowScale = 1;
@@ -37,7 +37,7 @@
            myimage.src = "place/" + nowImg +  "3.png";
             myimage.style.width = "1500px";
             nowScale = 3;
-        }else if(nowScale == 3 && myimage.width <= 1300){
+        }else if(nowScale == 3 && myimage.width <= 1500){
             myimage.src = "place/" + nowImg + "2.png";
             myimage.style.width = "2880px";
             nowScale = 2;

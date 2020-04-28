@@ -359,7 +359,7 @@ body {
     width: 5vh;
     height: 5vh;
     border-radius: 50px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     background: gray;
 }
 

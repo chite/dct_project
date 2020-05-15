@@ -132,7 +132,7 @@
 
             // Trigger photo take
             function snap() {
-
+                //這裡控制畫布大小
                 context.drawImage(video, 0, 0, 200, 150);
                 x = document
                     .getElementById('cameraSnapshot')
@@ -144,6 +144,7 @@
                 //拍的當下順便存
                 var d = new Date();
                 var link = document.createElement('a');
+                //切割日期檔名
                 link.download = d
                     .toString()
                     .slice(0, 24);

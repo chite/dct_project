@@ -64,12 +64,23 @@ body {
 }
 
 .error p {
-    font-size: 4rem;
     margin: 10px;
     text-align: center;
 }
 
 .blink {
+    font-size: 4rem;
     -webkit-animation: blink 1s steps(1, start) infinite alternate;
     animation: blink 1s steps(1, start) infinite alternate;
+}
+
+.qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.small_p {
+    font-size: 1rem;
 }

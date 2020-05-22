@@ -92,7 +92,7 @@ function clock() {
   //15mins
   setTimeout(function openWhoRU() {
     window.open("whoRU2.html");
-  }, 1200000);
+  }, 900000);
 }
 
 clock();
